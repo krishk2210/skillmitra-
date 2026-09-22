@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Checkout - Complete Your Subscription</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    "colors": {
+                        "surface-container-high": "#eae7e7",
+                        "secondary": "#795900",
+                        "on-surface": "#1c1b1b",
+                        "on-primary-fixed-variant": "#3a4569",
+                        "surface-bright": "#fcf9f8",
+                        "surface-container": "#f0eded",
+                        "on-background": "#1c1b1b",
+                        "on-tertiary-fixed-variant": "#005236",
+                        "tertiary-container": "#002214",
+                        "error": "#ba1a1a",
+                        "inverse-surface": "#313030",
+                        "on-error": "#ffffff",
+                        "surface": "#fcf9f8",
+                        "on-secondary-fixed": "#261a00",
+                        "primary-fixed": "#dbe1ff",
+                        "secondary-fixed-dim": "#f0c052",
+                        "surface-container-low": "#f6f3f2",
+                        "secondary-container": "#fccb5c",
+                        "primary-fixed-dim": "#bac5ef",
+                        "on-tertiary": "#ffffff",
+                        "outline-variant": "#c6c6cf",
+                        "surface-container-highest": "#e5e2e1",
+                        "primary-container": "#0f1b3c",
+                        "on-secondary-fixed-variant": "#5c4300",
+                        "on-secondary-container": "#735500",
+                        "on-primary-fixed": "#0e1a3b",
+                        "surface-tint": "#525d82",
+                        "outline": "#76767f",
+                        "inverse-on-surface": "#f3f0ef",
+                        "on-tertiary-fixed": "#002113",
+                        "background": "#fcf9f8",
+                        "tertiary-fixed": "#6ffbbe",
+                        "on-primary-container": "#7984aa",
+                        "on-primary": "#ffffff",
+                        "surface-container-lowest": "#ffffff",
+                        "primary": "#00020e",
+                        "on-surface-variant": "#45464e",
+                        "inverse-primary": "#bac5ef",
+                        "on-secondary": "#ffffff",
+                        "surface-dim": "#dcd9d9",
+                        "tertiary-fixed-dim": "#4edea3",
+                        "on-tertiary-container": "#009768",
+                        "on-error-container": "#93000a",
+                        "error-container": "#ffdad6",
+                        "surface-variant": "#e5e2e1",
+                        "secondary-fixed": "#ffdf9f",
+                        "tertiary": "#000301"
+                    },
+                    "borderRadius": {
+                        "DEFAULT": "0.25rem",
+                        "lg": "0.5rem",
+                        "xl": "0.75rem",
+                        "full": "9999px"
+                    },
+                    "spacing": {
+                        "stack-sm": "8px",
+                        "gutter": "24px",
+                        "margin-mobile": "16px",
+                        "stack-lg": "32px",
+                        "stack-md": "16px",
+                        "margin-desktop": "40px",
+                        "container-max": "1280px"
+                    },
+                    "fontFamily": {
+                        "headline-md": ["Inter"],
+                        "headline-lg": ["Inter"],
+                        "label-md": ["Inter"],
+                        "label-sm": ["Inter"],
+                        "body-lg": ["Inter"],
+                        "display-lg": ["Inter"],
+                        "headline-lg-mobile": ["Inter"],
+                        "body-md": ["Inter"]
+                    },
+                    "fontSize": {
+                        "headline-md": ["24px", { "lineHeight": "32px", "fontWeight": "600" }],
+                        "headline-lg": ["32px", { "lineHeight": "40px", "letterSpacing": "-0.01em", "fontWeight": "700" }],
+                        "label-md": ["14px", { "lineHeight": "20px", "letterSpacing": "0.01em", "fontWeight": "500" }],
+                        "label-sm": ["12px", { "lineHeight": "16px", "fontWeight": "600" }],
+                        "body-lg": ["18px", { "lineHeight": "28px", "fontWeight": "400" }],
+                        "display-lg": ["48px", { "lineHeight": "56px", "letterSpacing": "-0.02em", "fontWeight": "700" }],
+                        "headline-lg-mobile": ["28px", { "lineHeight": "36px", "fontWeight": "700" }],
+                        "body-md": ["16px", { "lineHeight": "24px", "fontWeight": "400" }]
+                    }
+                }
+            }
+        }
+    </script>
+<style>
+        .custom-shadow-card {
+            box-shadow: 0 12px 24px -4px rgba(0, 0, 0, 0.04);
+        }
+    </style>
+</head>
+<body class="bg-background text-on-background font-body-md text-body-md min-h-screen flex flex-col antialiased">
+<!-- Transactional Header (Global Nav Suppressed) -->
+<header class="w-full bg-surface-container-lowest border-b border-outline-variant/30 py-4 px-margin-mobile md:px-margin-desktop">
+<div class="max-w-container-max mx-auto flex justify-between items-center">
+<div class="font-headline-md text-headline-md font-bold text-primary tracking-tight">
+                Skill Mitra
+            </div>
+<div class="flex items-center gap-2 text-on-surface-variant bg-surface-container-low px-3 py-1.5 rounded-full">
+<span class="material-symbols-outlined text-[16px]">lock</span>
+<span class="font-label-sm text-label-sm uppercase tracking-wider">Secure Checkout</span>
+</div>
+</div>
+</header>
+<!-- Main Checkout Area -->
+<main class="flex-grow w-full max-w-container-max mx-auto px-margin-mobile md:px-margin-desktop py-stack-lg md:py-16">
+<div class="mb-stack-lg">
+<h1 class="font-headline-lg-mobile text-headline-lg-mobile md:font-headline-lg md:text-headline-lg text-primary-container">
+                Complete Your Subscription
+            </h1>
+<p class="font-body-md text-body-md text-on-surface-variant mt-2">
+                You're just one step away from unlocking premium learning.
+            </p>
+</div>
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-gutter lg:gap-12 items-start">
+<!-- Left Column: Payment Form & Onboarding Teaser -->
+<div class="lg:col-span-7 flex flex-col gap-stack-lg">
+<!-- Payment Method Card -->
+<section class="bg-surface-container-lowest rounded-xl custom-shadow-card border border-outline-variant/20 overflow-hidden">
+<div class="flex border-b border-outline-variant/30">
+<button class="flex-1 py-4 text-center font-label-md text-label-md border-b-2 border-primary-container text-primary-container bg-surface-container-low/50">
+                            Credit/Debit Card
+                        </button>
+<button class="flex-1 py-4 text-center font-label-md text-label-md text-on-surface-variant hover:bg-surface-container-low/50 transition-colors">
+                            UPI
+                        </button>
+</div>
+<div class="p-6 md:p-8">
+<form class="flex flex-col gap-6">
+<div>
+<label class="block font-label-md text-label-md text-on-surface mb-2" for="cardName">Name on Card</label>
+<input class="w-full bg-surface-container-lowest border border-outline-variant rounded-lg px-4 py-3 font-body-md text-body-md focus:outline-none focus:ring-2 focus:ring-primary-container/20 focus:border-primary-container transition-all" id="cardName" placeholder="e.g. Jane Doe" type="text"/>
+</div>
+<div>
+<label class="block font-label-md text-label-md text-on-surface mb-2" for="cardNumber">Card Number</label>
+<div class="relative">
+<input class="w-full bg-surface-container-lowest border border-outline-variant rounded-lg px-4 py-3 pl-12 font-body-md text-body-md focus:outline-none focus:ring-2 focus:ring-primary-container/20 focus:border-primary-container transition-all" id="cardNumber" placeholder="0000 0000 0000 0000" type="text"/>
+<span class="material-symbols-outlined absolute left-4 top-1/2 -translate-y-1/2 text-outline">credit_card</span>
+</div>
+</div>
+<div class="grid grid-cols-2 gap-6">
+<div>
+<label class="block font-label-md text-label-md text-on-surface mb-2" for="expiry">Expiry Date</label>
+<input class="w-full bg-surface-container-lowest border border-outline-variant rounded-lg px-4 py-3 font-body-md text-body-md focus:outline-none focus:ring-2 focus:ring-primary-container/20 focus:border-primary-container transition-all" id="expiry" placeholder="MM/YY" type="text"/>
+</div>
+<div>
+<label class="block font-label-md text-label-md text-on-surface mb-2" for="cvv">CVV</label>
+<input class="w-full bg-surface-container-lowest border border-outline-variant rounded-lg px-4 py-3 font-body-md text-body-md focus:outline-none focus:ring-2 focus:ring-primary-container/20 focus:border-primary-container transition-all" id="cvv" placeholder="123" type="text"/>
+</div>
+</div>
+<div class="flex items-center gap-3 mt-2">
+<span class="material-symbols-outlined text-tertiary-container" style="font-variation-settings: 'FILL' 1;">verified_user</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">Your payment information is encrypted and secure.</span>
+</div>
+</form>
+</div>
+</section>
+<!-- What Happens Next / Onboarding Teaser -->
+<section class="bg-surface-container-low rounded-xl p-6 md:p-8 border border-outline-variant/30 flex gap-6 items-start">
+<div class="hidden sm:flex h-12 w-12 rounded-full bg-primary-container text-on-primary items-center justify-center shrink-0">
+<span class="material-symbols-outlined">rocket_launch</span>
+</div>
+<div>
+<h3 class="font-headline-md text-headline-md text-primary-container mb-2">What happens next?</h3>
+<p class="font-body-md text-body-md text-on-surface-variant mb-4">
+                            Upon successful payment, your account will be instantly upgraded. You'll receive a welcome email with links to jumpstart your learning journey.
+                        </p>
+<ul class="flex flex-col gap-2">
+<li class="flex items-center gap-2 font-label-md text-label-md text-on-surface">
+<span class="material-symbols-outlined text-secondary text-[18px]">check_circle</span>
+                                Instant access to your dashboard
+                            </li>
+<li class="flex items-center gap-2 font-label-md text-label-md text-on-surface">
+<span class="material-symbols-outlined text-secondary text-[18px]">check_circle</span>
+                                Personalized course recommendations
+                            </li>
+</ul>
+</div>
+</section>
+</div>
+<!-- Right Column: Order Summary Sidebar -->
+<aside class="lg:col-span-5 sticky top-6">
+<div class="bg-surface-container-lowest rounded-xl custom-shadow-card border border-outline-variant/20 p-6 md:p-8 flex flex-col gap-6">
+<h2 class="font-headline-md text-headline-md border-b border-outline-variant/30 pb-4">Order Summary</h2>
+<!-- Plan Details -->
+<div class="flex justify-between items-start">
+<div>
+<h3 class="font-headline-md text-headline-md text-primary-container">Basic Plan</h3>
+<span class="font-label-sm text-label-sm text-on-surface-variant bg-surface-container py-1 px-2 rounded mt-1 inline-block">Monthly Subscription</span>
+</div>
+<div class="font-headline-md text-headline-md text-primary-container">
+                            $19.00
+                        </div>
+</div>
+<!-- Benefits List -->
+<div class="bg-surface py-4 px-5 rounded-lg border border-outline-variant/10">
+<ul class="flex flex-col gap-3">
+<li class="flex items-start gap-3">
+<span class="material-symbols-outlined text-tertiary-container text-[20px]" style="font-variation-settings: 'FILL' 1;">check</span>
+<span class="font-label-md text-label-md text-on-surface">Access to 500+ curated courses</span>
+</li>
+<li class="flex items-start gap-3">
+<span class="material-symbols-outlined text-tertiary-container text-[20px]" style="font-variation-settings: 'FILL' 1;">check</span>
+<span class="font-label-md text-label-md text-on-surface">Standard certificates on completion</span>
+</li>
+<li class="flex items-start gap-3">
+<span class="material-symbols-outlined text-tertiary-container text-[20px]" style="font-variation-settings: 'FILL' 1;">check</span>
+<span class="font-label-md text-label-md text-on-surface">Community forum access</span>
+</li>
+<li class="flex items-start gap-3">
+<span class="material-symbols-outlined text-tertiary-container text-[20px]" style="font-variation-settings: 'FILL' 1;">check</span>
+<span class="font-label-md text-label-md text-on-surface">Ad-free experience</span>
+</li>
+</ul>
+</div>
+<!-- Price Breakdown -->
+<div class="flex flex-col gap-3 pt-4 border-t border-outline-variant/30">
+<div class="flex justify-between font-body-md text-body-md text-on-surface-variant">
+<span>Subtotal</span>
+<span>$19.00</span>
+</div>
+<div class="flex justify-between font-body-md text-body-md text-on-surface-variant">
+<span>Tax (Estimated)</span>
+<span>$0.00</span>
+</div>
+</div>
+<div class="flex justify-between items-center pt-4 border-t border-outline-variant/30">
+<span class="font-headline-md text-headline-md text-on-background">Total</span>
+<span class="font-headline-lg-mobile text-headline-lg-mobile text-primary-container">$19.00</span>
+</div>
+<!-- Primary CTA -->
+<button class="w-full bg-primary-container text-on-primary font-label-md text-label-md py-4 rounded-xl hover:opacity-90 transition-opacity flex justify-center items-center gap-2 mt-2">
+                        Confirm &amp; Pay
+                        <span class="material-symbols-outlined text-[18px]">arrow_forward</span>
+</button>
+<p class="font-label-sm text-label-sm text-center text-on-surface-variant mt-2">
+                        By confirming, you agree to our Terms of Service and Privacy Policy. You can cancel your subscription at any time.
+                    </p>
+</div>
+</aside>
+</div>
+</main>
+</body></html>

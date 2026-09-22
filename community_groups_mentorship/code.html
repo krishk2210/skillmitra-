@@ -1,0 +1,345 @@
+<!DOCTYPE html>
+
+<html lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Community Groups &amp; Mentorship - Skill Mitra</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    "colors": {
+                        "on-primary": "#ffffff",
+                        "error-container": "#ffdad6",
+                        "on-tertiary-container": "#009768",
+                        "surface-container-highest": "#e5e2e1",
+                        "surface-container-low": "#f6f3f2",
+                        "on-surface-variant": "#45464e",
+                        "on-error": "#ffffff",
+                        "surface-container-lowest": "#ffffff",
+                        "inverse-on-surface": "#f3f0ef",
+                        "surface-variant": "#e5e2e1",
+                        "background": "#fcf9f8",
+                        "on-error-container": "#93000a",
+                        "on-tertiary-fixed-variant": "#005236",
+                        "on-surface": "#1c1b1b",
+                        "tertiary-container": "#002214",
+                        "secondary-fixed-dim": "#f0c052",
+                        "on-tertiary-fixed": "#002113",
+                        "outline": "#76767f",
+                        "error": "#ba1a1a",
+                        "on-secondary": "#ffffff",
+                        "surface-tint": "#525d82",
+                        "primary-fixed": "#dbe1ff",
+                        "primary-fixed-dim": "#bac5ef",
+                        "secondary": "#795900",
+                        "surface-dim": "#dcd9d9",
+                        "surface-container": "#f0eded",
+                        "on-tertiary": "#ffffff",
+                        "on-secondary-fixed": "#261a00",
+                        "inverse-primary": "#bac5ef",
+                        "primary": "#00020e",
+                        "on-background": "#1c1b1b",
+                        "on-secondary-container": "#735500",
+                        "surface": "#fcf9f8",
+                        "inverse-surface": "#313030",
+                        "tertiary-fixed": "#6ffbbe",
+                        "on-secondary-fixed-variant": "#5c4300",
+                        "tertiary": "#000301",
+                        "tertiary-fixed-dim": "#4edea3",
+                        "secondary-container": "#fccb5c",
+                        "on-primary-container": "#7984aa",
+                        "on-primary-fixed-variant": "#3a4569",
+                        "outline-variant": "#c6c6cf",
+                        "surface-bright": "#fcf9f8",
+                        "on-primary-fixed": "#0e1a3b",
+                        "primary-container": "#0f1b3c",
+                        "surface-container-high": "#eae7e7",
+                        "secondary-fixed": "#ffdf9f"
+                    },
+                    "borderRadius": {
+                        "DEFAULT": "0.25rem",
+                        "lg": "0.5rem",
+                        "xl": "0.75rem",
+                        "2xl": "1rem",
+                        "full": "9999px"
+                    },
+                    "spacing": {
+                        "stack-sm": "8px",
+                        "stack-lg": "32px",
+                        "container-max": "1280px",
+                        "margin-desktop": "40px",
+                        "margin-mobile": "16px",
+                        "stack-md": "16px",
+                        "gutter": "24px",
+                        "section": "80px"
+                    },
+                    "fontFamily": {
+                        "label-sm": ["Inter"],
+                        "headline-lg-mobile": ["Inter"],
+                        "headline-md": ["Inter"],
+                        "body-md": ["Inter"],
+                        "display-lg": ["Inter"],
+                        "label-md": ["Inter"],
+                        "body-lg": ["Inter"],
+                        "headline-lg": ["Inter"]
+                    },
+                    "fontSize": {
+                        "label-sm": ["12px", { "lineHeight": "16px", "fontWeight": "600" }],
+                        "headline-lg-mobile": ["28px", { "lineHeight": "36px", "fontWeight": "700" }],
+                        "headline-md": ["24px", { "lineHeight": "32px", "fontWeight": "600" }],
+                        "body-md": ["16px", { "lineHeight": "24px", "fontWeight": "400" }],
+                        "display-lg": ["48px", { "lineHeight": "56px", "letterSpacing": "-0.02em", "fontWeight": "700" }],
+                        "label-md": ["14px", { "lineHeight": "20px", "letterSpacing": "0.01em", "fontWeight": "500" }],
+                        "body-lg": ["18px", { "lineHeight": "28px", "fontWeight": "400" }],
+                        "headline-lg": ["32px", { "lineHeight": "40px", "letterSpacing": "-0.01em", "fontWeight": "700" }]
+                    },
+                    "boxShadow": {
+                        'soft': '0 4px 12px rgba(0, 0, 0, 0.04)',
+                        'hover': '0 8px 24px rgba(15, 27, 60, 0.08)',
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+<body class="bg-surface text-on-surface font-body-md antialiased pt-20">
+<!-- TopNavBar -->
+<nav class="fixed top-0 w-full z-50 shadow-sm bg-surface dark:bg-surface-dim">
+<div class="flex justify-between items-center max-w-container-max mx-auto px-margin-mobile md:px-margin-desktop py-4">
+<a class="text-headline-md font-headline-md font-bold text-primary dark:text-primary-fixed" href="#">
+                Skill Mitra
+            </a>
+<div class="hidden md:flex gap-gutter items-center">
+<a class="text-primary dark:text-primary-fixed hover:text-secondary-container transition-colors duration-200 font-label-md text-label-md" href="#">Free Education</a>
+<a class="text-primary dark:text-primary-fixed hover:text-secondary-container transition-colors duration-200 font-label-md text-label-md" href="#">Higher Education</a>
+<a class="text-primary dark:text-primary-fixed hover:text-secondary-container transition-colors duration-200 font-label-md text-label-md" href="#">Earning Opportunities</a>
+<a class="text-secondary border-b-2 border-secondary pb-1 hover:text-secondary-container transition-colors duration-200 font-label-md text-label-md" href="#">Community</a>
+</div>
+<button class="bg-primary-container text-on-primary font-label-md text-label-md px-4 py-2 rounded-lg hover:bg-opacity-90 transition-colors scale-95 active:opacity-80">
+                Login/Signup
+            </button>
+</div>
+</nav>
+<!-- Hero Section -->
+<header class="max-w-container-max mx-auto px-margin-mobile md:px-margin-desktop py-section text-center">
+<h1 class="font-display-lg text-display-lg text-primary-container mb-stack-md">Find Your Tribe</h1>
+<p class="font-body-lg text-body-lg text-on-surface-variant max-w-2xl mx-auto">
+            Connect with peers, collaborate on projects, and find expert mentors to accelerate your career growth in our thriving community ecosystem.
+        </p>
+</header>
+<!-- Search & Filter -->
+<section class="max-w-container-max mx-auto px-margin-mobile md:px-margin-desktop mb-section">
+<div class="bg-surface-container-lowest rounded-2xl shadow-soft p-stack-lg flex flex-col md:flex-row gap-gutter items-center justify-between">
+<div class="relative w-full md:w-1/2">
+<span class="material-symbols-outlined absolute left-4 top-1/2 -translate-y-1/2 text-outline">search</span>
+<input class="w-full pl-12 pr-4 py-3 rounded-lg border border-surface-variant focus:border-primary-container focus:ring-1 focus:ring-primary-container outline-none font-body-md text-body-md bg-transparent" placeholder="Search communities, topics, or mentors..." type="text"/>
+</div>
+<div class="flex flex-wrap gap-stack-sm w-full md:w-auto">
+<button class="px-4 py-2 rounded-full bg-primary-container text-on-primary font-label-sm text-label-sm">All</button>
+<button class="px-4 py-2 rounded-full bg-surface-container-high text-on-surface hover:bg-surface-variant transition-colors font-label-sm text-label-sm">Study Groups</button>
+<button class="px-4 py-2 rounded-full bg-surface-container-high text-on-surface hover:bg-surface-variant transition-colors font-label-sm text-label-sm">Career Networking</button>
+<button class="px-4 py-2 rounded-full bg-surface-container-high text-on-surface hover:bg-surface-variant transition-colors font-label-sm text-label-sm">Alumni</button>
+</div>
+</div>
+</section>
+<!-- Featured Groups -->
+<section class="max-w-container-max mx-auto px-margin-mobile md:px-margin-desktop mb-section">
+<div class="flex justify-between items-end mb-stack-lg">
+<div>
+<h2 class="font-headline-lg text-headline-lg text-primary-container md:block hidden">Active Communities</h2>
+<h2 class="font-headline-lg-mobile text-headline-lg-mobile text-primary-container md:hidden block">Active Communities</h2>
+<p class="font-body-md text-body-md text-on-surface-variant mt-2">Join discussions with like-minded learners.</p>
+</div>
+<a class="text-secondary font-label-md text-label-md hover:underline flex items-center gap-1" href="#">
+                View all <span class="material-symbols-outlined text-sm">arrow_forward</span>
+</a>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-gutter">
+<!-- Group Card 1 -->
+<div class="bg-surface-container-lowest rounded-2xl shadow-soft hover:shadow-hover transition-shadow duration-300 p-6 flex flex-col h-full border-t-2 border-secondary-container">
+<div class="flex items-center gap-4 mb-4">
+<div class="w-12 h-12 rounded-lg bg-primary-fixed flex items-center justify-center text-primary-container">
+<span class="material-symbols-outlined">terminal</span>
+</div>
+<div>
+<h3 class="font-headline-md text-headline-md text-primary-container">Frontend Masters</h3>
+<p class="font-label-sm text-label-sm text-on-surface-variant">Web Development</p>
+</div>
+</div>
+<p class="font-body-md text-body-md text-on-surface-variant mb-6 flex-grow">Deep dive into React, Vue, and modern CSS frameworks with peer reviews and weekly coding challenges.</p>
+<div class="flex items-center justify-between mt-auto">
+<div class="flex items-center gap-2 text-on-surface-variant font-label-sm text-label-sm">
+<span class="material-symbols-outlined text-sm">group</span> 1,240
+                        <span class="w-1 h-1 rounded-full bg-outline mx-1"></span>
+<span class="text-tertiary-fixed-dim">●</span> 14 active
+                    </div>
+<button class="px-4 py-2 bg-surface-container-high text-primary-container font-label-sm text-label-sm rounded-lg hover:bg-primary-container hover:text-on-primary transition-colors">Join Group</button>
+</div>
+</div>
+<!-- Group Card 2 -->
+<div class="bg-surface-container-lowest rounded-2xl shadow-soft hover:shadow-hover transition-shadow duration-300 p-6 flex flex-col h-full border-t-2 border-tertiary-fixed-dim">
+<div class="flex items-center gap-4 mb-4">
+<div class="w-12 h-12 rounded-lg bg-tertiary-fixed flex items-center justify-center text-tertiary-container">
+<span class="material-symbols-outlined">data_object</span>
+</div>
+<div>
+<h3 class="font-headline-md text-headline-md text-primary-container">Python Explorers</h3>
+<p class="font-label-sm text-label-sm text-on-surface-variant">Data Science &amp; AI</p>
+</div>
+</div>
+<p class="font-body-md text-body-md text-on-surface-variant mb-6 flex-grow">A supportive space for Python beginners and pros to discuss machine learning, automation, and data analysis.</p>
+<div class="flex items-center justify-between mt-auto">
+<div class="flex items-center gap-2 text-on-surface-variant font-label-sm text-label-sm">
+<span class="material-symbols-outlined text-sm">group</span> 3,892
+                        <span class="w-1 h-1 rounded-full bg-outline mx-1"></span>
+<span class="text-tertiary-fixed-dim">●</span> 42 active
+                    </div>
+<button class="px-4 py-2 bg-surface-container-high text-primary-container font-label-sm text-label-sm rounded-lg hover:bg-primary-container hover:text-on-primary transition-colors">Join Group</button>
+</div>
+</div>
+<!-- Group Card 3 -->
+<div class="bg-surface-container-lowest rounded-2xl shadow-soft hover:shadow-hover transition-shadow duration-300 p-6 flex flex-col h-full border-t-2 border-secondary-fixed">
+<div class="flex items-center gap-4 mb-4">
+<div class="w-12 h-12 rounded-lg bg-secondary-fixed flex items-center justify-center text-on-secondary-fixed">
+<span class="material-symbols-outlined">brush</span>
+</div>
+<div>
+<h3 class="font-headline-md text-headline-md text-primary-container">Design Thinking Hub</h3>
+<p class="font-label-sm text-label-sm text-on-surface-variant">UI/UX Design</p>
+</div>
+</div>
+<p class="font-body-md text-body-md text-on-surface-variant mb-6 flex-grow">Share portfolios, get critique on your Figma files, and discuss the latest trends in user experience.</p>
+<div class="flex items-center justify-between mt-auto">
+<div class="flex items-center gap-2 text-on-surface-variant font-label-sm text-label-sm">
+<span class="material-symbols-outlined text-sm">group</span> 850
+                        <span class="w-1 h-1 rounded-full bg-outline mx-1"></span>
+<span class="text-tertiary-fixed-dim">●</span> 8 active
+                    </div>
+<button class="px-4 py-2 bg-surface-container-high text-primary-container font-label-sm text-label-sm rounded-lg hover:bg-primary-container hover:text-on-primary transition-colors">Join Group</button>
+</div>
+</div>
+</div>
+</section>
+<!-- Mentorship & Events Bento -->
+<section class="max-w-container-max mx-auto px-margin-mobile md:px-margin-desktop mb-section">
+<div class="grid grid-cols-1 lg:grid-cols-3 gap-gutter">
+<!-- Mentorship (2/3 width) -->
+<div class="lg:col-span-2">
+<div class="flex justify-between items-end mb-stack-lg">
+<div>
+<h2 class="font-headline-lg text-headline-lg text-primary-container md:block hidden">Top Mentors</h2>
+<h2 class="font-headline-lg-mobile text-headline-lg-mobile text-primary-container md:hidden block">Top Mentors</h2>
+<p class="font-body-md text-body-md text-on-surface-variant mt-2">Get 1-on-1 guidance from industry leaders.</p>
+</div>
+<a class="text-secondary font-label-md text-label-md hover:underline flex items-center gap-1 hidden sm:flex" href="#">
+                        Browse all mentors <span class="material-symbols-outlined text-sm">arrow_forward</span>
+</a>
+</div>
+<div class="space-y-4">
+<!-- Mentor 1 -->
+<div class="bg-surface-container-lowest rounded-2xl shadow-soft p-4 flex flex-col sm:flex-row items-center gap-4 hover:shadow-hover transition-shadow">
+<img class="w-16 h-16 rounded-full object-cover shadow-sm" data-alt="Professional headshot of a female software engineer in her 30s with a warm smile, wearing a smart casual blazer, set against a bright, modern, minimalist office background with soft lighting, embodying a premium tech industry aesthetic." src="https://lh3.googleusercontent.com/aida-public/AB6AXuBwx1WyEdIgYpuk_MgMU6EKyNeYTYoDqDtATq6RNOHdI6H4yWgTQQ6eQP47h-NBYWP8eToiWtELUyD0tfL8DjhhyshlopqgUijj-FnIptU7lVIy_eaI6hfxfKT1f2Vd1YPgKktMkPfEpPteF2zKziWLLkxUaqOaifdRhZ3yiYz9ib9rpiXDdz4CeFvqs1tQBs4GyTJqqcWyhZsdJu6ro2pLiUi_seydMOyoqHZjYUGvghjKFvWyM0qQ"/>
+<div class="flex-grow text-center sm:text-left">
+<h4 class="font-headline-md text-headline-md text-primary-container text-lg">Sarah Jenkins</h4>
+<p class="font-body-md text-body-md text-on-surface-variant text-sm">Senior Frontend Engineer at Google</p>
+<div class="flex flex-wrap justify-center sm:justify-start gap-2 mt-2">
+<span class="px-2 py-1 bg-surface-container-high rounded-full font-label-sm text-label-sm text-on-surface-variant text-[10px]">React</span>
+<span class="px-2 py-1 bg-surface-container-high rounded-full font-label-sm text-label-sm text-on-surface-variant text-[10px]">Career Transition</span>
+</div>
+</div>
+<button class="w-full sm:w-auto px-4 py-2 border border-outline text-primary-container font-label-sm text-label-sm rounded-lg hover:bg-surface-container-high transition-colors">Request Mentorship</button>
+</div>
+<!-- Mentor 2 -->
+<div class="bg-surface-container-lowest rounded-2xl shadow-soft p-4 flex flex-col sm:flex-row items-center gap-4 hover:shadow-hover transition-shadow">
+<img class="w-16 h-16 rounded-full object-cover shadow-sm" data-alt="Professional portrait of a male UX designer in his 40s wearing stylish glasses and a crisp button-down shirt, looking directly at the camera with a confident, approachable expression, set in a well-lit, minimalist design studio with soft white light." src="https://lh3.googleusercontent.com/aida-public/AB6AXuBKhyangYPhsKWa-5gW-0993qYPB1bnjVf8w9a2-fE8aA1elzbpht7KCqCFcP3JugyUb_HnBnVtOzHngEeumFN_L7T4gYKVT-aoZcOMfD7yI5cWlnMua53rXUFJcyiUVM-u5760EQOkoU7xQuajFeX15-0makD77wxSbwBY9RgbLJzqA4w0eyOncDVCoT2iVs6hNFK9ebU3dX1uRF5V3HmWVED_TfWMX8Pue7fFcsazsXiXlz8TXE52"/>
+<div class="flex-grow text-center sm:text-left">
+<h4 class="font-headline-md text-headline-md text-primary-container text-lg">David Chen</h4>
+<p class="font-body-md text-body-md text-on-surface-variant text-sm">Lead Product Designer at Spotify</p>
+<div class="flex flex-wrap justify-center sm:justify-start gap-2 mt-2">
+<span class="px-2 py-1 bg-surface-container-high rounded-full font-label-sm text-label-sm text-on-surface-variant text-[10px]">UX Strategy</span>
+<span class="px-2 py-1 bg-surface-container-high rounded-full font-label-sm text-label-sm text-on-surface-variant text-[10px]">Portfolio Review</span>
+</div>
+</div>
+<button class="w-full sm:w-auto px-4 py-2 border border-outline text-primary-container font-label-sm text-label-sm rounded-lg hover:bg-surface-container-high transition-colors">Request Mentorship</button>
+</div>
+</div>
+</div>
+<!-- Events Sidebar (1/3 width) -->
+<div class="lg:col-span-1">
+<h2 class="font-headline-md text-headline-md text-primary-container mb-stack-lg">Upcoming Events</h2>
+<div class="bg-surface-container-lowest rounded-2xl shadow-soft p-6 flex flex-col gap-6">
+<!-- Event 1 -->
+<div class="flex gap-4 items-start">
+<div class="flex flex-col items-center justify-center bg-primary-container text-on-primary rounded-lg min-w-[60px] py-2">
+<span class="font-label-sm text-label-sm opacity-80 uppercase">Oct</span>
+<span class="font-headline-md text-headline-md leading-none mt-1">12</span>
+</div>
+<div>
+<h4 class="font-label-md text-label-md text-primary-container font-semibold">Mastering Technical Interviews</h4>
+<p class="font-body-md text-body-md text-on-surface-variant text-sm mt-1">Live Webinar • 2:00 PM EST</p>
+<button class="mt-2 text-secondary font-label-sm text-label-sm hover:underline">RSVP Now</button>
+</div>
+</div>
+<!-- Divider -->
+<hr class="border-surface-variant"/>
+<!-- Event 2 -->
+<div class="flex gap-4 items-start">
+<div class="flex flex-col items-center justify-center bg-surface-container-highest text-on-surface rounded-lg min-w-[60px] py-2">
+<span class="font-label-sm text-label-sm opacity-80 uppercase">Oct</span>
+<span class="font-headline-md text-headline-md leading-none mt-1">15</span>
+</div>
+<div>
+<h4 class="font-label-md text-label-md text-primary-container font-semibold">Design Portfolio Tear-down</h4>
+<p class="font-body-md text-body-md text-on-surface-variant text-sm mt-1">Community Workshop • 11:00 AM EST</p>
+<button class="mt-2 text-secondary font-label-sm text-label-sm hover:underline">RSVP Now</button>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- CTA Banner -->
+<section class="max-w-container-max mx-auto px-margin-mobile md:px-margin-desktop mb-section">
+<div class="bg-primary-container rounded-2xl p-stack-lg md:p-section text-center relative overflow-hidden">
+<!-- Decorative blur elements -->
+<div class="absolute top-0 left-0 w-64 h-64 bg-secondary-fixed rounded-full mix-blend-multiply filter blur-3xl opacity-20 transform -translate-x-1/2 -translate-y-1/2"></div>
+<div class="absolute bottom-0 right-0 w-64 h-64 bg-tertiary-fixed rounded-full mix-blend-multiply filter blur-3xl opacity-20 transform translate-x-1/2 translate-y-1/2"></div>
+<div class="relative z-10">
+<h2 class="font-display-lg text-display-lg text-on-primary mb-stack-md">Ready to dive in?</h2>
+<p class="font-body-lg text-body-lg text-on-primary/80 max-w-2xl mx-auto mb-stack-lg">
+                    Join the conversation, share your knowledge, or find the perfect study partner. The community is waiting for you.
+                </p>
+<div class="flex flex-col sm:flex-row gap-4 justify-center">
+<button class="px-8 py-3 bg-secondary-container text-on-secondary-container font-label-md text-label-md rounded-lg hover:bg-opacity-90 transition-colors shadow-soft">Go to Forums</button>
+<button class="px-8 py-3 bg-surface-container-lowest text-primary-container font-label-md text-label-md rounded-lg hover:bg-surface-variant transition-colors shadow-soft flex items-center justify-center gap-2">
+<img alt="Discord Logo" class="w-5 h-5" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDhDk0TA_H1s0lysOmXO0r1cROADNXsV7sVMfvZnEf8wVe7QYXLqpQmlT1o1ltrQGpbkWjZKSJNOQQnl0V__mvU4AFuVCVwIE21t7d706TXl0aMFk_6kdkdkrOumB3oLoVjYCfx2Dlfzg1GKjaF8BV-8xgxFmwqdo5jl_Jm86zhiVKxY-HcPFpNQGlfIA9lbavdMku4LDUHdb7sRUGwimzt_fforWo3L_lNiv7mq7gBVypvUvFxh4rs"/>
+                        Join Discord
+                    </button>
+</div>
+</div>
+</div>
+</section>
+<!-- Footer -->
+<footer class="w-full bg-primary dark:bg-primary-container">
+<div class="max-w-container-max mx-auto px-margin-desktop py-stack-lg flex flex-col md:flex-row justify-between gap-gutter">
+<div class="mb-4 md:mb-0">
+<span class="text-headline-md font-headline-md text-on-primary block mb-2">Skill Mitra</span>
+<p class="font-body-md text-body-md text-on-primary/80 dark:text-on-primary-container/80 text-sm">
+                    © 2024 Skill Mitra. All rights reserved.
+                </p>
+</div>
+<div class="flex flex-wrap gap-stack-lg">
+<a class="font-label-sm text-label-sm text-on-primary/80 dark:text-on-primary-container/80 hover:text-secondary-fixed transition-colors opacity-90 hover:opacity-100" href="#">Sitemap</a>
+<a class="font-label-sm text-label-sm text-on-primary/80 dark:text-on-primary-container/80 hover:text-secondary-fixed transition-colors opacity-90 hover:opacity-100" href="#">Social Links</a>
+<a class="font-label-sm text-label-sm text-on-primary/80 dark:text-on-primary-container/80 hover:text-secondary-fixed transition-colors opacity-90 hover:opacity-100" href="#">Newsletter</a>
+<a class="font-label-sm text-label-sm text-on-primary/80 dark:text-on-primary-container/80 hover:text-secondary-fixed transition-colors opacity-90 hover:opacity-100" href="#">Contact</a>
+</div>
+</div>
+</footer>
+</body></html>

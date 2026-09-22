@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+
+<html lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Course Enrollment Success - Skill Mitra</title>
+<!-- Material Symbols -->
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 1, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+    </style>
+<!-- Google Fonts: Inter -->
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<!-- Tailwind CSS -->
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<!-- Tailwind Config from Style Guidance -->
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    "colors": {
+                        "surface-container-highest": "#e5e2e1",
+                        "on-tertiary-fixed": "#002113",
+                        "secondary-fixed": "#ffdf9f",
+                        "inverse-on-surface": "#f3f0ef",
+                        "error-container": "#ffdad6",
+                        "surface-dim": "#dcd9d9",
+                        "outline": "#76767f",
+                        "primary-fixed-dim": "#bac5ef",
+                        "inverse-primary": "#bac5ef",
+                        "on-error": "#ffffff",
+                        "on-secondary": "#ffffff",
+                        "background": "#fcf9f8",
+                        "on-surface": "#1c1b1b",
+                        "on-secondary-fixed-variant": "#5c4300",
+                        "surface-container-lowest": "#ffffff",
+                        "surface-container-low": "#f6f3f2",
+                        "tertiary-fixed-dim": "#4edea3",
+                        "on-error-container": "#93000a",
+                        "secondary-fixed-dim": "#f0c052",
+                        "inverse-surface": "#313030",
+                        "tertiary-container": "#002214",
+                        "surface-container-high": "#eae7e7",
+                        "secondary-container": "#fccb5c",
+                        "surface-variant": "#e5e2e1",
+                        "surface-tint": "#525d82",
+                        "on-tertiary-fixed-variant": "#005236",
+                        "primary": "#00020e",
+                        "on-tertiary-container": "#009768",
+                        "primary-container": "#0f1b3c",
+                        "on-primary-container": "#7984aa",
+                        "on-tertiary": "#ffffff",
+                        "on-secondary-fixed": "#261a00",
+                        "on-primary-fixed": "#0e1a3b",
+                        "tertiary": "#000301",
+                        "on-primary-fixed-variant": "#3a4569",
+                        "outline-variant": "#c6c6cf",
+                        "on-secondary-container": "#735500",
+                        "on-surface-variant": "#45464e",
+                        "error": "#ba1a1a",
+                        "surface": "#fcf9f8",
+                        "secondary": "#795900",
+                        "tertiary-fixed": "#6ffbbe",
+                        "surface-container": "#f0eded",
+                        "on-background": "#1c1b1b",
+                        "on-primary": "#ffffff",
+                        "surface-bright": "#fcf9f8",
+                        "primary-fixed": "#dbe1ff"
+                    },
+                    "borderRadius": {
+                        "DEFAULT": "0.25rem",
+                        "lg": "0.5rem",
+                        "xl": "0.75rem",
+                        "full": "9999px"
+                    },
+                    "spacing": {
+                        "stack-lg": "32px",
+                        "margin-desktop": "40px",
+                        "stack-md": "16px",
+                        "container-max": "1280px",
+                        "margin-mobile": "16px",
+                        "stack-sm": "8px",
+                        "gutter": "24px"
+                    },
+                    "fontFamily": {
+                        "headline-lg-mobile": ["Inter"],
+                        "headline-md": ["Inter"],
+                        "label-md": ["Inter"],
+                        "headline-lg": ["Inter"],
+                        "display-lg": ["Inter"],
+                        "label-sm": ["Inter"],
+                        "body-md": ["Inter"],
+                        "body-lg": ["Inter"]
+                    },
+                    "fontSize": {
+                        "headline-lg-mobile": ["28px", { "lineHeight": "36px", "fontWeight": "700" }],
+                        "headline-md": ["24px", { "lineHeight": "32px", "fontWeight": "600" }],
+                        "label-md": ["14px", { "lineHeight": "20px", "letterSpacing": "0.01em", "fontWeight": "500" }],
+                        "headline-lg": ["32px", { "lineHeight": "40px", "letterSpacing": "-0.01em", "fontWeight": "700" }],
+                        "display-lg": ["48px", { "lineHeight": "56px", "letterSpacing": "-0.02em", "fontWeight": "700" }],
+                        "label-sm": ["12px", { "lineHeight": "16px", "fontWeight": "600" }],
+                        "body-md": ["16px", { "lineHeight": "24px", "fontWeight": "400" }],
+                        "body-lg": ["18px", { "lineHeight": "28px", "fontWeight": "400" }]
+                    },
+                    "boxShadow": {
+                        'ambient-low': '0 4px 12px rgba(0, 0, 0, 0.04)',
+                        'ambient-high': '0 8px 24px rgba(15, 27, 60, 0.08)',
+                    }
+                },
+            },
+        }
+    </script>
+</head>
+<body class="bg-surface text-on-surface font-body-md antialiased min-h-screen flex flex-col">
+<!-- TopNavBar Shared Component -->
+<!-- Note: All links use inactive state as this is a transactional success screen, not a main nav destination -->
+<header class="bg-surface shadow-sm fixed top-0 w-full z-50">
+<div class="flex justify-between items-center max-w-container-max mx-auto px-margin-desktop py-4">
+<!-- Brand Logo -->
+<a class="text-headline-md font-headline-md font-bold text-primary" href="#">
+                Skill Mitra
+            </a>
+<!-- Navigation Links (Desktop) -->
+<nav class="hidden md:flex gap-gutter items-center">
+<a class="text-primary font-label-md text-label-md hover:text-secondary-container transition-colors duration-200" href="#">Free Education</a>
+<a class="text-primary font-label-md text-label-md hover:text-secondary-container transition-colors duration-200" href="#">Higher Education</a>
+<a class="text-primary font-label-md text-label-md hover:text-secondary-container transition-colors duration-200" href="#">Earning Opportunities</a>
+<a class="text-primary font-label-md text-label-md hover:text-secondary-container transition-colors duration-200" href="#">Community</a>
+</nav>
+<!-- Trailing Action -->
+<button class="hidden md:block bg-primary-container text-on-primary font-label-md text-label-md px-6 py-2 rounded-lg scale-95 active:opacity-80 transition-transform">
+                Login/Signup
+            </button>
+<!-- Mobile Menu Icon -->
+<button class="md:hidden text-primary">
+<span class="material-symbols-outlined" data-icon="menu">menu</span>
+</button>
+</div>
+</header>
+<!-- Main Content Canvas -->
+<main class="flex-grow pt-[140px] pb-24 px-margin-mobile md:px-margin-desktop flex flex-col items-center justify-center relative overflow-hidden">
+<!-- Subtle Background Glow Element for Atmospheric Depth -->
+<div class="absolute top-20 left-1/2 -translate-x-1/2 w-[600px] h-[600px] bg-tertiary-fixed-dim/5 rounded-full blur-[100px] pointer-events-none -z-10"></div>
+<!-- Success Header Section -->
+<div class="text-center max-w-2xl mx-auto mb-stack-lg">
+<!-- Emerald Success Accent Icon -->
+<div class="inline-flex items-center justify-center w-20 h-20 rounded-full bg-tertiary-fixed-dim/20 text-tertiary-fixed-dim mb-6 shadow-ambient-low">
+<span class="material-symbols-outlined text-[40px]" data-icon="check_circle" data-weight="fill" style="font-variation-settings: 'FILL' 1;">check_circle</span>
+</div>
+<h1 class="font-display-lg text-display-lg md:font-display-lg text-on-surface mb-stack-sm tracking-tight">
+                You're Enrolled!
+            </h1>
+<p class="font-body-lg text-body-lg text-on-surface-variant">
+                Welcome to UI/UX Design Fundamentals. Your journey to mastering user-centric design starts now.
+            </p>
+</div>
+<!-- Course Summary Card (Glassmorphism / Premium Minimalist) -->
+<div class="w-full max-w-3xl bg-surface-container-lowest rounded-[16px] shadow-ambient-low p-6 md:p-8 flex flex-col md:flex-row gap-8 items-center border-t-2 border-primary-container mb-stack-lg transition-transform hover:shadow-ambient-high duration-300">
+<!-- Thumbnail -->
+<div class="w-full md:w-48 h-32 flex-shrink-0 rounded-lg overflow-hidden shadow-sm">
+<img alt="Course Thumbnail" class="w-full h-full object-cover" data-alt="A sleek, modern digital workspace setup featuring a high-resolution monitor displaying wireframes, a minimalist mechanical keyboard, and a stylish notebook on a light oak desk. Soft, natural daylight pours in from a nearby window, creating a bright, aspirational, premium light-mode aesthetic suitable for a UI/UX design course thumbnail." src="https://lh3.googleusercontent.com/aida-public/AB6AXuAeuclUOrDce_tLHCIuaLg2PPZ9fv8gd1fqA-Q-jx753Deq1XVQG5CpR_gg_F14ojeXCf8pTFkzWYIabTeBegV-9iunOj6dZYljgXQuNKoNmgAU66ru37iso_H5pfcnothxO9wXb3B3nXf42TPO46-r4NPhQWZzsvKmpW4D5DhNqDOFCBp2638t4lFrFlOqLte_PFZ9m97IfhIo9IweJbjxmdHYZtFYwidKt2HqTKA2KmwPYaumm5jw"/>
+</div>
+<!-- Details & Action -->
+<div class="flex-grow text-center md:text-left flex flex-col justify-center">
+<div class="inline-block px-3 py-1 bg-surface-container-highest text-on-surface-variant font-label-sm text-label-sm rounded-full mb-3 w-max mx-auto md:mx-0">
+                    Design Track
+                </div>
+<h2 class="font-headline-md text-headline-md text-on-surface mb-4">
+                    UI/UX Design Fundamentals
+                </h2>
+<div class="mt-auto flex justify-center md:justify-start">
+<button class="bg-primary-container text-on-primary font-label-md text-label-md px-8 py-3 rounded-lg flex items-center gap-2 hover:opacity-90 transition-opacity">
+<span>Start Learning</span>
+<span class="material-symbols-outlined text-[18px]" data-icon="arrow_forward">arrow_forward</span>
+</button>
+</div>
+</div>
+</div>
+<!-- What's Next Section (Bento-style Grid) -->
+<div class="w-full max-w-4xl mt-12">
+<h3 class="font-headline-md text-headline-md text-center text-on-surface mb-stack-lg">What's Next?</h3>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+<!-- Step 1 -->
+<div class="bg-surface-container-lowest rounded-xl p-6 shadow-ambient-low text-center flex flex-col items-center group hover:-translate-y-1 transition-transform duration-300">
+<div class="w-12 h-12 rounded-full bg-primary-fixed flex items-center justify-center text-on-primary-fixed mb-4 group-hover:bg-primary-container group-hover:text-on-primary transition-colors">
+<span class="material-symbols-outlined" data-icon="person">person</span>
+</div>
+<h4 class="font-label-md text-label-md text-on-surface mb-2">1. Complete your profile</h4>
+<p class="font-body-md text-body-md text-on-surface-variant text-sm">Add your goals to get personalized course recommendations.</p>
+</div>
+<!-- Step 2 -->
+<div class="bg-surface-container-lowest rounded-xl p-6 shadow-ambient-low text-center flex flex-col items-center group hover:-translate-y-1 transition-transform duration-300">
+<div class="w-12 h-12 rounded-full bg-secondary-fixed flex items-center justify-center text-on-secondary-fixed mb-4 group-hover:bg-secondary-container transition-colors">
+<span class="material-symbols-outlined" data-icon="forum">forum</span>
+</div>
+<h4 class="font-label-md text-label-md text-on-surface mb-2">2. Join the Community Group</h4>
+<p class="font-body-md text-body-md text-on-surface-variant text-sm">Introduce yourself to fellow aspiring designers.</p>
+</div>
+<!-- Step 3 -->
+<div class="bg-surface-container-lowest rounded-xl p-6 shadow-ambient-low text-center flex flex-col items-center group hover:-translate-y-1 transition-transform duration-300">
+<div class="w-12 h-12 rounded-full bg-surface-container-highest flex items-center justify-center text-on-surface-variant mb-4 group-hover:bg-outline-variant transition-colors">
+<span class="material-symbols-outlined" data-icon="notifications_active">notifications_active</span>
+</div>
+<h4 class="font-label-md text-label-md text-on-surface mb-2">3. Set a learning reminder</h4>
+<p class="font-body-md text-body-md text-on-surface-variant text-sm">Consistency is key. Schedule your weekly study time.</p>
+</div>
+</div>
+</div>
+<!-- Social Share Section -->
+<div class="mt-20 text-center flex flex-col items-center">
+<p class="font-label-md text-label-md text-on-surface-variant mb-4 uppercase tracking-wider text-sm">Share your milestone</p>
+<div class="flex gap-4">
+<!-- Ghost Button Style for Socials -->
+<button class="flex items-center gap-2 px-6 py-2 border border-outline-variant rounded-lg text-on-surface font-label-md text-label-md hover:bg-surface-container-high transition-colors bg-transparent">
+<span class="material-symbols-outlined text-[20px]" data-icon="share">share</span>
+                    LinkedIn
+                </button>
+<button class="flex items-center gap-2 px-6 py-2 border border-outline-variant rounded-lg text-on-surface font-label-md text-label-md hover:bg-surface-container-high transition-colors bg-transparent">
+<span class="material-symbols-outlined text-[20px]" data-icon="share">share</span>
+                    Twitter
+                </button>
+</div>
+</div>
+</main>
+<!-- Footer Shared Component -->
+<footer class="w-full bg-primary py-stack-lg mt-auto">
+<div class="max-w-container-max mx-auto px-margin-desktop flex flex-col md:flex-row justify-between gap-gutter items-center md:items-start">
+<!-- Brand & Copyright -->
+<div class="flex flex-col items-center md:items-start mb-6 md:mb-0">
+<div class="text-headline-md font-headline-md text-on-primary mb-2">
+                    Skill Mitra
+                </div>
+<div class="font-body-md text-body-md text-on-primary/80">
+                    © 2024 Skill Mitra. All rights reserved.
+                </div>
+</div>
+<!-- Links -->
+<nav class="flex flex-wrap justify-center gap-6">
+<a class="font-label-sm text-label-sm text-on-primary/80 hover:text-secondary-fixed transition-colors opacity-90 hover:opacity-100" href="#">Sitemap</a>
+<a class="font-label-sm text-label-sm text-on-primary/80 hover:text-secondary-fixed transition-colors opacity-90 hover:opacity-100" href="#">Social Links</a>
+<a class="font-label-sm text-label-sm text-on-primary/80 hover:text-secondary-fixed transition-colors opacity-90 hover:opacity-100" href="#">Newsletter</a>
+<a class="font-label-sm text-label-sm text-on-primary/80 hover:text-secondary-fixed transition-colors opacity-90 hover:opacity-100" href="#">Contact</a>
+</nav>
+</div>
+</footer>
+</body></html>

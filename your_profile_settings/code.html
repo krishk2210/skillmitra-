@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Skill Mitra - Profile &amp; Settings</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    "colors": {
+                        "primary-fixed": "#dbe1ff",
+                        "inverse-on-surface": "#f3f0ef",
+                        "on-background": "#1c1b1b",
+                        "surface-container-lowest": "#ffffff",
+                        "on-tertiary-fixed": "#002113",
+                        "on-secondary-container": "#735500",
+                        "on-secondary": "#ffffff",
+                        "surface-bright": "#fcf9f8",
+                        "surface-container-low": "#f6f3f2",
+                        "on-primary-container": "#7984aa",
+                        "on-tertiary-container": "#009768",
+                        "on-surface": "#1c1b1b",
+                        "error": "#ba1a1a",
+                        "surface-dim": "#dcd9d9",
+                        "on-secondary-fixed": "#261a00",
+                        "secondary": "#795900",
+                        "on-primary-fixed": "#0e1a3b",
+                        "tertiary-fixed": "#6ffbbe",
+                        "surface": "#fcf9f8",
+                        "inverse-primary": "#bac5ef",
+                        "inverse-surface": "#313030",
+                        "background": "#fcf9f8",
+                        "primary-container": "#0f1b3c",
+                        "tertiary": "#000301",
+                        "error-container": "#ffdad6",
+                        "on-error": "#ffffff",
+                        "on-primary": "#ffffff",
+                        "surface-tint": "#525d82",
+                        "on-tertiary": "#ffffff",
+                        "primary": "#00020e",
+                        "secondary-fixed": "#ffdf9f",
+                        "tertiary-fixed-dim": "#4edea3",
+                        "on-error-container": "#93000a",
+                        "secondary-container": "#fccb5c",
+                        "surface-container-high": "#eae7e7",
+                        "on-primary-fixed-variant": "#3a4569",
+                        "surface-container": "#f0eded",
+                        "secondary-fixed-dim": "#f0c052",
+                        "tertiary-container": "#002214",
+                        "primary-fixed-dim": "#bac5ef",
+                        "on-secondary-fixed-variant": "#5c4300",
+                        "outline-variant": "#c6c6cf",
+                        "outline": "#76767f",
+                        "surface-container-highest": "#e5e2e1",
+                        "on-tertiary-fixed-variant": "#005236",
+                        "surface-variant": "#e5e2e1",
+                        "on-surface-variant": "#45464e"
+                    },
+                    "borderRadius": {
+                        "DEFAULT": "0.25rem",
+                        "lg": "0.5rem",
+                        "xl": "0.75rem",
+                        "full": "9999px"
+                    },
+                    "spacing": {
+                        "stack-md": "16px",
+                        "margin-desktop": "40px",
+                        "margin-mobile": "16px",
+                        "stack-sm": "8px",
+                        "container-max": "1280px",
+                        "stack-lg": "32px",
+                        "gutter": "24px"
+                    },
+                    "fontFamily": {
+                        "body-md": ["Inter"],
+                        "label-sm": ["Inter"],
+                        "headline-md": ["Inter"],
+                        "body-lg": ["Inter"],
+                        "label-md": ["Inter"],
+                        "headline-lg-mobile": ["Inter"],
+                        "display-lg": ["Inter"],
+                        "headline-lg": ["Inter"]
+                    },
+                    "fontSize": {
+                        "body-md": ["16px", { "lineHeight": "24px", "fontWeight": "400" }],
+                        "label-sm": ["12px", { "lineHeight": "16px", "fontWeight": "600" }],
+                        "headline-md": ["24px", { "lineHeight": "32px", "fontWeight": "600" }],
+                        "body-lg": ["18px", { "lineHeight": "28px", "fontWeight": "400" }],
+                        "label-md": ["14px", { "lineHeight": "20px", "letterSpacing": "0.01em", "fontWeight": "500" }],
+                        "headline-lg-mobile": ["28px", { "lineHeight": "36px", "fontWeight": "700" }],
+                        "display-lg": ["48px", { "lineHeight": "56px", "letterSpacing": "-0.02em", "fontWeight": "700" }],
+                        "headline-lg": ["32px", { "lineHeight": "40px", "letterSpacing": "-0.01em", "fontWeight": "700" }]
+                    }
+                }
+            }
+        }
+    </script>
+<style>
+        .glass-card {
+            background: rgba(255, 255, 255, 0.85);
+            backdrop-filter: blur(12px);
+            border: 1px solid rgba(255, 255, 255, 0.3);
+        }
+    </style>
+</head>
+<body class="bg-background text-on-background min-h-screen font-body-md">
+<!-- Top Navigation (Mobile & Desktop) -->
+<nav class="fixed top-0 w-full z-50 shadow-sm bg-surface dark:bg-surface-dim">
+<div class="flex justify-between items-center max-w-container-max mx-auto px-margin-desktop py-4">
+<div class="text-headline-md font-headline-md font-bold text-primary dark:text-primary-fixed">
+                Skill Mitra
+            </div>
+<!-- Desktop Nav Links -->
+<div class="hidden md:flex gap-gutter items-center">
+<a class="text-primary dark:text-primary-fixed hover:text-secondary-container transition-colors duration-200 font-label-md text-label-md" href="#">Free Education</a>
+<a class="text-primary dark:text-primary-fixed hover:text-secondary-container transition-colors duration-200 font-label-md text-label-md" href="#">Higher Education</a>
+<a class="text-primary dark:text-primary-fixed hover:text-secondary-container transition-colors duration-200 font-label-md text-label-md" href="#">Earning Opportunities</a>
+<a class="text-primary dark:text-primary-fixed hover:text-secondary-container transition-colors duration-200 font-label-md text-label-md" href="#">Community</a>
+</div>
+<!-- Trailing Action / Mobile Menu Toggle -->
+<div class="flex items-center gap-4">
+<button class="md:hidden text-primary">
+<span class="material-symbols-outlined">menu</span>
+</button>
+<div class="w-10 h-10 rounded-full overflow-hidden border border-outline-variant hidden md:block">
+<img alt="Profile" class="w-full h-full object-cover" data-alt="A professional headshot of a young woman smiling warmly, dressed in smart casual attire (a light blazer over a plain tee). The background is slightly blurred showing a modern, bright office space with soft natural lighting, fitting a premium light-mode UI aesthetic." src="https://lh3.googleusercontent.com/aida-public/AB6AXuBzBYEvyJ45SRfoPHxxtjG6pULGaxPGGAm4tlzwwu0gF4Gwftgw6bEYDVpMpUnitv9TzzKNz5Lg0tPH04YxXMNOi6j5iA42ne8dNejGPpTaqzVoAF5z0wohgJe53ty_LqkDzYCDIrEizaReqb8qvO4nkbF9QOeOpQSEHALcYeTtZHGZXI5EQKLAlstobiWHLMInpv1LrakXYIwxWWJuoPIFH23lMAZi2kDUg65rbPHgmyftXCHxhbme"/>
+</div>
+</div>
+</div>
+</nav>
+<main class="pt-[88px] pb-stack-lg max-w-container-max mx-auto px-margin-mobile md:px-margin-desktop flex flex-col md:flex-row gap-gutter">
+<!-- Sidebar Navigation -->
+<aside class="w-full md:w-64 flex-shrink-0 mb-stack-lg md:mb-0">
+<div class="glass-card rounded-xl shadow-[0_4px_12px_rgba(0,0,0,0.04)] p-stack-md sticky top-[104px]">
+<nav class="flex flex-col gap-2">
+<a class="flex items-center gap-3 px-4 py-3 rounded-lg text-on-surface-variant hover:bg-surface-container-low transition-colors group" href="#">
+<span class="material-symbols-outlined text-on-surface-variant group-hover:text-primary transition-colors">book</span>
+<span class="font-label-md text-label-md group-hover:text-primary transition-colors">My Courses</span>
+</a>
+<a class="flex items-center gap-3 px-4 py-3 rounded-lg text-on-surface-variant hover:bg-surface-container-low transition-colors group" href="#">
+<span class="material-symbols-outlined text-on-surface-variant group-hover:text-primary transition-colors">work</span>
+<span class="font-label-md text-label-md group-hover:text-primary transition-colors">Job Applications</span>
+</a>
+<a class="flex items-center gap-3 px-4 py-3 rounded-lg text-on-surface-variant hover:bg-surface-container-low transition-colors group" href="#">
+<span class="material-symbols-outlined text-on-surface-variant group-hover:text-primary transition-colors">forum</span>
+<span class="font-label-md text-label-md group-hover:text-primary transition-colors">Community</span>
+</a>
+<a class="flex items-center gap-3 px-4 py-3 rounded-lg bg-primary-container text-on-primary-container font-medium" href="#">
+<span class="material-symbols-outlined text-on-primary-container" style="font-variation-settings: 'FILL' 1;">person</span>
+<span class="font-label-md text-label-md">Profile Settings</span>
+</a>
+</nav>
+</div>
+</aside>
+<!-- Main Content Area -->
+<div class="flex-1 flex flex-col gap-stack-lg">
+<!-- Profile Header Bento Box -->
+<section class="glass-card rounded-xl shadow-[0_4px_12px_rgba(0,0,0,0.04)] p-stack-lg border-t-2 border-primary">
+<div class="flex flex-col md:flex-row items-center gap-stack-lg">
+<div class="relative w-32 h-32 rounded-full overflow-hidden border-4 border-surface-container-lowest shadow-md">
+<img alt="Jane Doe Profile" class="w-full h-full object-cover" data-alt="A professional headshot of a young woman named Jane Doe smiling warmly, dressed in a sleek navy blazer over a crisp white shirt. The background is a soft, well-lit modern studio setting with a subtle cream backdrop, aligning perfectly with a premium, minimalist educational platform." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDEvCuacN4oT49MKd6htrVXVZ2Z-WFqTILJHtKzXsr9tSkX20VY1fbdDSaNpn_pqi_PhgSKR5P7iBR39TsJcUTly0abbG5-rFIPqYkgFn-EtgTy8dqv5VBL6XwhzpaTufUtU-VX3Gs2S_kehMYyOS9mGgfJ_ji3mVUv5OHWaJJiqL7Dkk_ENsla3tk-lAMfPbzMg89nm06z5he5_bnKl8KgdMkytq_JPwq7urjJGun1idU6ndBNX_oW"/>
+<button class="absolute inset-0 bg-primary/40 flex items-center justify-center opacity-0 hover:opacity-100 transition-opacity">
+<span class="material-symbols-outlined text-white">photo_camera</span>
+</button>
+</div>
+<div class="text-center md:text-left flex-1">
+<div class="flex items-center justify-center md:justify-start gap-2 mb-2">
+<h1 class="font-headline-lg text-headline-lg md:text-headline-lg text-primary">Jane Doe</h1>
+<span class="material-symbols-outlined text-tertiary-container" style="font-variation-settings: 'FILL' 1;" title="Verified User">check_circle</span>
+</div>
+<p class="font-body-lg text-body-lg text-on-surface-variant mb-4">Aspiring UI/UX Designer</p>
+<!-- Subscription Status Widget (Inline) -->
+<div class="inline-flex items-center gap-3 bg-secondary-container/20 px-4 py-2 rounded-full border border-secondary-container/30">
+<span class="material-symbols-outlined text-secondary" style="font-variation-settings: 'FILL' 1;">workspace_premium</span>
+<span class="font-label-sm text-label-sm text-on-secondary-container">Pro Plan Active</span>
+<button class="ml-2 font-label-sm text-label-sm text-primary hover:underline">Manage</button>
+</div>
+</div>
+<div class="flex gap-3">
+<button class="bg-primary text-on-primary px-6 py-2 rounded-lg font-label-md text-label-md hover:bg-primary/90 transition-colors shadow-sm">Save Changes</button>
+</div>
+</div>
+</section>
+<!-- Grid Layout for Forms and Info -->
+<div class="grid grid-cols-1 lg:grid-cols-3 gap-gutter">
+<!-- Main Form Column -->
+<div class="lg:col-span-2 flex flex-col gap-stack-lg">
+<!-- Personal Information -->
+<section class="glass-card rounded-xl shadow-[0_4px_12px_rgba(0,0,0,0.04)] p-stack-lg">
+<h2 class="font-headline-md text-headline-md text-primary mb-stack-md flex items-center gap-2">
+<span class="material-symbols-outlined text-surface-tint">badge</span>
+                            Personal Information
+                        </h2>
+<div class="grid grid-cols-1 md:grid-cols-2 gap-stack-md">
+<div class="flex flex-col gap-1">
+<label class="font-label-md text-label-md text-on-surface-variant">Full Name</label>
+<input class="w-full px-4 py-2 rounded border border-outline-variant bg-surface-container-lowest focus:border-primary focus:ring-1 focus:ring-primary outline-none transition-all font-body-md text-body-md text-on-surface" type="text" value="Jane Doe"/>
+</div>
+<div class="flex flex-col gap-1">
+<label class="font-label-md text-label-md text-on-surface-variant">Email Address</label>
+<input class="w-full px-4 py-2 rounded border border-outline-variant bg-surface-container-lowest focus:border-primary focus:ring-1 focus:ring-primary outline-none transition-all font-body-md text-body-md text-on-surface" type="email" value="jane.doe@example.com"/>
+</div>
+<div class="flex flex-col gap-1">
+<label class="font-label-md text-label-md text-on-surface-variant">Phone Number</label>
+<input class="w-full px-4 py-2 rounded border border-outline-variant bg-surface-container-lowest focus:border-primary focus:ring-1 focus:ring-primary outline-none transition-all font-body-md text-body-md text-on-surface" type="tel" value="+1 (555) 123-4567"/>
+</div>
+<div class="flex flex-col gap-1">
+<label class="font-label-md text-label-md text-on-surface-variant">Location</label>
+<input class="w-full px-4 py-2 rounded border border-outline-variant bg-surface-container-lowest focus:border-primary focus:ring-1 focus:ring-primary outline-none transition-all font-body-md text-body-md text-on-surface" type="text" value="San Francisco, CA"/>
+</div>
+</div>
+</section>
+<!-- Professional Summary -->
+<section class="glass-card rounded-xl shadow-[0_4px_12px_rgba(0,0,0,0.04)] p-stack-lg">
+<h2 class="font-headline-md text-headline-md text-primary mb-stack-md flex items-center gap-2">
+<span class="material-symbols-outlined text-surface-tint">description</span>
+                            Professional Summary
+                        </h2>
+<div class="flex flex-col gap-1">
+<label class="font-label-md text-label-md text-on-surface-variant">Bio</label>
+<textarea class="w-full px-4 py-3 rounded border border-outline-variant bg-surface-container-lowest focus:border-primary focus:ring-1 focus:ring-primary outline-none transition-all font-body-md text-body-md text-on-surface resize-none" rows="4">Passionate UI/UX designer with a background in psychology. Currently upskilling to create more intuitive and accessible digital experiences. Always eager to learn new tools and methodologies.</textarea>
+<div class="text-right mt-1">
+<span class="font-label-sm text-label-sm text-outline">189/500 characters</span>
+</div>
+</div>
+</section>
+</div>
+<!-- Side Settings Column -->
+<div class="flex flex-col gap-stack-lg">
+<!-- Skills & Interests -->
+<section class="glass-card rounded-xl shadow-[0_4px_12px_rgba(0,0,0,0.04)] p-stack-lg">
+<h2 class="font-headline-md text-headline-md text-primary mb-stack-md flex items-center gap-2">
+<span class="material-symbols-outlined text-surface-tint">psychology</span>
+                            Skills
+                        </h2>
+<div class="flex flex-wrap gap-2 mb-4">
+<span class="bg-surface-container-high text-on-surface px-3 py-1 rounded-full font-label-sm text-label-sm flex items-center gap-1 group cursor-pointer hover:bg-error-container hover:text-on-error-container transition-colors">
+                                Figma <span class="material-symbols-outlined text-[16px] opacity-50 group-hover:opacity-100">close</span>
+</span>
+<span class="bg-surface-container-high text-on-surface px-3 py-1 rounded-full font-label-sm text-label-sm flex items-center gap-1 group cursor-pointer hover:bg-error-container hover:text-on-error-container transition-colors">
+                                User Research <span class="material-symbols-outlined text-[16px] opacity-50 group-hover:opacity-100">close</span>
+</span>
+<span class="bg-surface-container-high text-on-surface px-3 py-1 rounded-full font-label-sm text-label-sm flex items-center gap-1 group cursor-pointer hover:bg-error-container hover:text-on-error-container transition-colors">
+                                Wireframing <span class="material-symbols-outlined text-[16px] opacity-50 group-hover:opacity-100">close</span>
+</span>
+</div>
+<div class="flex gap-2">
+<input class="w-full px-3 py-2 rounded border border-outline-variant bg-surface-container-lowest focus:border-primary focus:ring-1 focus:ring-primary outline-none transition-all font-body-md text-body-md text-on-surface" placeholder="Add a skill..." type="text"/>
+<button class="bg-surface-variant text-on-surface-variant px-3 py-2 rounded hover:bg-surface-container-highest transition-colors">
+<span class="material-symbols-outlined">add</span>
+</button>
+</div>
+</section>
+<!-- Account Settings -->
+<section class="glass-card rounded-xl shadow-[0_4px_12px_rgba(0,0,0,0.04)] p-stack-lg">
+<h2 class="font-headline-md text-headline-md text-primary mb-stack-md flex items-center gap-2">
+<span class="material-symbols-outlined text-surface-tint">settings</span>
+                            Preferences
+                        </h2>
+<div class="flex flex-col gap-4">
+<div class="flex items-center justify-between">
+<span class="font-body-md text-body-md text-on-surface">Email Notifications</span>
+<label class="relative inline-flex items-center cursor-pointer">
+<input checked="" class="sr-only peer" type="checkbox" value=""/>
+<div class="w-11 h-6 bg-surface-variant peer-focus:outline-none rounded-full peer peer-checked:after:translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-[2px] after:left-[2px] after:bg-white after:border-gray-300 after:border after:rounded-full after:h-5 after:w-5 after:transition-all peer-checked:bg-primary"></div>
+</label>
+</div>
+<div class="flex items-center justify-between">
+<span class="font-body-md text-body-md text-on-surface">Push Notifications</span>
+<label class="relative inline-flex items-center cursor-pointer">
+<input class="sr-only peer" type="checkbox" value=""/>
+<div class="w-11 h-6 bg-surface-variant peer-focus:outline-none rounded-full peer peer-checked:after:translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-[2px] after:left-[2px] after:bg-white after:border-gray-300 after:border after:rounded-full after:h-5 after:w-5 after:transition-all peer-checked:bg-primary"></div>
+</label>
+</div>
+<div class="h-px w-full bg-outline-variant/30 my-2"></div>
+<button class="text-left font-label-md text-label-md text-primary hover:underline flex items-center gap-2">
+<span class="material-symbols-outlined text-[18px]">lock_reset</span> Change Password
+                            </button>
+<button class="text-left font-label-md text-label-md text-primary hover:underline flex items-center gap-2">
+<span class="material-symbols-outlined text-[18px]">shield</span> Privacy Settings
+                            </button>
+</div>
+</section>
+</div>
+</div>
+</div>
+</main>
+<!-- Footer -->
+<footer class="w-full bg-primary dark:bg-primary-container text-on-primary dark:text-on-primary-container mt-auto">
+<div class="max-w-container-max mx-auto px-margin-desktop py-stack-lg flex flex-col md:flex-row justify-between gap-gutter items-center">
+<div class="text-headline-md font-headline-md text-on-primary">
+                Skill Mitra
+            </div>
+<div class="flex gap-gutter">
+<a class="text-on-primary/80 dark:text-on-primary-container/80 hover:text-secondary-fixed transition-colors font-label-sm text-label-sm" href="#">Sitemap</a>
+<a class="text-on-primary/80 dark:text-on-primary-container/80 hover:text-secondary-fixed transition-colors font-label-sm text-label-sm" href="#">Social Links</a>
+<a class="text-on-primary/80 dark:text-on-primary-container/80 hover:text-secondary-fixed transition-colors font-label-sm text-label-sm" href="#">Newsletter</a>
+<a class="text-on-primary/80 dark:text-on-primary-container/80 hover:text-secondary-fixed transition-colors font-label-sm text-label-sm" href="#">Contact</a>
+</div>
+<div class="font-body-md text-body-md text-on-primary/60">
+                © 2024 Skill Mitra. All rights reserved.
+            </div>
+</div>
+</footer>
+</body></html>

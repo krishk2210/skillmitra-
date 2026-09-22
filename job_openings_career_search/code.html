@@ -1,0 +1,366 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Skill Mitra - Job Openings</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    "colors": {
+                        "on-secondary-fixed": "#261a00",
+                        "on-tertiary-fixed-variant": "#005236",
+                        "on-tertiary": "#ffffff",
+                        "surface": "#fcf9f8",
+                        "on-surface": "#1c1b1b",
+                        "tertiary": "#000301",
+                        "tertiary-fixed": "#6ffbbe",
+                        "on-secondary-container": "#735500",
+                        "on-primary-container": "#7984aa",
+                        "on-error-container": "#93000a",
+                        "on-primary-fixed": "#0e1a3b",
+                        "tertiary-fixed-dim": "#4edea3",
+                        "primary-fixed": "#dbe1ff",
+                        "secondary-fixed": "#ffdf9f",
+                        "inverse-primary": "#bac5ef",
+                        "primary-fixed-dim": "#bac5ef",
+                        "error": "#ba1a1a",
+                        "primary": "#00020e",
+                        "tertiary-container": "#002214",
+                        "surface-variant": "#e5e2e1",
+                        "on-surface-variant": "#45464e",
+                        "surface-tint": "#525d82",
+                        "on-tertiary-container": "#009768",
+                        "background": "#fcf9f8",
+                        "secondary": "#795900",
+                        "outline-variant": "#c6c6cf",
+                        "surface-container": "#f0eded",
+                        "on-tertiary-fixed": "#002113",
+                        "on-secondary-fixed-variant": "#5c4300",
+                        "outline": "#76767f",
+                        "on-background": "#1c1b1b",
+                        "primary-container": "#0f1b3c",
+                        "on-primary": "#ffffff",
+                        "on-error": "#ffffff",
+                        "surface-dim": "#dcd9d9",
+                        "inverse-surface": "#313030",
+                        "on-primary-fixed-variant": "#3a4569",
+                        "surface-container-highest": "#e5e2e1",
+                        "on-secondary": "#ffffff",
+                        "surface-container-low": "#f6f3f2",
+                        "error-container": "#ffdad6",
+                        "inverse-on-surface": "#f3f0ef",
+                        "secondary-fixed-dim": "#f0c052",
+                        "surface-container-high": "#eae7e7",
+                        "surface-bright": "#fcf9f8",
+                        "secondary-container": "#fccb5c",
+                        "surface-container-lowest": "#ffffff"
+                    },
+                    "borderRadius": {
+                        "DEFAULT": "0.25rem",
+                        "lg": "0.5rem",
+                        "xl": "0.75rem",
+                        "full": "9999px"
+                    },
+                    "spacing": {
+                        "container-max": "1280px",
+                        "gutter": "24px",
+                        "margin-desktop": "40px",
+                        "stack-md": "16px",
+                        "stack-lg": "32px",
+                        "stack-sm": "8px",
+                        "margin-mobile": "16px"
+                    },
+                    "fontFamily": {
+                        "display-lg": ["Inter"],
+                        "headline-lg-mobile": ["Inter"],
+                        "label-sm": ["Inter"],
+                        "label-md": ["Inter"],
+                        "body-md": ["Inter"],
+                        "body-lg": ["Inter"],
+                        "headline-md": ["Inter"],
+                        "headline-lg": ["Inter"]
+                    },
+                    "fontSize": {
+                        "display-lg": ["48px", { "lineHeight": "56px", "letterSpacing": "-0.02em", "fontWeight": "700" }],
+                        "headline-lg-mobile": ["28px", { "lineHeight": "36px", "fontWeight": "700" }],
+                        "label-sm": ["12px", { "lineHeight": "16px", "fontWeight": "600" }],
+                        "label-md": ["14px", { "lineHeight": "20px", "letterSpacing": "0.01em", "fontWeight": "500" }],
+                        "body-md": ["16px", { "lineHeight": "24px", "fontWeight": "400" }],
+                        "body-lg": ["18px", { "lineHeight": "28px", "fontWeight": "400" }],
+                        "headline-md": ["24px", { "lineHeight": "32px", "fontWeight": "600" }],
+                        "headline-lg": ["32px", { "lineHeight": "40px", "letterSpacing": "-0.01em", "fontWeight": "700" }]
+                    }
+                }
+            }
+        }
+    </script>
+<style>
+        .custom-shadow { box-shadow: 0 12px 24px -12px rgba(0, 0, 0, 0.04); }
+        .hover-elevate { transition: transform 0.2s ease, box-shadow 0.2s ease; }
+        .hover-elevate:hover { transform: translateY(-4px); box-shadow: 0 20px 25px -5px rgba(15, 27, 60, 0.08), 0 10px 10px -5px rgba(15, 27, 60, 0.04); }
+    </style>
+</head>
+<body class="bg-surface text-on-surface font-body-md antialiased min-h-screen flex flex-col">
+<!-- TopNavBar -->
+<nav class="bg-surface dark:bg-surface-dim fixed top-0 w-full z-50 shadow-sm transition-all duration-300">
+<div class="flex justify-between items-center max-w-container-max mx-auto px-margin-mobile md:px-margin-desktop py-4">
+<a class="text-headline-md font-headline-md font-bold text-primary dark:text-primary-fixed" href="#">Skill Mitra</a>
+<div class="hidden md:flex items-center space-x-gutter">
+<a class="text-primary dark:text-primary-fixed font-label-md text-label-md hover:text-secondary-container transition-colors duration-200" href="#">Free Education</a>
+<a class="text-primary dark:text-primary-fixed font-label-md text-label-md hover:text-secondary-container transition-colors duration-200" href="#">Higher Education</a>
+<a class="text-secondary border-b-2 border-secondary pb-1 font-label-md text-label-md hover:text-secondary-container transition-colors duration-200" href="#">Earning Opportunities</a>
+<a class="text-primary dark:text-primary-fixed font-label-md text-label-md hover:text-secondary-container transition-colors duration-200" href="#">Community</a>
+</div>
+<button class="bg-primary-container text-on-primary font-label-md text-label-md px-4 py-2 rounded-lg hover:bg-opacity-90 scale-95 active:opacity-80 transition-transform hidden md:block">
+                Login/Signup
+            </button>
+<button class="md:hidden text-primary">
+<span class="material-symbols-outlined">menu</span>
+</button>
+</div>
+</nav>
+<!-- Main Content Wrapper -->
+<main class="flex-grow pt-[88px] max-w-container-max mx-auto w-full px-margin-mobile md:px-margin-desktop pb-stack-lg">
+<!-- Hero Search Section -->
+<section class="py-stack-lg md:py-[64px]">
+<h1 class="text-headline-lg-mobile md:text-headline-lg font-headline-lg-mobile md:font-headline-lg text-center mb-stack-md text-primary-container">Explore Your Next Career Move</h1>
+<p class="text-body-lg font-body-lg text-center text-on-surface-variant mb-stack-lg max-w-2xl mx-auto">Discover opportunities that align with your skills and aspirations.</p>
+<div class="bg-surface-container-lowest rounded-xl p-4 custom-shadow max-w-4xl mx-auto flex flex-col md:flex-row gap-stack-md">
+<div class="flex-grow flex items-center border border-surface-variant rounded-lg px-3 focus-within:border-primary-container focus-within:ring-1 focus-within:ring-primary-container transition-all">
+<span class="material-symbols-outlined text-outline">search</span>
+<input class="w-full border-none bg-transparent focus:ring-0 text-body-md font-body-md placeholder-outline-variant py-2" placeholder="Job title, keywords, or company" type="text"/>
+</div>
+<div class="flex-grow flex items-center border border-surface-variant rounded-lg px-3 focus-within:border-primary-container focus-within:ring-1 focus-within:ring-primary-container transition-all">
+<span class="material-symbols-outlined text-outline">location_on</span>
+<input class="w-full border-none bg-transparent focus:ring-0 text-body-md font-body-md placeholder-outline-variant py-2" placeholder="Location or Remote" type="text"/>
+</div>
+<button class="bg-primary-container text-on-primary font-label-md text-label-md px-6 py-2 rounded-lg hover:bg-opacity-90 transition-opacity whitespace-nowrap">
+                    Search Jobs
+                </button>
+</div>
+</section>
+<!-- Layout: Sidebar + Grid -->
+<div class="flex flex-col lg:flex-row gap-gutter mt-stack-md">
+<!-- Left Sidebar Filters -->
+<aside class="w-full lg:w-1/4 flex-shrink-0 space-y-stack-md">
+<div class="bg-surface-container-lowest rounded-xl p-stack-md custom-shadow">
+<div class="flex justify-between items-center mb-stack-md">
+<h2 class="text-headline-md font-headline-md">Filters</h2>
+<button class="text-label-sm font-label-sm text-secondary hover:underline">Clear all</button>
+</div>
+<!-- Filter Group: Job Type -->
+<div class="mb-stack-md">
+<h3 class="text-label-md font-label-md text-on-surface-variant mb-2">Job Type</h3>
+<div class="space-y-2">
+<label class="flex items-center space-x-2 cursor-pointer">
+<input class="rounded border-surface-variant text-primary-container focus:ring-primary-container" type="checkbox"/>
+<span class="text-body-md font-body-md">Full-time</span>
+</label>
+<label class="flex items-center space-x-2 cursor-pointer">
+<input checked="" class="rounded border-surface-variant text-primary-container focus:ring-primary-container" type="checkbox"/>
+<span class="text-body-md font-body-md">Internship</span>
+</label>
+<label class="flex items-center space-x-2 cursor-pointer">
+<input class="rounded border-surface-variant text-primary-container focus:ring-primary-container" type="checkbox"/>
+<span class="text-body-md font-body-md">Freelance</span>
+</label>
+</div>
+</div>
+<!-- Filter Group: Experience Level -->
+<div class="mb-stack-md">
+<h3 class="text-label-md font-label-md text-on-surface-variant mb-2">Experience</h3>
+<div class="space-y-2">
+<label class="flex items-center space-x-2 cursor-pointer">
+<input class="rounded border-surface-variant text-primary-container focus:ring-primary-container" type="checkbox"/>
+<span class="text-body-md font-body-md">Entry Level</span>
+</label>
+<label class="flex items-center space-x-2 cursor-pointer">
+<input class="rounded border-surface-variant text-primary-container focus:ring-primary-container" type="checkbox"/>
+<span class="text-body-md font-body-md">Mid Level</span>
+</label>
+<label class="flex items-center space-x-2 cursor-pointer">
+<input class="rounded border-surface-variant text-primary-container focus:ring-primary-container" type="checkbox"/>
+<span class="text-body-md font-body-md">Senior Level</span>
+</label>
+</div>
+</div>
+<!-- Filter Group: Work Model -->
+<div class="mb-stack-md">
+<h3 class="text-label-md font-label-md text-on-surface-variant mb-2">Work Model</h3>
+<div class="space-y-2">
+<label class="flex items-center space-x-2 cursor-pointer">
+<input class="rounded border-surface-variant text-primary-container focus:ring-primary-container" type="checkbox"/>
+<span class="text-body-md font-body-md">Remote</span>
+</label>
+<label class="flex items-center space-x-2 cursor-pointer">
+<input class="rounded border-surface-variant text-primary-container focus:ring-primary-container" type="checkbox"/>
+<span class="text-body-md font-body-md">On-site</span>
+</label>
+<label class="flex items-center space-x-2 cursor-pointer">
+<input class="rounded border-surface-variant text-primary-container focus:ring-primary-container" type="checkbox"/>
+<span class="text-body-md font-body-md">Hybrid</span>
+</label>
+</div>
+</div>
+</div>
+</aside>
+<!-- Main Content: Job Grid -->
+<div class="flex-grow flex flex-col">
+<!-- Sorting & Results count -->
+<div class="flex justify-between items-center mb-stack-md">
+<p class="text-body-md font-body-md text-on-surface-variant">Showing <span class="font-bold text-on-surface">124</span> opportunities</p>
+<div class="flex items-center space-x-2">
+<span class="text-label-sm font-label-sm text-on-surface-variant">Sort by:</span>
+<select class="border-surface-variant rounded-md text-body-md font-body-md py-1 pl-2 pr-8 focus:ring-primary-container focus:border-primary-container bg-transparent">
+<option>Relevance</option>
+<option>Newest First</option>
+<option>Salary (High to Low)</option>
+</select>
+</div>
+</div>
+<!-- Jobs Grid -->
+<div class="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-2 gap-stack-md">
+<!-- Job Card 1 -->
+<div class="bg-surface-container-lowest rounded-xl p-stack-md custom-shadow hover-elevate border-t-2 border-secondary-container flex flex-col h-full relative">
+<div class="absolute top-4 right-4 bg-secondary-container/20 text-secondary-fixed-dim px-2 py-1 rounded text-label-sm font-label-sm flex items-center gap-1">
+<span class="material-symbols-outlined text-[14px]">star</span> Featured
+                        </div>
+<div class="flex items-start gap-4 mb-4">
+<img class="w-12 h-12 rounded-md object-cover border border-surface-variant" data-alt="A clean, minimalist logo for a tech company featuring a blue abstract geometric shape on a white background, highly professional and modern." src="https://lh3.googleusercontent.com/aida-public/AB6AXuB10wt5ccxrM4bBANI_kIf_tEy-7MSVaz9uPJe7SURlSY2qfqFar6IMjxn7kQk-K-BFuTpOLUpueyHM0jk3dMFY96P3JDlwMZQPm56G2pdc4xm9Xhbw-W_nbRpNcutTrJe0W_JMwRYwUby2IOoX7naKGNSarCRBEIPlGPKK13IQHNG4HqKN2NKA4L3cVMqKwp667_xcgIZDwSmw3B8LNQRPge8r0nSFvn4X6t9Rzcd_3Q9LL_QMvtze"/>
+<div>
+<h3 class="text-headline-md font-headline-md text-primary-container">Product Designer</h3>
+<p class="text-body-md font-body-md text-on-surface-variant">TechFlow Innovators • San Francisco, CA</p>
+</div>
+</div>
+<div class="flex flex-wrap gap-2 mb-4">
+<span class="bg-primary-container/10 text-primary-container px-2 py-1 rounded-full text-label-sm font-label-sm">Full-time</span>
+<span class="bg-surface-variant text-on-surface-variant px-2 py-1 rounded-full text-label-sm font-label-sm">Remote Option</span>
+</div>
+<p class="text-body-md font-body-md text-on-surface mb-4 flex-grow line-clamp-2">
+                            We are looking for a visionary Product Designer to lead our UX initiatives and craft beautiful, intuitive interfaces for our flagship SaaS platform.
+                        </p>
+<div class="flex justify-between items-end mt-auto pt-4 border-t border-surface-variant">
+<div>
+<p class="text-label-md font-label-md text-primary-container font-bold">$110k - $140k</p>
+<p class="text-label-sm font-label-sm text-on-surface-variant">Posted 2 days ago</p>
+</div>
+<div class="flex space-x-2">
+<button class="border border-outline-variant text-primary-container font-label-md text-label-md px-3 py-1.5 rounded-lg hover:bg-surface-variant transition-colors">Details</button>
+<button class="bg-secondary-container text-on-secondary-container font-label-md text-label-md px-4 py-1.5 rounded-lg hover:opacity-90 transition-opacity">Apply</button>
+</div>
+</div>
+</div>
+<!-- Job Card 2 -->
+<div class="bg-surface-container-lowest rounded-xl p-stack-md custom-shadow hover-elevate flex flex-col h-full relative">
+<div class="flex items-start gap-4 mb-4">
+<img class="w-12 h-12 rounded-md object-cover border border-surface-variant" data-alt="A minimalist logo for a creative agency, featuring a bold, dark navy typographic mark on a crisp white background, exuding premium aesthetic." src="https://lh3.googleusercontent.com/aida-public/AB6AXuBCqGPr1vhCcMtjeVxXEk8tl-zVIPlj09JiZKOobrDNFXukQul2MKeJNs8jFUghrD-zJYoH2dmIBsULm7gQhYjlEtq-68PYklZ1jMn64jabU8oZDFbRgzJxLEXXcnOvnDtPQ9F-mnO-TOWQCw7omf5bvW30rGDNwLtyQPgoTnY6b-N2oJtYUgzVj4OFz8haYWmWdYaAiSCt4pFDuSCgyNRE5kxK3VcBQpI9NMOsHNGpCcJPuUDK_-Mf"/>
+<div>
+<h3 class="text-headline-md font-headline-md text-primary-container">Frontend Intern</h3>
+<p class="text-body-md font-body-md text-on-surface-variant">Creative Canvas • New York, NY</p>
+</div>
+</div>
+<div class="flex flex-wrap gap-2 mb-4">
+<span class="bg-secondary-container/20 text-secondary-container px-2 py-1 rounded-full text-label-sm font-label-sm border border-secondary-container/50">Internship</span>
+<span class="bg-surface-variant text-on-surface-variant px-2 py-1 rounded-full text-label-sm font-label-sm">On-site</span>
+</div>
+<p class="text-body-md font-body-md text-on-surface mb-4 flex-grow line-clamp-2">
+                            Join our fast-paced design team to help implement cutting-edge web experiences. Mentorship provided by senior developers.
+                        </p>
+<div class="flex justify-between items-end mt-auto pt-4 border-t border-surface-variant">
+<div>
+<p class="text-label-md font-label-md text-primary-container font-bold">$25/hr - $35/hr</p>
+<p class="text-label-sm font-label-sm text-on-surface-variant">Posted today</p>
+</div>
+<div class="flex space-x-2">
+<button class="border border-outline-variant text-primary-container font-label-md text-label-md px-3 py-1.5 rounded-lg hover:bg-surface-variant transition-colors">Details</button>
+<button class="bg-primary-container text-on-primary font-label-md text-label-md px-4 py-1.5 rounded-lg hover:opacity-90 transition-opacity">Apply</button>
+</div>
+</div>
+</div>
+<!-- Job Card 3 -->
+<div class="bg-surface-container-lowest rounded-xl p-stack-md custom-shadow hover-elevate flex flex-col h-full relative">
+<div class="flex items-start gap-4 mb-4">
+<img class="w-12 h-12 rounded-md object-cover border border-surface-variant" data-alt="A corporate logo featuring a sleek, interlocking silver and navy geometric pattern on a white background, suggesting stability and finance." src="https://lh3.googleusercontent.com/aida-public/AB6AXuB5CcJhIv-xLKM5m3rmbI6Nrg9Ka8vlxY0pF8O9CeS-JMoxEV-0p7hwpe1njuAM059cBYdJyMJdJgfcXsCxZIyOTNS6KgQrD4LgT1cRd3gjIUIadZwInbJhFPfW5UpUna7XU1aYV55t3bge2Z6aKOEBQE38xGpxETSamGnKV-xq_A7OjnxcBO-Z-6qGgcGCyDDBBoaT1w-2Mn7gywU9QJtKMAd98AG-ER46fY1n4ns8PAJ7p63pdht6"/>
+<div>
+<h3 class="text-headline-md font-headline-md text-primary-container">Data Analyst</h3>
+<p class="text-body-md font-body-md text-on-surface-variant">Global FinServ • London, UK</p>
+</div>
+</div>
+<div class="flex flex-wrap gap-2 mb-4">
+<span class="bg-primary-container/10 text-primary-container px-2 py-1 rounded-full text-label-sm font-label-sm">Full-time</span>
+<span class="bg-surface-variant text-on-surface-variant px-2 py-1 rounded-full text-label-sm font-label-sm">Hybrid</span>
+</div>
+<p class="text-body-md font-body-md text-on-surface mb-4 flex-grow line-clamp-2">
+                            Analyze complex financial datasets to drive business decisions. Strong SQL and Python skills required.
+                        </p>
+<div class="flex justify-between items-end mt-auto pt-4 border-t border-surface-variant">
+<div>
+<p class="text-label-md font-label-md text-primary-container font-bold">$90k - $120k</p>
+<p class="text-label-sm font-label-sm text-on-surface-variant">Posted 5 days ago</p>
+</div>
+<div class="flex space-x-2">
+<button class="border border-outline-variant text-primary-container font-label-md text-label-md px-3 py-1.5 rounded-lg hover:bg-surface-variant transition-colors">Details</button>
+<button class="bg-primary-container text-on-primary font-label-md text-label-md px-4 py-1.5 rounded-lg hover:opacity-90 transition-opacity">Apply</button>
+</div>
+</div>
+</div>
+<!-- Job Card 4 -->
+<div class="bg-surface-container-lowest rounded-xl p-stack-md custom-shadow hover-elevate flex flex-col h-full relative">
+<div class="flex items-start gap-4 mb-4">
+<img class="w-12 h-12 rounded-md object-cover border border-surface-variant" data-alt="A modern startup logo with a vibrant, gradient orange and red icon resembling a spark, set against a clean white background." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDeDZe62OcTB79RtdJ_QC5L4PtA1_repASwwmC6OusZ8sWlHufRdVEyb7nDYjxRyZLyXKjK2ECWlohKdbR7_D53fBB8pz30OizW-yIpNVB3A2CK-oTbBmPYgKUiHGWPKZ0J8m1ttd5QrUWu4VPqO0MLlEoC864lZgP5iosUSuQmhBpxcQahrMjNvJlauro7-O_Kk65E6NstRjTNLfa86gPpLRBLCDdqhZQAsqZ1vmH5Dl2X53CwBEHd"/>
+<div>
+<h3 class="text-headline-md font-headline-md text-primary-container">Marketing Specialist</h3>
+<p class="text-body-md font-body-md text-on-surface-variant">Ignite Media • Remote</p>
+</div>
+</div>
+<div class="flex flex-wrap gap-2 mb-4">
+<span class="bg-surface-variant text-on-surface-variant px-2 py-1 rounded-full text-label-sm font-label-sm border border-outline-variant">Freelance</span>
+<span class="bg-surface-variant text-on-surface-variant px-2 py-1 rounded-full text-label-sm font-label-sm">Remote</span>
+</div>
+<p class="text-body-md font-body-md text-on-surface mb-4 flex-grow line-clamp-2">
+                            Looking for a creative freelancer to manage social media campaigns and drive brand engagement across multiple platforms.
+                        </p>
+<div class="flex justify-between items-end mt-auto pt-4 border-t border-surface-variant">
+<div>
+<p class="text-label-md font-label-md text-primary-container font-bold">$40/hr - $60/hr</p>
+<p class="text-label-sm font-label-sm text-on-surface-variant">Posted 1 week ago</p>
+</div>
+<div class="flex space-x-2">
+<button class="border border-outline-variant text-primary-container font-label-md text-label-md px-3 py-1.5 rounded-lg hover:bg-surface-variant transition-colors">Details</button>
+<button class="bg-primary-container text-on-primary font-label-md text-label-md px-4 py-1.5 rounded-lg hover:opacity-90 transition-opacity">Apply</button>
+</div>
+</div>
+</div>
+</div>
+<!-- Load More -->
+<div class="flex justify-center mt-stack-lg">
+<button class="border border-primary-container text-primary-container font-label-md text-label-md px-6 py-2 rounded-lg hover:bg-surface-variant transition-colors flex items-center gap-2">
+                        Load More Opportunities <span class="material-symbols-outlined text-[18px]">expand_more</span>
+</button>
+</div>
+</div>
+</div>
+</main>
+<!-- Footer -->
+<footer class="bg-primary dark:bg-primary-container w-full mt-auto">
+<div class="max-w-container-max mx-auto px-margin-desktop py-stack-lg flex flex-col md:flex-row justify-between gap-gutter items-center md:items-start">
+<div class="text-center md:text-left">
+<p class="text-headline-md font-headline-md text-on-primary mb-2">Skill Mitra</p>
+<p class="text-label-sm font-label-sm text-on-primary/80 dark:text-on-primary-container/80">© 2024 Skill Mitra. All rights reserved.</p>
+</div>
+<div class="flex flex-wrap justify-center md:justify-end gap-x-6 gap-y-2">
+<a class="text-label-sm font-label-sm text-on-primary/80 dark:text-on-primary-container/80 hover:text-secondary-fixed transition-colors opacity-90 hover:opacity-100 transition-opacity" href="#">Sitemap</a>
+<a class="text-label-sm font-label-sm text-on-primary/80 dark:text-on-primary-container/80 hover:text-secondary-fixed transition-colors opacity-90 hover:opacity-100 transition-opacity" href="#">Social Links</a>
+<a class="text-label-sm font-label-sm text-on-primary/80 dark:text-on-primary-container/80 hover:text-secondary-fixed transition-colors opacity-90 hover:opacity-100 transition-opacity" href="#">Newsletter</a>
+<a class="text-label-sm font-label-sm text-on-primary/80 dark:text-on-primary-container/80 hover:text-secondary-fixed transition-colors opacity-90 hover:opacity-100 transition-opacity" href="#">Contact</a>
+</div>
+</div>
+</footer>
+</body></html>

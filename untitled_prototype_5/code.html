@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+
+<html class="scroll-smooth" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Skill Mitra - Learn Free. Earn Real. Grow Together.</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    "colors": {
+                        "on-secondary-fixed-variant": "#5c4300",
+                        "error": "#ba1a1a",
+                        "surface-container": "#f0eded",
+                        "secondary": "#795900",
+                        "outline-variant": "#c6c6cf",
+                        "tertiary-fixed-dim": "#4edea3",
+                        "on-primary-container": "#7984aa",
+                        "on-secondary": "#ffffff",
+                        "primary": "#00020e",
+                        "on-background": "#1c1b1b",
+                        "surface-dim": "#dcd9d9",
+                        "secondary-container": "#fccb5c",
+                        "on-primary-fixed": "#0e1a3b",
+                        "surface-container-high": "#eae7e7",
+                        "primary-fixed-dim": "#bac5ef",
+                        "on-tertiary": "#ffffff",
+                        "on-secondary-fixed": "#261a00",
+                        "primary-container": "#0f1b3c",
+                        "surface-container-low": "#f6f3f2",
+                        "surface-container-highest": "#e5e2e1",
+                        "inverse-surface": "#313030",
+                        "on-primary": "#ffffff",
+                        "on-primary-fixed-variant": "#3a4569",
+                        "on-tertiary-fixed-variant": "#005236",
+                        "primary-fixed": "#dbe1ff",
+                        "on-surface": "#1c1b1b",
+                        "surface-variant": "#e5e2e1",
+                        "on-error-container": "#93000a",
+                        "surface": "#fcf9f8",
+                        "tertiary-fixed": "#6ffbbe",
+                        "on-secondary-container": "#735500",
+                        "inverse-on-surface": "#f3f0ef",
+                        "tertiary": "#000301",
+                        "background": "#fcf9f8",
+                        "on-error": "#ffffff",
+                        "inverse-primary": "#bac5ef",
+                        "on-tertiary-fixed": "#002113",
+                        "on-tertiary-container": "#009768",
+                        "tertiary-container": "#002214",
+                        "surface-tint": "#525d82",
+                        "on-surface-variant": "#45464e",
+                        "secondary-fixed": "#ffdf9f",
+                        "error-container": "#ffdad6",
+                        "outline": "#76767f",
+                        "surface-bright": "#fcf9f8",
+                        "secondary-fixed-dim": "#f0c052",
+                        "surface-container-lowest": "#ffffff"
+                    },
+                    "borderRadius": {
+                        "DEFAULT": "0.25rem",
+                        "lg": "0.5rem",
+                        "xl": "0.75rem",
+                        "full": "9999px"
+                    },
+                    "spacing": {
+                        "stack-md": "16px",
+                        "gutter": "24px",
+                        "stack-sm": "8px",
+                        "margin-desktop": "40px",
+                        "stack-lg": "32px",
+                        "container-max": "1280px",
+                        "margin-mobile": "16px"
+                    },
+                    "fontFamily": {
+                        "headline-lg-mobile": ["Inter"],
+                        "label-md": ["Inter"],
+                        "headline-md": ["Inter"],
+                        "display-lg": ["Inter"],
+                        "body-lg": ["Inter"],
+                        "body-md": ["Inter"],
+                        "headline-lg": ["Inter"],
+                        "label-sm": ["Inter"]
+                    },
+                    "fontSize": {
+                        "headline-lg-mobile": ["28px", { "lineHeight": "36px", "fontWeight": "700" }],
+                        "label-md": ["14px", { "lineHeight": "20px", "letterSpacing": "0.01em", "fontWeight": "500" }],
+                        "headline-md": ["24px", { "lineHeight": "32px", "fontWeight": "600" }],
+                        "display-lg": ["48px", { "lineHeight": "56px", "letterSpacing": "-0.02em", "fontWeight": "700" }],
+                        "body-lg": ["18px", { "lineHeight": "28px", "fontWeight": "400" }],
+                        "body-md": ["16px", { "lineHeight": "24px", "fontWeight": "400" }],
+                        "headline-lg": ["32px", { "lineHeight": "40px", "letterSpacing": "-0.01em", "fontWeight": "700" }],
+                        "label-sm": ["12px", { "lineHeight": "16px", "fontWeight": "600" }]
+                    },
+                    "boxShadow": {
+                        "card": "0 12px 24px -12px rgba(0, 0, 0, 0.04)",
+                        "hover": "0 24px 48px -12px rgba(0, 2, 14, 0.08)",
+                        "nav": "0 4px 20px -2px rgba(0, 0, 0, 0.05)"
+                    }
+                }
+            }
+        }
+    </script>
+<style>
+        body {
+            background-color: #F8F7F3; /* Custom brand background overriding default tailwind config if needed, but keeping text styles */
+        }
+        .text-gradient {
+            background: linear-gradient(135deg, #00020e 0%, #3a4569 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+        .hero-blob {
+            position: absolute;
+            width: 600px;
+            height: 600px;
+            background: radial-gradient(circle, rgba(252,203,92,0.15) 0%, rgba(248,247,243,0) 70%);
+            top: -100px;
+            right: -150px;
+            z-index: -1;
+            border-radius: 50%;
+        }
+    </style>
+</head>
+<body class="font-sans text-on-surface antialiased bg-[#F8F7F3]">
+<!-- TopNavBar -->
+<header class="fixed top-0 w-full z-50 shadow-sm bg-surface dark:bg-surface-dim transition-all duration-300" id="main-nav">
+<div class="flex justify-between items-center max-w-container-max mx-auto px-margin-mobile md:px-margin-desktop py-4">
+<a class="text-headline-md font-headline-md font-bold text-primary dark:text-primary-fixed scale-95 active:opacity-80 transition-transform" href="#">
+                Skill Mitra
+            </a>
+<!-- Mobile Menu Button -->
+<button aria-label="Toggle Menu" class="md:hidden text-primary p-2 focus:outline-none">
+<span class="material-symbols-outlined">menu</span>
+</button>
+<!-- Desktop Navigation -->
+<nav class="hidden md:flex items-center gap-8">
+<a class="font-label-md text-label-md text-secondary border-b-2 border-secondary pb-1 transition-colors duration-200" href="#">
+                    Free Education
+                </a>
+<a class="font-label-md text-label-md text-primary dark:text-primary-fixed hover:text-secondary-container transition-colors duration-200 scale-95 active:opacity-80" href="#">
+                    Higher Education
+                </a>
+<a class="font-label-md text-label-md text-primary dark:text-primary-fixed hover:text-secondary-container transition-colors duration-200 scale-95 active:opacity-80" href="#">
+                    Earning Opportunities
+                </a>
+<a class="font-label-md text-label-md text-primary dark:text-primary-fixed hover:text-secondary-container transition-colors duration-200 scale-95 active:opacity-80" href="#">
+                    Community
+                </a>
+</nav>
+<div class="hidden md:block">
+<a class="font-label-md text-label-md bg-primary text-on-primary px-6 py-2.5 rounded-lg hover:bg-on-primary-fixed-variant transition-colors shadow-sm scale-95 active:opacity-80 transition-transform" href="#">
+                    Login/Signup
+                </a>
+</div>
+</div>
+</header>
+<!-- Main Content Canvas -->
+<main class="pt-[80px]"> <!-- Offset for fixed nav -->
+<!-- Hero Section -->
+<section class="relative overflow-hidden py-20 lg:py-32">
+<div class="hero-blob"></div>
+<div class="max-w-container-max mx-auto px-margin-mobile md:px-margin-desktop grid lg:grid-cols-2 gap-12 items-center">
+<div class="flex flex-col gap-6 z-10">
+<div class="inline-flex items-center gap-2 bg-white px-4 py-2 rounded-full shadow-sm w-fit border border-surface-variant">
+<span class="w-2 h-2 rounded-full bg-secondary-container animate-pulse"></span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">New: Premium Career Paths Available</span>
+</div>
+<h1 class="font-display-lg text-display-lg text-primary">
+                        Learn Free. <br/>
+<span class="text-gradient">Earn Real.</span> <br/>
+                        Grow Together.
+                    </h1>
+<p class="font-body-lg text-body-lg text-on-surface-variant max-w-[540px]">
+                        Join the premium educational platform designed for ambitious learners. Master in-demand skills for free, upgrade your credentials, and unlock real earning opportunities.
+                    </p>
+<div class="flex flex-col sm:flex-row gap-4 mt-4">
+<button class="bg-primary-container text-on-primary px-8 py-3.5 rounded-lg font-label-md text-label-md hover:bg-primary transition-all shadow-md hover:shadow-hover">
+                            Start Learning Free
+                        </button>
+<button class="bg-transparent border border-outline text-primary px-8 py-3.5 rounded-lg font-label-md text-label-md hover:border-secondary hover:text-secondary transition-all">
+                            Explore Careers
+                        </button>
+</div>
+</div>
+<div class="relative z-10 w-full aspect-square md:aspect-[4/3] rounded-2xl overflow-hidden shadow-card">
+<div class="bg-cover bg-center w-full h-full rounded-2xl" data-alt="A sophisticated, minimalist 3D illustration of a modern academic environment. The scene features floating geometric shapes representing data, books, and graduation caps, rendered in a pristine light-mode aesthetic with soft white lighting. Deep navy and warm gold accents pop against a soft off-white background. The composition is dynamic yet orderly, evoking a sense of premium education and career growth." style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuCYetsq3rUkLULHxmPTX1yxQoq7ZxaJvBV_3QsIBicZS5CddEMtNDHO6dgJkJW67wrJr6D73oxRRWH88tzezcoxkQUTZmdBpw5w9oSVjaBiliWVizLMufaxiuANs-Md-y7OmFKlFURzZavGWM5ley6i8_KLHMude2vsOk6X2hOHOt9U2EeCMCpElusC3qS51E8qsbKUrhhJIX8FIDlV2EvNkpJTKxwqMydi1Z6vSppvqsrSN97B8YDQ')"></div>
+</div>
+</div>
+</section>
+<!-- Trust Strip -->
+<section class="border-y border-surface-variant bg-white">
+<div class="max-w-container-max mx-auto px-margin-mobile md:px-margin-desktop py-8">
+<div class="grid grid-cols-2 md:grid-cols-4 gap-8 divide-x divide-surface-variant">
+<div class="flex flex-col items-center justify-center text-center px-4">
+<span class="font-headline-md text-headline-md text-primary font-bold">50,000+</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant uppercase tracking-wider mt-1">Learners</span>
+</div>
+<div class="flex flex-col items-center justify-center text-center px-4">
+<span class="font-headline-md text-headline-md text-primary font-bold">500+</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant uppercase tracking-wider mt-1">Placements</span>
+</div>
+<div class="flex flex-col items-center justify-center text-center px-4">
+<span class="font-headline-md text-headline-md text-primary font-bold">100%</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant uppercase tracking-wider mt-1">Free Courses</span>
+</div>
+<div class="flex flex-col items-center justify-center text-center px-4">
+<span class="font-headline-md text-headline-md text-primary font-bold">4.9/5</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant uppercase tracking-wider mt-1">Average Rating</span>
+</div>
+</div>
+</div>
+</section>
+<!-- Why Skill Mitra -->
+<section class="py-24 bg-[#F8F7F3]">
+<div class="max-w-container-max mx-auto px-margin-mobile md:px-margin-desktop">
+<div class="text-center mb-16">
+<h2 class="font-headline-lg text-headline-lg md:text-[40px] md:leading-[48px] text-primary mb-4">The Skill Mitra Advantage</h2>
+<p class="font-body-md text-body-md text-on-surface-variant max-w-[600px] mx-auto">A comprehensive ecosystem designed to take you from curious beginner to employed professional.</p>
+</div>
+<div class="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
+<!-- Card 1 -->
+<div class="bg-white p-8 rounded-[16px] shadow-card hover:shadow-hover transition-shadow duration-300 border-t-2 border-transparent hover:border-primary">
+<div class="w-12 h-12 bg-surface rounded-lg flex items-center justify-center mb-6">
+<span class="material-symbols-outlined text-primary text-[28px]" data-icon="menu_book">menu_book</span>
+</div>
+<h3 class="font-headline-md text-headline-md text-primary mb-3 text-lg">Free Learning</h3>
+<p class="font-body-md text-body-md text-on-surface-variant text-sm">Access foundational courses across tech, business, and design at zero cost.</p>
+</div>
+<!-- Card 2 -->
+<div class="bg-white p-8 rounded-[16px] shadow-card hover:shadow-hover transition-shadow duration-300 border-t-2 border-transparent hover:border-secondary-container">
+<div class="w-12 h-12 bg-surface rounded-lg flex items-center justify-center mb-6">
+<span class="material-symbols-outlined text-secondary-container text-[28px]" data-icon="school">school</span>
+</div>
+<h3 class="font-headline-md text-headline-md text-primary mb-3 text-lg">Higher Education</h3>
+<p class="font-body-md text-body-md text-on-surface-variant text-sm">Upgrade to expert-led premium programs with recognized certifications.</p>
+</div>
+<!-- Card 3 -->
+<div class="bg-white p-8 rounded-[16px] shadow-card hover:shadow-hover transition-shadow duration-300 border-t-2 border-transparent hover:border-tertiary-fixed-dim">
+<div class="w-12 h-12 bg-surface rounded-lg flex items-center justify-center mb-6">
+<span class="material-symbols-outlined text-tertiary-fixed-dim text-[28px]" data-icon="work">work</span>
+</div>
+<h3 class="font-headline-md text-headline-md text-primary mb-3 text-lg">Job Placement</h3>
+<p class="font-body-md text-body-md text-on-surface-variant text-sm">Direct connections to top employers and dedicated career coaching.</p>
+</div>
+<!-- Card 4 -->
+<div class="bg-white p-8 rounded-[16px] shadow-card hover:shadow-hover transition-shadow duration-300 border-t-2 border-transparent hover:border-primary">
+<div class="w-12 h-12 bg-surface rounded-lg flex items-center justify-center mb-6">
+<span class="material-symbols-outlined text-primary text-[28px]" data-icon="groups">groups</span>
+</div>
+<h3 class="font-headline-md text-headline-md text-primary mb-3 text-lg">Community Support</h3>
+<p class="font-body-md text-body-md text-on-surface-variant text-sm">Join thousands of peers for collaborative learning and networking.</p>
+</div>
+</div>
+</div>
+</section>
+</main>
+<!-- Footer -->
+<footer class="w-full bg-primary dark:bg-primary-container text-on-primary dark:text-on-primary-container mt-20">
+<div class="max-w-container-max mx-auto px-margin-mobile md:px-margin-desktop py-stack-lg flex flex-col md:flex-row justify-between gap-gutter items-center md:items-start">
+<div class="flex flex-col items-center md:items-start gap-4">
+<span class="text-headline-md font-headline-md text-on-primary font-bold">Skill Mitra</span>
+<p class="font-body-md text-body-md text-on-primary/80 max-w-xs text-center md:text-left text-sm">
+                    Empowering the next generation of professionals through accessible education and real opportunities.
+                </p>
+</div>
+<nav class="flex flex-wrap justify-center md:justify-end gap-x-8 gap-y-4">
+<a class="font-label-sm text-label-sm text-secondary-fixed font-bold opacity-90 hover:opacity-100 hover:text-secondary-fixed transition-all" href="#">Sitemap</a>
+<a class="font-label-sm text-label-sm text-on-primary/80 dark:text-on-primary-container/80 opacity-90 hover:opacity-100 hover:text-secondary-fixed transition-all" href="#">Social Links</a>
+<a class="font-label-sm text-label-sm text-on-primary/80 dark:text-on-primary-container/80 opacity-90 hover:opacity-100 hover:text-secondary-fixed transition-all" href="#">Newsletter</a>
+<a class="font-label-sm text-label-sm text-on-primary/80 dark:text-on-primary-container/80 opacity-90 hover:opacity-100 hover:text-secondary-fixed transition-all" href="#">Contact</a>
+</nav>
+<div class="w-full md:w-auto text-center md:text-right mt-8 md:mt-0 pt-8 md:pt-0 border-t md:border-none border-on-primary/20">
+<span class="font-label-sm text-label-sm text-on-primary/60">
+                    © 2024 Skill Mitra. All rights reserved.
+                </span>
+</div>
+</div>
+</footer>
+<script>
+        // Simple sticky nav shadow effect on scroll
+        window.addEventListener('scroll', () => {
+            const nav = document.getElementById('main-nav');
+            if (window.scrollY > 10) {
+                nav.classList.add('shadow-nav');
+                nav.classList.remove('shadow-sm');
+            } else {
+                nav.classList.remove('shadow-nav');
+                nav.classList.add('shadow-sm');
+            }
+        });
+    </script>
+</body></html>

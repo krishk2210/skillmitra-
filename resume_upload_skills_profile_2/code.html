@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Upload Resume - Skill Mitra</title>
+<!-- Material Symbols -->
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<!-- Google Fonts -->
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<!-- Tailwind Configuration -->
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    "colors": {
+                        "primary-fixed": "#dbe1ff",
+                        "inverse-primary": "#bac5ef",
+                        "tertiary-fixed": "#6ffbbe",
+                        "surface-container": "#f0eded",
+                        "on-surface-variant": "#45464e",
+                        "on-error-container": "#93000a",
+                        "surface-container-lowest": "#ffffff",
+                        "on-tertiary-fixed-variant": "#005236",
+                        "on-primary-fixed-variant": "#3a4569",
+                        "on-secondary-container": "#735500",
+                        "on-tertiary-fixed": "#002113",
+                        "surface-tint": "#525d82",
+                        "primary": "#00020e",
+                        "surface-container-highest": "#e5e2e1",
+                        "on-primary-fixed": "#0e1a3b",
+                        "error": "#ba1a1a",
+                        "inverse-on-surface": "#f3f0ef",
+                        "outline-variant": "#c6c6cf",
+                        "primary-container": "#0f1b3c",
+                        "primary-fixed-dim": "#bac5ef",
+                        "inverse-surface": "#313030",
+                        "secondary-fixed": "#ffdf9f",
+                        "tertiary-container": "#002214",
+                        "surface-container-high": "#eae7e7",
+                        "on-secondary-fixed-variant": "#5c4300",
+                        "on-surface": "#1c1b1b",
+                        "on-background": "#1c1b1b",
+                        "on-primary": "#ffffff",
+                        "tertiary-fixed-dim": "#4edea3",
+                        "secondary": "#795900",
+                        "on-error": "#ffffff",
+                        "on-secondary": "#ffffff",
+                        "secondary-container": "#fccb5c",
+                        "surface-bright": "#fcf9f8",
+                        "surface": "#fcf9f8",
+                        "on-tertiary-container": "#009768",
+                        "on-secondary-fixed": "#261a00",
+                        "on-primary-container": "#7984aa",
+                        "tertiary": "#000301",
+                        "surface-container-low": "#f6f3f2",
+                        "surface-variant": "#e5e2e1",
+                        "on-tertiary": "#ffffff",
+                        "secondary-fixed-dim": "#f0c052",
+                        "background": "#fcf9f8",
+                        "error-container": "#ffdad6",
+                        "surface-dim": "#dcd9d9",
+                        "outline": "#76767f"
+                    },
+                    "borderRadius": {
+                        "DEFAULT": "0.25rem",
+                        "lg": "0.5rem",
+                        "xl": "0.75rem",
+                        "full": "9999px"
+                    },
+                    "spacing": {
+                        "container-max": "1280px",
+                        "stack-md": "16px",
+                        "stack-sm": "8px",
+                        "margin-mobile": "16px",
+                        "gutter": "24px",
+                        "margin-desktop": "40px",
+                        "stack-lg": "32px"
+                    },
+                    "fontFamily": {
+                        "label-md": ["Inter"],
+                        "body-md": ["Inter"],
+                        "headline-lg-mobile": ["Inter"],
+                        "headline-lg": ["Inter"],
+                        "body-lg": ["Inter"],
+                        "headline-md": ["Inter"],
+                        "label-sm": ["Inter"],
+                        "display-lg": ["Inter"]
+                    },
+                    "fontSize": {
+                        "label-md": ["14px", { "lineHeight": "20px", "letterSpacing": "0.01em", "fontWeight": "500" }],
+                        "body-md": ["16px", { "lineHeight": "24px", "fontWeight": "400" }],
+                        "headline-lg-mobile": ["28px", { "lineHeight": "36px", "fontWeight": "700" }],
+                        "headline-lg": ["32px", { "lineHeight": "40px", "letterSpacing": "-0.01em", "fontWeight": "700" }],
+                        "body-lg": ["18px", { "lineHeight": "28px", "fontWeight": "400" }],
+                        "headline-md": ["24px", { "lineHeight": "32px", "fontWeight": "600" }],
+                        "label-sm": ["12px", { "lineHeight": "16px", "fontWeight": "600" }],
+                        "display-lg": ["48px", { "lineHeight": "56px", "letterSpacing": "-0.02em", "fontWeight": "700" }]
+                    }
+                },
+            },
+        }
+    </script>
+<style>
+        .drag-active {
+            border-color: #0f1b3c;
+            background-color: #f0eded;
+        }
+        
+        /* Custom progress bar styles */
+        .progress-step.active .step-icon {
+            background-color: #0f1b3c;
+            color: #ffffff;
+            border-color: #0f1b3c;
+        }
+        .progress-step.completed .step-icon {
+            background-color: #10B981; /* Emerald Green */
+            color: #ffffff;
+            border-color: #10B981;
+        }
+        .progress-step.completed .step-line {
+            background-color: #10B981;
+        }
+    </style>
+</head>
+<body class="bg-surface text-on-surface font-body-md min-h-screen flex flex-col antialiased">
+<!-- TopNavBar -->
+<header class="bg-surface dark:bg-surface-dim shadow-sm fixed top-0 w-full z-50">
+<div class="flex justify-between items-center max-w-container-max mx-auto px-margin-desktop py-4">
+<div class="text-headline-md font-headline-md font-bold text-primary dark:text-primary-fixed">
+                Skill Mitra
+            </div>
+<!-- Desktop Navigation -->
+<nav class="hidden md:flex gap-gutter items-center text-primary dark:text-primary-fixed font-label-md text-label-md">
+<a class="hover:text-secondary-container transition-colors duration-200" href="#">Free Education</a>
+<a class="hover:text-secondary-container transition-colors duration-200" href="#">Higher Education</a>
+<a class="text-secondary border-b-2 border-secondary pb-1" href="#">Earning Opportunities</a>
+<a class="hover:text-secondary-container transition-colors duration-200" href="#">Community</a>
+</nav>
+<button class="hidden md:block bg-primary-container text-on-primary font-label-md text-label-md px-4 py-2 rounded-lg scale-95 active:opacity-80 transition-transform">
+                Login/Signup
+            </button>
+<!-- Mobile Menu Toggle -->
+<button class="md:hidden text-primary">
+<span class="material-symbols-outlined">menu</span>
+</button>
+</div>
+</header>
+<!-- Main Content Canvas -->
+<main class="flex-grow pt-[100px] pb-stack-lg px-margin-mobile md:px-margin-desktop max-w-container-max mx-auto w-full">
+<!-- Header Section -->
+<div class="text-center mb-12">
+<h1 class="font-headline-lg text-headline-lg-mobile md:text-headline-lg text-primary mb-2">Build Your Professional Profile</h1>
+<p class="font-body-lg text-body-lg text-on-surface-variant max-w-2xl mx-auto">Upload your resume to automatically generate your skills profile and match with top earning opportunities.</p>
+</div>
+<!-- Progress Indicator -->
+<div class="max-w-3xl mx-auto mb-16 relative">
+<div class="flex justify-between items-center relative z-10">
+<!-- Step 1: Upload (Active) -->
+<div class="flex flex-col items-center progress-step active w-1/3">
+<div class="step-icon w-10 h-10 rounded-full border-2 border-primary-container bg-primary-container text-on-primary flex items-center justify-center font-label-md text-label-md mb-2 transition-colors shadow-sm">
+                        1
+                    </div>
+<span class="font-label-md text-label-md text-primary">Upload</span>
+</div>
+<!-- Step 2: Parse -->
+<div class="flex flex-col items-center progress-step w-1/3">
+<div class="step-icon w-10 h-10 rounded-full border-2 border-outline-variant bg-surface text-on-surface-variant flex items-center justify-center font-label-md text-label-md mb-2 transition-colors">
+                        2
+                    </div>
+<span class="font-label-md text-label-md text-on-surface-variant">Review Skills</span>
+</div>
+<!-- Step 3: Confirm -->
+<div class="flex flex-col items-center progress-step w-1/3">
+<div class="step-icon w-10 h-10 rounded-full border-2 border-outline-variant bg-surface text-on-surface-variant flex items-center justify-center font-label-md text-label-md mb-2 transition-colors">
+                        3
+                    </div>
+<span class="font-label-md text-label-md text-on-surface-variant">Confirm</span>
+</div>
+</div>
+<!-- Progress Line Background -->
+<div class="absolute top-5 left-1/6 right-1/6 h-0.5 bg-outline-variant z-0 -mx-10"></div>
+</div>
+<!-- Two Column Layout -->
+<div class="grid grid-cols-1 lg:grid-cols-3 gap-gutter max-w-5xl mx-auto">
+<!-- Main Upload Area -->
+<div class="lg:col-span-2">
+<div class="bg-surface-container-lowest rounded-xl shadow-[0_4px_12px_rgba(0,0,0,0.04)] p-8 border border-surface-variant h-full flex flex-col">
+<div class="flex items-center gap-2 mb-6">
+<span class="material-symbols-outlined text-primary-container" style="font-variation-settings: 'FILL' 1;">upload_file</span>
+<h2 class="font-headline-md text-headline-md text-primary">Upload Resume</h2>
+</div>
+<!-- Drag & Drop Zone -->
+<div class="flex-grow border-2 border-dashed border-outline-variant rounded-lg flex flex-col items-center justify-center p-12 text-center transition-colors duration-200 cursor-pointer hover:bg-surface-container-low group min-h-[300px]" id="drop-zone">
+<div class="w-16 h-16 bg-primary-fixed rounded-full flex items-center justify-center mb-4 group-hover:scale-110 transition-transform">
+<span class="material-symbols-outlined text-primary-container text-3xl">cloud_upload</span>
+</div>
+<h3 class="font-headline-md text-headline-md text-primary mb-2">Drag and drop your resume here</h3>
+<p class="font-body-md text-body-md text-on-surface-variant mb-6">Supported formats: PDF, DOCX (Max 5MB)</p>
+<input accept=".pdf,.doc,.docx" class="hidden" id="file-input" type="file"/>
+<button class="bg-primary-container text-on-primary font-label-md text-label-md px-6 py-3 rounded-lg hover:bg-primary transition-colors shadow-sm" onclick="document.getElementById('file-input').click()">
+                            Browse Files
+                        </button>
+</div>
+<div class="mt-6 flex items-start gap-2 text-on-surface-variant bg-surface-container-low p-4 rounded-lg">
+<span class="material-symbols-outlined text-secondary-container mt-0.5" style="font-variation-settings: 'FILL' 1;">info</span>
+<p class="font-label-sm text-label-sm">Your resume will be parsed to extract skills and experience. You can review and edit everything in the next step.</p>
+</div>
+</div>
+</div>
+<!-- Sidebar: Tips for Success -->
+<div class="lg:col-span-1">
+<div class="bg-surface-container-lowest rounded-xl shadow-[0_4px_12px_rgba(0,0,0,0.04)] p-6 border-t-2 border-t-[#10B981] h-full">
+<div class="flex items-center gap-2 mb-6">
+<span class="material-symbols-outlined text-[#10B981]" style="font-variation-settings: 'FILL' 1;">lightbulb</span>
+<h3 class="font-headline-md text-headline-md text-primary">Tips for Success</h3>
+</div>
+<ul class="space-y-6">
+<li class="flex gap-4">
+<div class="flex-shrink-0 w-8 h-8 rounded-full bg-[#10B981]/10 flex items-center justify-center text-[#10B981]">
+<span class="material-symbols-outlined text-sm" style="font-variation-settings: 'FILL' 1;">check_circle</span>
+</div>
+<div>
+<h4 class="font-label-md text-label-md text-primary mb-1">Clear Formatting</h4>
+<p class="font-label-sm text-label-sm text-on-surface-variant">Use standard fonts and clear headings for better parsing accuracy.</p>
+</div>
+</li>
+<li class="flex gap-4">
+<div class="flex-shrink-0 w-8 h-8 rounded-full bg-[#10B981]/10 flex items-center justify-center text-[#10B981]">
+<span class="material-symbols-outlined text-sm" style="font-variation-settings: 'FILL' 1;">check_circle</span>
+</div>
+<div>
+<h4 class="font-label-md text-label-md text-primary mb-1">Highlight Skills</h4>
+<p class="font-label-sm text-label-sm text-on-surface-variant">Ensure your core technical and soft skills are explicitly listed.</p>
+</div>
+</li>
+<li class="flex gap-4">
+<div class="flex-shrink-0 w-8 h-8 rounded-full bg-[#10B981]/10 flex items-center justify-center text-[#10B981]">
+<span class="material-symbols-outlined text-sm" style="font-variation-settings: 'FILL' 1;">check_circle</span>
+</div>
+<div>
+<h4 class="font-label-md text-label-md text-primary mb-1">Recent Experience First</h4>
+<p class="font-label-sm text-label-sm text-on-surface-variant">Reverse chronological order helps our AI identify your current expertise.</p>
+</div>
+</li>
+</ul>
+<div class="mt-8 pt-6 border-t border-surface-variant">
+<p class="font-label-sm text-label-sm text-on-surface-variant italic">A complete profile increases your chances of matching with premium earning opportunities by up to 40%.</p>
+</div>
+</div>
+</div>
+</div>
+</main>
+<!-- Footer -->
+<footer class="bg-primary dark:bg-primary-container text-on-primary dark:text-on-primary-container w-full mt-auto">
+<div class="max-w-container-max mx-auto px-margin-desktop py-stack-lg flex flex-col md:flex-row justify-between gap-gutter items-center">
+<div class="text-headline-md font-headline-md text-on-primary mb-4 md:mb-0">
+                Skill Mitra
+            </div>
+<nav class="flex flex-wrap justify-center gap-6 font-label-sm text-label-sm text-on-primary/80 dark:text-on-primary-container/80">
+<a class="hover:text-secondary-fixed transition-colors" href="#">Sitemap</a>
+<a class="hover:text-secondary-fixed transition-colors" href="#">Social Links</a>
+<a class="hover:text-secondary-fixed transition-colors" href="#">Newsletter</a>
+<a class="hover:text-secondary-fixed transition-colors" href="#">Contact</a>
+</nav>
+<div class="font-label-sm text-label-sm text-on-primary/60 mt-4 md:mt-0">
+                © 2024 Skill Mitra. All rights reserved.
+            </div>
+</div>
+</footer>
+<script>
+        // Simple drag and drop visual feedback
+        const dropZone = document.getElementById('drop-zone');
+        
+        ['dragenter', 'dragover', 'dragleave', 'drop'].forEach(eventName => {
+            dropZone.addEventListener(eventName, preventDefaults, false);
+        });
+        
+        function preventDefaults(e) {
+            e.preventDefault();
+            e.stopPropagation();
+        }
+        
+        ['dragenter', 'dragover'].forEach(eventName => {
+            dropZone.addEventListener(eventName, highlight, false);
+        });
+        
+        ['dragleave', 'drop'].forEach(eventName => {
+            dropZone.addEventListener(eventName, unhighlight, false);
+        });
+        
+        function highlight(e) {
+            dropZone.classList.add('drag-active');
+        }
+        
+        function unhighlight(e) {
+            dropZone.classList.remove('drag-active');
+        }
+        
+        dropZone.addEventListener('drop', handleDrop, false);
+        
+        function handleDrop(e) {
+            let dt = e.dataTransfer;
+            let files = dt.files;
+            
+            // In a real app, you would process the files here
+            console.log("File dropped:", files[0].name);
+            alert("File selected: " + files[0].name + ". In a real application, this would begin the upload process.");
+        }
+    </script>
+</body></html>

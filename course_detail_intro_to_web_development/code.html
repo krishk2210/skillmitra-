@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Course Detail - Introduction to Web Development</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    "colors": {
+                        "secondary-fixed": "#ffdf9f",
+                        "outline-variant": "#c6c6cf",
+                        "secondary": "#795900",
+                        "on-primary-fixed-variant": "#3a4569",
+                        "on-background": "#1c1b1b",
+                        "surface-container": "#f0eded",
+                        "on-tertiary-container": "#009768",
+                        "surface-variant": "#e5e2e1",
+                        "secondary-container": "#fccb5c",
+                        "on-error-container": "#93000a",
+                        "on-error": "#ffffff",
+                        "inverse-on-surface": "#f3f0ef",
+                        "inverse-surface": "#313030",
+                        "secondary-fixed-dim": "#f0c052",
+                        "surface-container-lowest": "#ffffff",
+                        "error-container": "#ffdad6",
+                        "primary": "#00020e",
+                        "surface-container-low": "#f6f3f2",
+                        "on-secondary-fixed-variant": "#5c4300",
+                        "primary-container": "#0f1b3c",
+                        "tertiary-fixed": "#6ffbbe",
+                        "on-secondary-fixed": "#261a00",
+                        "on-secondary-container": "#735500",
+                        "surface-container-highest": "#e5e2e1",
+                        "surface": "#fcf9f8",
+                        "on-surface-variant": "#45464e",
+                        "surface-dim": "#dcd9d9",
+                        "tertiary": "#000301",
+                        "on-surface": "#1c1b1b",
+                        "tertiary-container": "#002214",
+                        "error": "#ba1a1a",
+                        "on-tertiary": "#ffffff",
+                        "primary-fixed": "#dbe1ff",
+                        "background": "#fcf9f8",
+                        "on-secondary": "#ffffff",
+                        "outline": "#76767f",
+                        "surface-container-high": "#eae7e7",
+                        "on-tertiary-fixed": "#002113",
+                        "on-tertiary-fixed-variant": "#005236",
+                        "inverse-primary": "#bac5ef",
+                        "tertiary-fixed-dim": "#4edea3",
+                        "on-primary": "#ffffff",
+                        "on-primary-fixed": "#0e1a3b",
+                        "surface-bright": "#fcf9f8",
+                        "on-primary-container": "#7984aa",
+                        "primary-fixed-dim": "#bac5ef",
+                        "surface-tint": "#525d82",
+                        "brand-gold": "#E8B84B",
+                        "brand-emerald": "#10B981",
+                        "brand-emerald-bg": "rgba(16, 185, 129, 0.1)"
+                    },
+                    "borderRadius": {
+                        "DEFAULT": "0.25rem",
+                        "lg": "0.5rem",
+                        "xl": "0.75rem",
+                        "full": "9999px",
+                        "card": "16px"
+                    },
+                    "spacing": {
+                        "margin-mobile": "16px",
+                        "container-max": "1280px",
+                        "stack-sm": "8px",
+                        "stack-md": "16px",
+                        "margin-desktop": "40px",
+                        "stack-lg": "32px",
+                        "gutter": "24px"
+                    },
+                    "fontFamily": {
+                        "headline-md": ["Inter"],
+                        "body-lg": ["Inter"],
+                        "label-sm": ["Inter"],
+                        "display-lg": ["Inter"],
+                        "label-md": ["Inter"],
+                        "headline-lg-mobile": ["Inter"],
+                        "body-md": ["Inter"],
+                        "headline-lg": ["Inter"]
+                    },
+                    "fontSize": {
+                        "headline-md": ["24px", {"lineHeight": "32px", "fontWeight": "600"}],
+                        "body-lg": ["18px", {"lineHeight": "28px", "fontWeight": "400"}],
+                        "label-sm": ["12px", {"lineHeight": "16px", "fontWeight": "600"}],
+                        "display-lg": ["48px", {"lineHeight": "56px", "letterSpacing": "-0.02em", "fontWeight": "700"}],
+                        "label-md": ["14px", {"lineHeight": "20px", "letterSpacing": "0.01em", "fontWeight": "500"}],
+                        "headline-lg-mobile": ["28px", {"lineHeight": "36px", "fontWeight": "700"}],
+                        "body-md": ["16px", {"lineHeight": "24px", "fontWeight": "400"}],
+                        "headline-lg": ["32px", {"lineHeight": "40px", "letterSpacing": "-0.01em", "fontWeight": "700"}]
+                    },
+                    "boxShadow": {
+                        "card": "0 4px 12px rgba(0, 0, 0, 0.04)",
+                        "card-hover": "0 8px 24px rgba(15, 27, 60, 0.08)"
+                    }
+                }
+            }
+        }
+    </script>
+<style>
+        body { font-family: 'Inter', sans-serif; background-color: #F8F7F3; }
+        .material-symbols-outlined { font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24; }
+    </style>
+</head>
+<body class="bg-background text-on-surface min-h-screen pt-20">
+<!-- TopNavBar component -->
+<nav class="fixed top-0 w-full z-50 shadow-sm bg-surface dark:bg-surface-dim">
+<div class="flex justify-between items-center max-w-container-max mx-auto px-margin-desktop py-4">
+<div class="text-headline-md font-headline-md font-bold text-primary dark:text-primary-fixed">Skill Mitra</div>
+<div class="hidden md:flex items-center gap-gutter">
+<a class="text-secondary border-b-2 border-secondary pb-1 font-label-md text-label-md hover:text-secondary-container transition-colors duration-200" href="#">Free Education</a>
+<a class="text-primary dark:text-primary-fixed font-label-md text-label-md hover:text-secondary-container transition-colors duration-200" href="#">Higher Education</a>
+<a class="text-primary dark:text-primary-fixed font-label-md text-label-md hover:text-secondary-container transition-colors duration-200" href="#">Earning Opportunities</a>
+<a class="text-primary dark:text-primary-fixed font-label-md text-label-md hover:text-secondary-container transition-colors duration-200" href="#">Community</a>
+</div>
+<button class="bg-primary-container text-on-primary font-label-md text-label-md px-6 py-2 rounded-lg scale-95 active:opacity-80 transition-transform">Login/Signup</button>
+</div>
+</nav>
+<!-- Main Content Area -->
+<main class="max-w-container-max mx-auto px-margin-desktop py-stack-lg flex flex-col lg:flex-row gap-gutter">
+<!-- Left Column: Course Details -->
+<div class="w-full lg:w-2/3 flex flex-col gap-stack-lg">
+<!-- Hero Section -->
+<section class="bg-surface-container-lowest rounded-card shadow-card p-8 md:p-12 relative overflow-hidden">
+<div class="absolute top-0 left-0 w-full h-1 bg-brand-emerald"></div>
+<div class="flex items-center gap-2 mb-4">
+<span class="bg-brand-emerald-bg text-brand-emerald px-3 py-1 rounded-full font-label-sm text-label-sm uppercase tracking-wider">Free Course</span>
+<span class="bg-surface-container-high text-on-surface-variant px-3 py-1 rounded-full font-label-sm text-label-sm">Web Development</span>
+</div>
+<h1 class="font-display-lg text-display-lg text-primary-container mb-6 md:hidden font-headline-lg-mobile text-headline-lg-mobile">Introduction to Web Development</h1>
+<h1 class="font-display-lg text-display-lg text-primary-container mb-6 hidden md:block">Introduction to Web Development</h1>
+<p class="font-body-lg text-body-lg text-on-surface-variant mb-8 max-w-2xl">Master the basics of HTML, CSS, and JavaScript in this comprehensive beginner guide. Build a strong foundation for your journey into software engineering.</p>
+<div class="flex flex-col sm:flex-row gap-4">
+<button class="bg-primary-container text-on-primary font-label-md text-label-md px-8 py-3 rounded-lg hover:shadow-card-hover transition-all">Enroll for Free</button>
+<button class="border border-outline-variant text-on-surface font-label-md text-label-md px-8 py-3 rounded-lg hover:bg-surface-container transition-colors flex items-center justify-center gap-2">
+<span class="material-symbols-outlined">bookmark_add</span>
+                        Save to List
+                    </button>
+</div>
+</section>
+<!-- Course Overview Bento Grid -->
+<section class="grid grid-cols-1 md:grid-cols-2 gap-stack-md">
+<div class="bg-surface-container-lowest rounded-card shadow-card p-6 border-t-2 border-secondary-container">
+<h2 class="font-headline-md text-headline-md text-primary-container mb-4 flex items-center gap-2">
+<span class="material-symbols-outlined text-secondary-container">target</span>
+                        Learning Objectives
+                    </h2>
+<ul class="space-y-3 font-body-md text-body-md text-on-surface-variant">
+<li class="flex items-start gap-2"><span class="material-symbols-outlined text-brand-emerald text-xl mt-0.5">check_circle</span> Build your first responsive website from scratch.</li>
+<li class="flex items-start gap-2"><span class="material-symbols-outlined text-brand-emerald text-xl mt-0.5">check_circle</span> Understand core HTML tags and document structure.</li>
+<li class="flex items-start gap-2"><span class="material-symbols-outlined text-brand-emerald text-xl mt-0.5">check_circle</span> Style pages elegantly using modern CSS techniques.</li>
+<li class="flex items-start gap-2"><span class="material-symbols-outlined text-brand-emerald text-xl mt-0.5">check_circle</span> Add basic interactivity with JavaScript fundamentals.</li>
+</ul>
+</div>
+<div class="bg-surface-container-lowest rounded-card shadow-card p-6">
+<h2 class="font-headline-md text-headline-md text-primary-container mb-4">Prerequisites</h2>
+<p class="font-body-md text-body-md text-on-surface-variant mb-4">None! This course is designed for absolute beginners with no prior coding experience.</p>
+<div class="bg-surface-container p-4 rounded-lg flex items-center gap-4">
+<span class="material-symbols-outlined text-3xl text-primary-container">computer</span>
+<div>
+<p class="font-label-md text-label-md text-primary-container">Required Tools</p>
+<p class="font-label-sm text-label-sm text-on-surface-variant">A web browser and a text editor (like VS Code).</p>
+</div>
+</div>
+</div>
+</section>
+<!-- Syllabus Section -->
+<section class="bg-surface-container-lowest rounded-card shadow-card p-8">
+<h2 class="font-headline-md text-headline-md text-primary-container mb-6 border-b border-surface-container pb-4">Course Syllabus</h2>
+<div class="space-y-6">
+<!-- Module 1 -->
+<div class="border border-surface-container rounded-lg p-6 hover:shadow-card transition-shadow">
+<div class="flex justify-between items-center mb-4 cursor-pointer">
+<div>
+<span class="font-label-sm text-label-sm text-secondary-container uppercase tracking-wider block mb-1">Module 1</span>
+<h3 class="font-headline-md text-headline-md text-on-surface text-xl">HTML Basics &amp; Structure</h3>
+</div>
+<span class="material-symbols-outlined text-on-surface-variant">expand_more</span>
+</div>
+<div class="pl-4 border-l-2 border-surface-container space-y-3 font-body-md text-body-md text-on-surface-variant">
+<div class="flex items-center gap-3"><span class="material-symbols-outlined text-base">play_circle</span> Introduction to the Web (15m)</div>
+<div class="flex items-center gap-3"><span class="material-symbols-outlined text-base">play_circle</span> Creating your first HTML file (20m)</div>
+<div class="flex items-center gap-3"><span class="material-symbols-outlined text-base">article</span> Understanding Semantic Tags (Reading)</div>
+</div>
+</div>
+<!-- Module 2 -->
+<div class="border border-surface-container rounded-lg p-6 hover:shadow-card transition-shadow">
+<div class="flex justify-between items-center mb-4 cursor-pointer">
+<div>
+<span class="font-label-sm text-label-sm text-secondary-container uppercase tracking-wider block mb-1">Module 2</span>
+<h3 class="font-headline-md text-headline-md text-on-surface text-xl">Styling with CSS</h3>
+</div>
+<span class="material-symbols-outlined text-on-surface-variant">expand_more</span>
+</div>
+</div>
+</div>
+</section>
+</div>
+<!-- Right Column: Sidebar -->
+<aside class="w-full lg:w-1/3 flex flex-col gap-stack-md">
+<!-- Sticky CTA Card -->
+<div class="bg-surface-container-lowest rounded-card shadow-card p-6 sticky top-24 border-t-4 border-brand-emerald">
+<div class="mb-6 rounded-lg overflow-hidden relative" style="padding-top: 56.25%;">
+<img class="absolute top-0 left-0 w-full h-full object-cover" data-alt="A modern, bright workspace setup featuring a sleek laptop displaying colorful lines of code, placed on a clean wooden desk. Next to it sits a notebook, a minimalist coffee cup, and a small potted plant bathed in soft, natural morning light. The overall aesthetic is premium, clean, and inspiring for a beginner learner in a sophisticated educational setting." src="https://lh3.googleusercontent.com/aida-public/AB6AXuALqeVomRsWlWYY8YvMPTbXQfRx4pyVHooEQurGYpOONpMOS1Ydbv1MLdLHgbO9jh9Y9fajjtv5GT84glRqtKtBtAElC67CxaxGGoZNTjqejesOF199TGxqFqJcbDX3c_AQL9Rd73rG0lr7xBl5Hk4zGG3W5cd1tx8gExUZEgdEPYwJsyCJvIbgVMYbs1pDot-2yHex4t5G1rQqRzFWTP8m-SMIsKo8xPcBttq-IlQbnbQ5LCJQyf_D"/>
+<div class="absolute inset-0 bg-black/20 flex items-center justify-center">
+<span class="material-symbols-outlined text-white text-5xl opacity-80 hover:opacity-100 cursor-pointer transition-opacity">play_circle</span>
+</div>
+</div>
+<div class="flex items-baseline gap-2 mb-6">
+<span class="font-headline-lg text-headline-lg text-primary-container">Free</span>
+<span class="font-body-md text-body-md text-on-surface-variant line-through">$49.99</span>
+</div>
+<button class="w-full bg-primary-container text-on-primary font-label-md text-label-md py-3 rounded-lg hover:shadow-card-hover transition-all mb-4">Start Learning Now</button>
+<p class="text-center font-label-sm text-label-sm text-on-surface-variant mb-6">Join 15,000+ students already enrolled.</p>
+<div class="space-y-4 pt-4 border-t border-surface-container">
+<div class="flex items-center justify-between font-body-md text-body-md">
+<span class="text-on-surface-variant flex items-center gap-2"><span class="material-symbols-outlined text-lg">schedule</span> Duration</span>
+<span class="font-medium text-on-surface">10 hours</span>
+</div>
+<div class="flex items-center justify-between font-body-md text-body-md">
+<span class="text-on-surface-variant flex items-center gap-2"><span class="material-symbols-outlined text-lg">signal_cellular_alt</span> Level</span>
+<span class="font-medium text-on-surface">Beginner</span>
+</div>
+<div class="flex items-center justify-between font-body-md text-body-md">
+<span class="text-on-surface-variant flex items-center gap-2"><span class="material-symbols-outlined text-lg">language</span> Language</span>
+<span class="font-medium text-on-surface">English</span>
+</div>
+<div class="flex items-center justify-between font-body-md text-body-md">
+<span class="text-on-surface-variant flex items-center gap-2"><span class="material-symbols-outlined text-lg">workspace_premium</span> Certificate</span>
+<span class="font-medium text-on-surface">Included</span>
+</div>
+</div>
+</div>
+<!-- Instructor Profile -->
+<div class="bg-surface-container-lowest rounded-card shadow-card p-6 mt-4">
+<h3 class="font-headline-md text-headline-md text-primary-container mb-4 text-xl">Your Instructor</h3>
+<div class="flex items-center gap-4 mb-4">
+<div class="w-16 h-16 rounded-full overflow-hidden bg-surface-container">
+<img class="w-full h-full object-cover" data-alt="A professional headshot of a friendly, approachable female software instructor in her 30s. She is smiling confidently at the camera, wearing a smart-casual navy blue blazer over a clean white shirt. The background is a softly blurred, modern tech office environment with warm, inviting lighting that perfectly matches the premium minimalist design system aesthetic." src="https://lh3.googleusercontent.com/aida-public/AB6AXuBZe-9SlVKpfVCyNdSHB4fRecGwDBTbD0wTmfxs7ObRDLIBaKQHsf7qAomkLIYV6Xtuc6VdI52v7QJ-0WGJHgA98TCx40i-TtRiv8S7bFRiKNTKOOlrvE77twtYXj8-DdI56DfCmeidUViIVgfWRRr9xKDoEm-ge_BpKWt3aL6tt7v_8lR2hDTYPx2HxoTm_F0QQIJWr5YQnZg79eHRffJ5N36ldV5hZyce6XMLe4_tBAh9MZOCXE7b"/>
+</div>
+<div>
+<p class="font-label-md text-label-md text-on-surface font-semibold text-lg">Sarah Jenkins</p>
+<p class="font-label-sm text-label-sm text-on-surface-variant">Senior Frontend Engineer</p>
+</div>
+</div>
+<p class="font-body-md text-body-md text-on-surface-variant text-sm">Sarah has over 8 years of experience building scalable web applications and is passionate about making technical education accessible to everyone.</p>
+</div>
+</aside>
+</main>
+<!-- Footer component -->
+<footer class="w-full bg-primary dark:bg-primary-container mt-stack-lg">
+<div class="max-w-container-max mx-auto px-margin-desktop py-stack-lg flex flex-col md:flex-row justify-between gap-gutter">
+<div>
+<div class="text-headline-md font-headline-md text-on-primary mb-2">Skill Mitra</div>
+<div class="font-body-md text-body-md text-on-primary/80 dark:text-on-primary-container/80 text-sm">© 2024 Skill Mitra. All rights reserved.</div>
+</div>
+<div class="flex flex-wrap gap-6 items-center">
+<a class="font-label-sm text-label-sm text-on-primary/80 dark:text-on-primary-container/80 hover:text-secondary-fixed transition-colors opacity-90 hover:opacity-100 transition-opacity" href="#">Sitemap</a>
+<a class="font-label-sm text-label-sm text-on-primary/80 dark:text-on-primary-container/80 hover:text-secondary-fixed transition-colors opacity-90 hover:opacity-100 transition-opacity" href="#">Social Links</a>
+<a class="font-label-sm text-label-sm text-on-primary/80 dark:text-on-primary-container/80 hover:text-secondary-fixed transition-colors opacity-90 hover:opacity-100 transition-opacity" href="#">Newsletter</a>
+<a class="font-label-sm text-label-sm text-on-primary/80 dark:text-on-primary-container/80 hover:text-secondary-fixed transition-colors opacity-90 hover:opacity-100 transition-opacity" href="#">Contact</a>
+</div>
+</div>
+</footer>
+</body></html>

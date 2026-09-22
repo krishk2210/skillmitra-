@@ -1,0 +1,167 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    font-family: 'Inter', system-ui, sans-serif;
+    background-color: #F8F7F3;
+    color: #1c1b1b;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+
+  * {
+    box-sizing: border-box;
+  }
+}
+
+@layer components {
+  /* Text gradient utility */
+  .text-gradient {
+    background: linear-gradient(135deg, #00020e 0%, #3a4569 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+  }
+
+  /* Hero blob decorative element */
+  .hero-blob {
+    position: absolute;
+    width: 600px;
+    height: 600px;
+    background: radial-gradient(circle, rgba(252, 203, 92, 0.15) 0%, rgba(248, 247, 243, 0) 70%);
+    top: -100px;
+    right: -150px;
+    z-index: -1;
+    border-radius: 50%;
+    pointer-events: none;
+  }
+
+  /* Card elevation styles */
+  .card-ambient {
+    box-shadow: 0 4px 24px -4px rgba(0, 0, 0, 0.04);
+  }
+
+  .card-interactive {
+    transition: box-shadow 0.3s ease, transform 0.3s ease;
+  }
+
+  .card-interactive:hover {
+    box-shadow: 0 8px 32px -8px rgba(15, 27, 60, 0.1);
+    transform: translateY(-2px);
+  }
+
+  /* Input focus glow */
+  .input-glow:focus-within {
+    box-shadow: 0 0 0 2px rgba(15, 27, 60, 0.2);
+  }
+
+  /* Goal selection card */
+  .goal-card {
+    border: 1px solid #c6c6cf;
+    border-radius: 12px;
+    padding: 16px;
+    cursor: pointer;
+    transition: border-color 0.2s ease, background-color 0.2s ease;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .goal-card:hover {
+    border-color: #0f1b3c;
+  }
+
+  .goal-card.selected {
+    border-color: #0f1b3c;
+    background-color: #f6f3f2;
+  }
+
+  .goal-card.selected .check-icon {
+    opacity: 1;
+  }
+
+  .check-icon {
+    opacity: 0;
+    transition: opacity 0.2s ease;
+  }
+
+  /* Material Symbols */
+  .material-symbols-outlined {
+    font-family: 'Material Symbols Outlined';
+    font-weight: normal;
+    font-style: normal;
+    font-size: 24px;
+    line-height: 1;
+    letter-spacing: normal;
+    text-transform: none;
+    display: inline-block;
+    white-space: nowrap;
+    word-wrap: normal;
+    direction: ltr;
+    -webkit-font-feature-settings: 'liga';
+    -webkit-font-smoothing: antialiased;
+    font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+    user-select: none;
+  }
+
+  .symbol-filled {
+    font-variation-settings: 'FILL' 1, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+  }
+
+  /* Toggle switch */
+  .toggle-checkbox:checked {
+    right: 0;
+    border-color: #00020e;
+  }
+
+  .toggle-checkbox:checked + .toggle-label {
+    background-color: #00020e;
+  }
+
+  /* Pricing card highlight */
+  .pricing-popular {
+    transform: translateY(-16px);
+    box-shadow: 0 12px 32px rgba(15, 27, 60, 0.1);
+  }
+}
+
+@layer utilities {
+  .animate-pulse-slow {
+    animation: pulse 3s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+  }
+
+  .backdrop-blur-xs {
+    backdrop-filter: blur(4px);
+  }
+
+  /* Page transition */
+  .page-enter {
+    animation: fadeInUp 0.4s ease forwards;
+  }
+
+  @keyframes fadeInUp {
+    from {
+      opacity: 0;
+      transform: translateY(12px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+
+  @keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+  }
+}

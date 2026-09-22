@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Student Dashboard - Skill Mitra</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    "colors": {
+                        "on-secondary-fixed-variant": "#5c4300",
+                        "error": "#ba1a1a",
+                        "surface-container": "#f0eded",
+                        "secondary": "#795900",
+                        "outline-variant": "#c6c6cf",
+                        "tertiary-fixed-dim": "#4edea3",
+                        "on-primary-container": "#7984aa",
+                        "on-secondary": "#ffffff",
+                        "primary": "#00020e",
+                        "on-background": "#1c1b1b",
+                        "surface-dim": "#dcd9d9",
+                        "secondary-container": "#fccb5c",
+                        "on-primary-fixed": "#0e1a3b",
+                        "surface-container-high": "#eae7e7",
+                        "primary-fixed-dim": "#bac5ef",
+                        "on-tertiary": "#ffffff",
+                        "on-secondary-fixed": "#261a00",
+                        "primary-container": "#0f1b3c",
+                        "surface-container-low": "#f6f3f2",
+                        "surface-container-highest": "#e5e2e1",
+                        "inverse-surface": "#313030",
+                        "on-primary": "#ffffff",
+                        "on-primary-fixed-variant": "#3a4569",
+                        "on-tertiary-fixed-variant": "#005236",
+                        "primary-fixed": "#dbe1ff",
+                        "on-surface": "#1c1b1b",
+                        "surface-variant": "#e5e2e1",
+                        "on-error-container": "#93000a",
+                        "surface": "#fcf9f8",
+                        "tertiary-fixed": "#6ffbbe",
+                        "on-secondary-container": "#735500",
+                        "inverse-on-surface": "#f3f0ef",
+                        "tertiary": "#000301",
+                        "background": "#fcf9f8",
+                        "on-error": "#ffffff",
+                        "inverse-primary": "#bac5ef",
+                        "on-tertiary-fixed": "#002113",
+                        "on-tertiary-container": "#009768",
+                        "tertiary-container": "#002214",
+                        "surface-tint": "#525d82",
+                        "on-surface-variant": "#45464e",
+                        "secondary-fixed": "#ffdf9f",
+                        "error-container": "#ffdad6",
+                        "outline": "#76767f",
+                        "surface-bright": "#fcf9f8",
+                        "secondary-fixed-dim": "#f0c052",
+                        "surface-container-lowest": "#ffffff"
+                    },
+                    "borderRadius": {
+                        "DEFAULT": "0.25rem",
+                        "lg": "0.5rem",
+                        "xl": "0.75rem",
+                        "full": "9999px"
+                    },
+                    "spacing": {
+                        "stack-md": "16px",
+                        "gutter": "24px",
+                        "stack-sm": "8px",
+                        "margin-desktop": "40px",
+                        "stack-lg": "32px",
+                        "container-max": "1280px",
+                        "margin-mobile": "16px"
+                    },
+                    "fontFamily": {
+                        "headline-lg-mobile": ["Inter"],
+                        "label-md": ["Inter"],
+                        "headline-md": ["Inter"],
+                        "display-lg": ["Inter"],
+                        "body-lg": ["Inter"],
+                        "body-md": ["Inter"],
+                        "headline-lg": ["Inter"],
+                        "label-sm": ["Inter"]
+                    },
+                    "fontSize": {
+                        "headline-lg-mobile": ["28px", { "lineHeight": "36px", "fontWeight": "700" }],
+                        "label-md": ["14px", { "lineHeight": "20px", "letterSpacing": "0.01em", "fontWeight": "500" }],
+                        "headline-md": ["24px", { "lineHeight": "32px", "fontWeight": "600" }],
+                        "display-lg": ["48px", { "lineHeight": "56px", "letterSpacing": "-0.02em", "fontWeight": "700" }],
+                        "body-lg": ["18px", { "lineHeight": "28px", "fontWeight": "400" }],
+                        "body-md": ["16px", { "lineHeight": "24px", "fontWeight": "400" }],
+                        "headline-lg": ["32px", { "lineHeight": "40px", "letterSpacing": "-0.01em", "fontWeight": "700" }],
+                        "label-sm": ["12px", { "lineHeight": "16px", "fontWeight": "600" }]
+                    }
+                }
+            }
+        }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        .material-symbols-outlined.fill {
+            font-variation-settings: 'FILL' 1, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+    </style>
+</head>
+<body class="bg-background text-on-background font-body-md text-body-md min-h-screen flex flex-col md:flex-row">
+<!-- Mobile TopAppBar -->
+<header class="md:hidden fixed top-0 w-full z-50 bg-surface shadow-sm px-margin-mobile py-4 flex justify-between items-center">
+<div class="text-headline-md font-headline-md font-bold text-primary">Skill Mitra</div>
+<button class="text-primary hover:text-secondary-container transition-colors duration-200">
+<span class="material-symbols-outlined" data-icon="menu">menu</span>
+</button>
+</header>
+<!-- Sidebar Navigation (Desktop) -->
+<aside class="hidden md:flex flex-col w-64 bg-surface-container-low border-r border-surface-variant min-h-screen fixed left-0 top-0">
+<div class="p-gutter border-b border-surface-variant">
+<div class="text-headline-md font-headline-md font-bold text-primary">Skill Mitra</div>
+</div>
+<nav class="flex-1 p-gutter flex flex-col gap-stack-sm">
+<!-- Active State Navigation -->
+<a class="flex items-center gap-stack-sm p-stack-sm rounded-lg bg-primary-container text-on-primary-container transition-colors duration-200" href="#">
+<span class="material-symbols-outlined" data-icon="dashboard">dashboard</span>
+<span class="font-label-md text-label-md font-bold">Dashboard</span>
+</a>
+<a class="flex items-center gap-stack-sm p-stack-sm rounded-lg text-on-surface-variant hover:bg-surface-variant transition-colors duration-200" href="#">
+<span class="material-symbols-outlined" data-icon="book">book</span>
+<span class="font-label-md text-label-md">My Courses</span>
+</a>
+<a class="flex items-center gap-stack-sm p-stack-sm rounded-lg text-on-surface-variant hover:bg-surface-variant transition-colors duration-200" href="#">
+<span class="material-symbols-outlined" data-icon="work">work</span>
+<span class="font-label-md text-label-md">Job Applications</span>
+</a>
+<a class="flex items-center gap-stack-sm p-stack-sm rounded-lg text-on-surface-variant hover:bg-surface-variant transition-colors duration-200" href="#">
+<span class="material-symbols-outlined" data-icon="group">group</span>
+<span class="font-label-md text-label-md">Community</span>
+</a>
+<a class="flex items-center gap-stack-sm p-stack-sm rounded-lg text-on-surface-variant hover:bg-surface-variant transition-colors duration-200" href="#">
+<span class="material-symbols-outlined" data-icon="person">person</span>
+<span class="font-label-md text-label-md">Profile</span>
+</a>
+</nav>
+<!-- Subscription Widget in Sidebar -->
+<div class="p-gutter m-gutter bg-surface rounded-xl shadow-sm border border-outline-variant/30 flex flex-col gap-stack-sm">
+<h4 class="font-label-md text-label-md text-on-surface-variant">Current Plan</h4>
+<div class="font-headline-md text-headline-md text-primary">Basic Free</div>
+<p class="font-label-sm text-label-sm text-on-surface-variant">Unlock premium courses and mentoring.</p>
+<button class="mt-stack-sm bg-secondary-container text-primary font-label-md text-label-md px-stack-md py-stack-sm rounded-lg hover:opacity-90 transition-opacity font-semibold">
+                Upgrade to Pro
+            </button>
+</div>
+</aside>
+<!-- Main Content Area -->
+<main class="flex-1 md:ml-64 pt-[80px] md:pt-0 p-margin-mobile md:p-margin-desktop max-w-container-max mx-auto w-full">
+<!-- Header Section -->
+<div class="mb-stack-lg flex flex-col md:flex-row md:items-end justify-between gap-stack-md">
+<div>
+<h1 class="font-headline-lg-mobile md:font-headline-lg text-headline-lg-mobile md:text-headline-lg text-primary">Welcome back, Student</h1>
+<p class="font-body-md text-body-md text-on-surface-variant mt-stack-sm">Here's an overview of your progress today.</p>
+</div>
+<div class="flex items-center gap-stack-sm">
+<button class="bg-surface border border-outline-variant px-stack-md py-stack-sm rounded-lg font-label-md text-label-md text-primary hover:bg-surface-variant transition-colors">
+                    Resume Last Course
+                </button>
+</div>
+</div>
+<!-- Bento Grid Layout -->
+<div class="grid grid-cols-1 md:grid-cols-12 gap-gutter">
+<!-- Active Course Progress (Span 8) -->
+<div class="md:col-span-8 bg-surface rounded-xl shadow-[0_4px_12px_rgba(0,0,0,0.04)] p-gutter border-t-2 border-primary">
+<div class="flex justify-between items-center mb-stack-md">
+<h2 class="font-headline-md text-headline-md text-primary">In Progress</h2>
+<a class="font-label-md text-label-md text-primary hover:text-secondary underline decoration-secondary" href="#">View All</a>
+</div>
+<div class="flex flex-col gap-stack-md">
+<!-- Course Item -->
+<div class="flex items-center gap-stack-md p-stack-sm hover:bg-surface-container-low rounded-lg transition-colors">
+<div class="w-16 h-16 rounded-lg bg-surface-variant flex-shrink-0 overflow-hidden relative">
+<img class="object-cover w-full h-full" data-alt="A close-up of a modern computer screen displaying clean, colorful code in an IDE. The lighting is soft and aspirational, fitting a premium learning platform. Colors feature deep navy and crisp white." src="https://lh3.googleusercontent.com/aida-public/AB6AXuAMHvxOlIxPoYN_T2IB-3QGIKHI1y0pm0X_Ae_cbDL8oLPSbOw5HL8IR5UjcD6b-L4sqb2BsG_nN8tkL84_PTCES_FzZa7TVa9JHIQItleFTLepclBa4dZlaSk4Cepz0xjeqitDwhOq3ki8M7PV81V23nH_wbuNjtcBEmnEsy1MCdMm6R7Ey0D4okZ_rNUDiuWAXYnABHeFdsnm-ZKGog0UfLF3ZVtP24rxDBlsofSQGFftONJuJPSh"/>
+</div>
+<div class="flex-1">
+<h3 class="font-label-md text-label-md text-primary font-semibold">Advanced Full-Stack Web Development</h3>
+<p class="font-label-sm text-label-sm text-on-surface-variant mt-1">Module 4: React Performance Optimization</p>
+<div class="w-full bg-surface-container-highest rounded-full h-2 mt-2">
+<div class="bg-primary h-2 rounded-full" style="width: 65%"></div>
+</div>
+</div>
+<div class="text-right flex-shrink-0">
+<span class="font-label-md text-label-md text-primary font-bold">65%</span>
+</div>
+</div>
+<!-- Course Item -->
+<div class="flex items-center gap-stack-md p-stack-sm hover:bg-surface-container-low rounded-lg transition-colors">
+<div class="w-16 h-16 rounded-lg bg-surface-variant flex-shrink-0 overflow-hidden relative">
+<img class="object-cover w-full h-full" data-alt="A minimalist abstract data visualization graphic showing a network of nodes connected by fine lines. The color palette uses deep navy and subtle gold accents on a clean off-white background." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDAgoi3krbBiIk7WJDFTPpeSXItdM1qBS0902p7EdZpUrPY6gm0cvmkm5W0eS7nTFDVXHcSGLDqMIQ2ygUhn5CQx_CI39DhCTDHwxZzqPe48dQHPCi-8dB1ynK_I9sZVk-ogwihtzJBqNKyqSdPFuPjNbwG5Ykms3dwORjWgLmcubIac1OHocQso_kl863sdXgWioE9sLa_m-UzDNZSiWv3qDfdNaHBtKkHFETN5I43l5FfqlGiQpfS"/>
+</div>
+<div class="flex-1">
+<h3 class="font-label-md text-label-md text-primary font-semibold">Data Structures &amp; Algorithms</h3>
+<p class="font-label-sm text-label-sm text-on-surface-variant mt-1">Module 2: Binary Search Trees</p>
+<div class="w-full bg-surface-container-highest rounded-full h-2 mt-2">
+<div class="bg-primary h-2 rounded-full" style="width: 30%"></div>
+</div>
+</div>
+<div class="text-right flex-shrink-0">
+<span class="font-label-md text-label-md text-primary font-bold">30%</span>
+</div>
+</div>
+</div>
+</div>
+<!-- Quick Stats (Span 4) -->
+<div class="md:col-span-4 flex flex-col gap-gutter">
+<!-- Certificates -->
+<div class="bg-surface rounded-xl shadow-[0_4px_12px_rgba(0,0,0,0.04)] p-gutter border-t-2 border-secondary-container flex items-center justify-between">
+<div>
+<p class="font-label-md text-label-md text-on-surface-variant">Certificates Earned</p>
+<h3 class="font-display-lg text-display-lg text-primary mt-stack-sm">3</h3>
+</div>
+<div class="w-12 h-12 rounded-full bg-secondary-container/20 flex items-center justify-center text-secondary">
+<span class="material-symbols-outlined" data-icon="workspace_premium">workspace_premium</span>
+</div>
+</div>
+<!-- Job Applications -->
+<div class="bg-surface rounded-xl shadow-[0_4px_12px_rgba(0,0,0,0.04)] p-gutter border-t-2 border-tertiary-fixed-dim flex items-center justify-between">
+<div>
+<p class="font-label-md text-label-md text-on-surface-variant">Active Applications</p>
+<h3 class="font-display-lg text-display-lg text-primary mt-stack-sm">5</h3>
+</div>
+<div class="w-12 h-12 rounded-full bg-tertiary-fixed-dim/20 flex items-center justify-center text-tertiary-container">
+<span class="material-symbols-outlined" data-icon="work_history">work_history</span>
+</div>
+</div>
+</div>
+<!-- Recommended Content (Span 12) -->
+<div class="md:col-span-12 mt-stack-lg">
+<div class="flex justify-between items-center mb-stack-md">
+<h2 class="font-headline-md text-headline-md text-primary">Recommended for you</h2>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-gutter">
+<!-- Recommendation Card 1 -->
+<div class="bg-surface rounded-xl shadow-[0_4px_12px_rgba(0,0,0,0.04)] overflow-hidden hover:shadow-[0_8px_24px_rgba(0,0,0,0.08)] transition-shadow">
+<div class="h-32 bg-surface-variant relative">
+<img class="object-cover w-full h-full" data-alt="A clean, professional workspace showing a sleek laptop open on a wooden desk next to a notebook. The lighting is soft and natural, emphasizing a productive learning environment in a premium setting." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCCqMBsBAHl_jnYgZWp53RSIHP1AaYq2tpVIkYHjHx6LuIONvOaZylUbkjJzMgUELOCdxWcAJnAwb2Tgh5emcD8BPS_R8S0iyrCkKHDypnGI0DDdL279Fg9JjhEwNHxNmzxfcxDJgypi2FQnk97BEAW0aZyje7yr0oIkB7azIM7xmAmM4pIhQCu0nvRh9YxGQ0i58cEDeKdaw7tgufJoUI4nr-6ojzBy5aNcYYCp1mHyWvaQAGivcPk"/>
+<div class="absolute top-stack-sm right-stack-sm bg-tertiary-fixed-dim/90 text-tertiary-container font-label-sm text-label-sm px-2 py-1 rounded">Free</div>
+</div>
+<div class="p-gutter">
+<div class="font-label-sm text-label-sm text-on-surface-variant mb-1">Career Track</div>
+<h3 class="font-headline-md text-headline-md text-primary text-[18px] leading-tight mb-stack-sm">UI/UX Design Fundamentals</h3>
+<button class="text-primary font-label-md text-label-md flex items-center gap-1 hover:text-secondary transition-colors mt-stack-md">
+                                Enroll Now <span class="material-symbols-outlined text-[16px]" data-icon="arrow_forward">arrow_forward</span>
+</button>
+</div>
+</div>
+<!-- Recommendation Card 2 -->
+<div class="bg-surface rounded-xl shadow-[0_4px_12px_rgba(0,0,0,0.04)] overflow-hidden hover:shadow-[0_8px_24px_rgba(0,0,0,0.08)] transition-shadow border-t-2 border-secondary-container">
+<div class="h-32 bg-surface-variant relative">
+<img class="object-cover w-full h-full" data-alt="A dynamic corporate meeting room setting with abstract floating UI elements representing job opportunities and networking. The color scheme is professional, utilizing deep navy and bright white." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCcoL4mutUF4WWe_hjR1kWaokb_NeOayNY9X65phZZQyOvueVsgpoZCI78fsDFTTEjF2tDHCS3OpU4Ck4EM4rpLMb1J4gQEy2sYLDNyzxpR99usMUqn4lmlAYquQwZAF_bkHsF16cl8GRB3tlSYrsZlYpdbLti3_ee48hWvJEdZSLYHN94UapiTSd71Z-7hFHF1xrJq767lyL0j0TfSTsLv8BwvRWBaA7nyRJ-slZBNgV7Nr8GywwlL"/>
+<div class="absolute top-stack-sm right-stack-sm bg-secondary-container/90 text-on-secondary-container font-label-sm text-label-sm px-2 py-1 rounded flex items-center gap-1">
+<span class="material-symbols-outlined text-[14px]" data-icon="star">star</span> Premium
+                            </div>
+</div>
+<div class="p-gutter">
+<div class="font-label-sm text-label-sm text-on-surface-variant mb-1">Job Opportunity</div>
+<h3 class="font-headline-md text-headline-md text-primary text-[18px] leading-tight mb-stack-sm">Frontend Developer at TechNova</h3>
+<button class="text-primary font-label-md text-label-md flex items-center gap-1 hover:text-secondary transition-colors mt-stack-md">
+                                View Details <span class="material-symbols-outlined text-[16px]" data-icon="arrow_forward">arrow_forward</span>
+</button>
+</div>
+</div>
+<!-- Recommendation Card 3 -->
+<div class="bg-surface rounded-xl shadow-[0_4px_12px_rgba(0,0,0,0.04)] overflow-hidden hover:shadow-[0_8px_24px_rgba(0,0,0,0.08)] transition-shadow">
+<div class="h-32 bg-surface-variant relative">
+<img class="object-cover w-full h-full" data-alt="A minimalist illustration of cloud computing infrastructure with servers and nodes connected. The aesthetic is clean, modern, and tech-focused, using a premium palette of deep navy and white." src="https://lh3.googleusercontent.com/aida-public/AB6AXuBXw5awiPlOrtvFDi0AzEJfPDoABgwupkrDRxXtOtNixhET7ilpQg0bzSBBtb94P83JDHt_783MPqJzd5_iIwrcCeoJmJ9jGi4G6O18Pfl7EIpekQ-DUXe3kGYrxMJAQAAyOd0xikH6ZE6iEkya83WPhgSN6JI360gO9Z7UHpFydOSCbTX1lWKZZWmy-17sJEyJ9a9rtcdrLtF76xdJC4RpcNrRIjAstsCORaZDpmdrZcTkClJ9O0r4"/>
+</div>
+<div class="p-gutter">
+<div class="font-label-sm text-label-sm text-on-surface-variant mb-1">Short Course</div>
+<h3 class="font-headline-md text-headline-md text-primary text-[18px] leading-tight mb-stack-sm">Introduction to Cloud Computing</h3>
+<button class="text-primary font-label-md text-label-md flex items-center gap-1 hover:text-secondary transition-colors mt-stack-md">
+                                Enroll Now <span class="material-symbols-outlined text-[16px]" data-icon="arrow_forward">arrow_forward</span>
+</button>
+</div>
+</div>
+</div>
+</div>
+</div>
+</main>
+<!-- Mobile Bottom NavBar -->
+<nav class="md:hidden fixed bottom-0 w-full z-50 bg-surface border-t border-surface-variant flex justify-around items-center py-2 px-margin-mobile pb-6">
+<a class="flex flex-col items-center p-2 text-primary" href="#">
+<span class="material-symbols-outlined fill" data-icon="dashboard">dashboard</span>
+<span class="font-label-sm text-[10px] mt-1">Dashboard</span>
+</a>
+<a class="flex flex-col items-center p-2 text-on-surface-variant" href="#">
+<span class="material-symbols-outlined" data-icon="book">book</span>
+<span class="font-label-sm text-[10px] mt-1">Courses</span>
+</a>
+<a class="flex flex-col items-center p-2 text-on-surface-variant" href="#">
+<span class="material-symbols-outlined" data-icon="work">work</span>
+<span class="font-label-sm text-[10px] mt-1">Jobs</span>
+</a>
+<a class="flex flex-col items-center p-2 text-on-surface-variant" href="#">
+<span class="material-symbols-outlined" data-icon="person">person</span>
+<span class="font-label-sm text-[10px] mt-1">Profile</span>
+</a>
+</nav>
+</body></html>

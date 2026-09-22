@@ -1,0 +1,390 @@
+<!DOCTYPE html>
+
+<html lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Free Education - Expanded Catalog | Skill Mitra</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    "colors": {
+                        "tertiary-container": "#002214",
+                        "surface-tint": "#525d82",
+                        "secondary-fixed": "#ffdf9f",
+                        "inverse-primary": "#bac5ef",
+                        "on-error": "#ffffff",
+                        "on-error-container": "#93000a",
+                        "tertiary-fixed-dim": "#4edea3",
+                        "on-tertiary": "#ffffff",
+                        "on-secondary": "#ffffff",
+                        "on-background": "#1c1b1b",
+                        "on-surface": "#1c1b1b",
+                        "on-primary-fixed-variant": "#3a4569",
+                        "on-surface-variant": "#45464e",
+                        "on-secondary-fixed-variant": "#5c4300",
+                        "primary": "#00020e",
+                        "on-primary-container": "#7984aa",
+                        "on-primary": "#ffffff",
+                        "primary-container": "#0f1b3c",
+                        "error": "#ba1a1a",
+                        "on-primary-fixed": "#0e1a3b",
+                        "surface-container-highest": "#e5e2e1",
+                        "error-container": "#ffdad6",
+                        "on-secondary-fixed": "#261a00",
+                        "on-tertiary-container": "#009768",
+                        "surface-container-low": "#f6f3f2",
+                        "surface-container-lowest": "#ffffff",
+                        "tertiary": "#000301",
+                        "inverse-surface": "#313030",
+                        "on-secondary-container": "#735500",
+                        "surface-container": "#f0eded",
+                        "secondary-container": "#fccb5c",
+                        "surface": "#fcf9f8",
+                        "inverse-on-surface": "#f3f0ef",
+                        "surface-container-high": "#eae7e7",
+                        "secondary": "#795900",
+                        "surface-variant": "#e5e2e1",
+                        "primary-fixed": "#dbe1ff",
+                        "surface-dim": "#dcd9d9",
+                        "on-tertiary-fixed-variant": "#005236",
+                        "background": "#fcf9f8",
+                        "surface-bright": "#fcf9f8",
+                        "on-tertiary-fixed": "#002113",
+                        "primary-fixed-dim": "#bac5ef",
+                        "outline": "#76767f",
+                        "outline-variant": "#c6c6cf",
+                        "secondary-fixed-dim": "#f0c052",
+                        "tertiary-fixed": "#6ffbbe"
+                    },
+                    "borderRadius": {
+                        "DEFAULT": "0.25rem",
+                        "lg": "0.5rem",
+                        "xl": "0.75rem",
+                        "full": "9999px"
+                    },
+                    "spacing": {
+                        "gutter": "24px",
+                        "container-max": "1280px",
+                        "stack-sm": "8px",
+                        "stack-lg": "32px",
+                        "stack-md": "16px",
+                        "margin-desktop": "40px",
+                        "margin-mobile": "16px"
+                    },
+                    "fontFamily": {
+                        "body-md": ["Inter"],
+                        "display-lg": ["Inter"],
+                        "headline-lg": ["Inter"],
+                        "label-md": ["Inter"],
+                        "body-lg": ["Inter"],
+                        "headline-lg-mobile": ["Inter"],
+                        "label-sm": ["Inter"],
+                        "headline-md": ["Inter"]
+                    },
+                    "fontSize": {
+                        "body-md": ["16px", { "lineHeight": "24px", "fontWeight": "400" }],
+                        "display-lg": ["48px", { "lineHeight": "56px", "letterSpacing": "-0.02em", "fontWeight": "700" }],
+                        "headline-lg": ["32px", { "lineHeight": "40px", "letterSpacing": "-0.01em", "fontWeight": "700" }],
+                        "label-md": ["14px", { "lineHeight": "20px", "letterSpacing": "0.01em", "fontWeight": "500" }],
+                        "body-lg": ["18px", { "lineHeight": "28px", "fontWeight": "400" }],
+                        "headline-lg-mobile": ["28px", { "lineHeight": "36px", "fontWeight": "700" }],
+                        "label-sm": ["12px", { "lineHeight": "16px", "fontWeight": "600" }],
+                        "headline-md": ["24px", { "lineHeight": "32px", "fontWeight": "600" }]
+                    }
+                }
+            }
+        }
+    </script>
+<style>
+        .glass-card {
+            background: rgba(255, 255, 255, 0.95);
+            backdrop-filter: blur(12px);
+            box-shadow: 0 4px 24px rgba(0, 0, 0, 0.04);
+        }
+        .hover-lift {
+            transition: transform 0.3s cubic-bezier(0.4, 0, 0.2, 1), box-shadow 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+        }
+        .hover-lift:hover {
+            transform: translateY(-4px);
+            box-shadow: 0 12px 32px rgba(15, 27, 60, 0.08);
+        }
+    </style>
+</head>
+<body class="bg-[#F8F7F3] text-on-surface font-body-md antialiased pt-[88px] selection:bg-secondary-container selection:text-on-secondary-container">
+<!-- TopNavBar (Shared Component) -->
+<nav class="fixed top-0 w-full z-50 shadow-sm bg-surface dark:bg-surface-dim">
+<div class="flex justify-between items-center max-w-container-max mx-auto px-margin-desktop py-4 md:px-margin-desktop px-margin-mobile">
+<a class="text-headline-md font-headline-md font-bold text-primary dark:text-primary-fixed" href="#">
+                Skill Mitra
+            </a>
+<div class="hidden md:flex gap-gutter items-center">
+<a class="font-label-md text-label-md text-secondary border-b-2 border-secondary pb-1 scale-95 active:opacity-80 transition-transform" href="#">
+                    Free Education
+                </a>
+<a class="font-label-md text-label-md text-primary dark:text-primary-fixed hover:text-secondary-container transition-colors duration-200 scale-95 active:opacity-80 transition-transform" href="#">
+                    Higher Education
+                </a>
+<a class="font-label-md text-label-md text-primary dark:text-primary-fixed hover:text-secondary-container transition-colors duration-200 scale-95 active:opacity-80 transition-transform" href="#">
+                    Earning Opportunities
+                </a>
+<a class="font-label-md text-label-md text-primary dark:text-primary-fixed hover:text-secondary-container transition-colors duration-200 scale-95 active:opacity-80 transition-transform" href="#">
+                    Community
+                </a>
+</div>
+<button class="font-label-md text-label-md bg-primary-container text-on-primary px-6 py-2 rounded-lg hover:bg-primary transition-colors scale-95 active:opacity-80 transition-transform">
+                Login/Signup
+            </button>
+</div>
+</nav>
+<main class="max-w-container-max mx-auto px-margin-mobile md:px-margin-desktop pb-[120px]">
+<!-- Breadcrumbs -->
+<div class="py-stack-md flex items-center gap-2 text-on-surface-variant font-label-md text-label-md">
+<a class="hover:text-primary transition-colors" href="#">Catalog</a>
+<span class="material-symbols-outlined text-[16px]">chevron_right</span>
+<span class="text-primary font-medium">Page 2</span>
+</div>
+<!-- Header Section -->
+<header class="py-stack-lg max-w-3xl">
+<h1 class="font-display-lg text-display-lg text-primary mb-stack-sm md:text-display-lg text-headline-lg-mobile">
+                More Free Courses
+            </h1>
+<p class="font-body-lg text-body-lg text-on-surface-variant">
+                Continuing your journey with advanced foundational skills. Explore soft skills, digital literacy, and creative thinking modules designed to elevate your professional profile.
+            </p>
+</header>
+<!-- Category Filters -->
+<div class="flex flex-wrap gap-3 mb-stack-lg border-b border-surface-variant pb-stack-md">
+<button class="px-4 py-2 rounded-full font-label-md text-label-md bg-surface-container-high text-on-surface-variant hover:bg-surface-variant transition-colors">
+                All categories
+            </button>
+<button class="px-4 py-2 rounded-full font-label-md text-label-md bg-primary-container text-on-primary transition-colors">
+                Soft Skills
+            </button>
+<button class="px-4 py-2 rounded-full font-label-md text-label-md bg-surface-container-high text-on-surface-variant hover:bg-surface-variant transition-colors">
+                Digital Literacy
+            </button>
+<button class="px-4 py-2 rounded-full font-label-md text-label-md bg-surface-container-high text-on-surface-variant hover:bg-surface-variant transition-colors">
+                Creative Thinking
+            </button>
+</div>
+<!-- Course Grid -->
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-gutter mb-[80px]">
+<!-- Card 1 -->
+<article class="glass-card rounded-[16px] overflow-hidden hover-lift border-t-2 border-primary-container flex flex-col">
+<div class="h-40 w-full relative">
+<img class="w-full h-full object-cover" data-alt="A diverse group of professionals actively engaged in a round-table discussion in a bright, modern corporate office. Natural sunlight floods the room through large windows. The overall aesthetic is clean, professional, and optimistic, adhering to a high-end light mode UI theme." src="https://lh3.googleusercontent.com/aida-public/AB6AXuBn6RYSMou5n3hr2UlTN6sbbMQwFSPsDS1s_ZCtZSpAAxcwMv2R5XS33pu_Lnpg3MxiKNfBLhoGflOD5Hhd0tjaQNDMXpvj9fzUW63BgSbeSJd7c88PZICBHxWdODRjRbYSS3OTj0D3zBoET8AMCyhlvB1JpUoIRp7sAkTIEF5B7BVsVWdvsYXTJBEPRTzvouw5KrdyKZeRUg408mzIVMDj5iHNarbyH-lyBBNhKcdeCPSevHj6Tvlu"/>
+<div class="absolute top-4 left-4 bg-[#D1FAE5] text-[#065F46] font-label-sm text-label-sm px-3 py-1 rounded-full flex items-center gap-1 backdrop-blur-sm bg-opacity-90">
+<span class="material-symbols-outlined text-[14px]">local_offer</span> Free
+                    </div>
+</div>
+<div class="p-6 flex flex-col flex-grow">
+<div class="flex justify-between items-center mb-2">
+<span class="font-label-sm text-label-sm text-on-surface-variant bg-surface-container-high px-2 py-1 rounded-full">Soft Skills</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant flex items-center gap-1"><span class="material-symbols-outlined text-[14px]">schedule</span> 4 Hrs</span>
+</div>
+<h3 class="font-headline-md text-headline-md text-primary mb-2 line-clamp-2">Effective Business Communication</h3>
+<p class="font-body-md text-body-md text-on-surface-variant mb-6 line-clamp-2 flex-grow">Master professional writing, active listening, and clear verbal communication for the modern workplace.</p>
+<a class="inline-flex items-center gap-2 font-label-md text-label-md text-primary-container hover:text-secondary-fixed-dim transition-colors group" href="#">
+                        Start Module <span class="material-symbols-outlined group-hover:translate-x-1 transition-transform">arrow_forward</span>
+</a>
+</div>
+</article>
+<!-- Card 2 -->
+<article class="glass-card rounded-[16px] overflow-hidden hover-lift border-t-2 border-primary-container flex flex-col">
+<div class="h-40 w-full relative">
+<img class="w-full h-full object-cover" data-alt="Two colleagues looking at a laptop screen together, smiling and pointing at data. They are in a well-lit, minimalist coworking space with light wood accents and white walls. The scene conveys collaboration and positive energy in a bright, modern light mode aesthetic." src="https://lh3.googleusercontent.com/aida-public/AB6AXuBDgF8TyKD5ltG-O5v4leg1c0RF_pSI_Ew1DwRmWgI2ZlvyvruyTLbBdU9E_SuObt8YkfsJoxv7g9C5BKrSdH1Xrhkbc8PBpYXQp1xeWZ3IRuQ4qNxiLVM2SUYyfpnmvBaXepubnu5-f52IblfiF3ndhfrCCVtLY2MQOBPmQ9uWdCOaEqYMP0M48LNsq4dRFP35-6xO6Syj_4K8UunVnYaIqCPq90ktXW0S9zR9_1onVkAE2TYbv0iz"/>
+<div class="absolute top-4 left-4 bg-[#D1FAE5] text-[#065F46] font-label-sm text-label-sm px-3 py-1 rounded-full flex items-center gap-1 backdrop-blur-sm bg-opacity-90">
+<span class="material-symbols-outlined text-[14px]">local_offer</span> Free
+                    </div>
+</div>
+<div class="p-6 flex flex-col flex-grow">
+<div class="flex justify-between items-center mb-2">
+<span class="font-label-sm text-label-sm text-on-surface-variant bg-surface-container-high px-2 py-1 rounded-full">Soft Skills</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant flex items-center gap-1"><span class="material-symbols-outlined text-[14px]">schedule</span> 3.5 Hrs</span>
+</div>
+<h3 class="font-headline-md text-headline-md text-primary mb-2 line-clamp-2">Teamwork &amp; Collaboration</h3>
+<p class="font-body-md text-body-md text-on-surface-variant mb-6 line-clamp-2 flex-grow">Learn strategies for building trust, resolving conflicts, and working effectively in diverse teams.</p>
+<a class="inline-flex items-center gap-2 font-label-md text-label-md text-primary-container hover:text-secondary-fixed-dim transition-colors group" href="#">
+                        Start Module <span class="material-symbols-outlined group-hover:translate-x-1 transition-transform">arrow_forward</span>
+</a>
+</div>
+</article>
+<!-- Card 3 -->
+<article class="glass-card rounded-[16px] overflow-hidden hover-lift border-t-2 border-primary-container flex flex-col">
+<div class="h-40 w-full relative">
+<img class="w-full h-full object-cover" data-alt="A close-up abstract view of glowing data visualizations, charts, and graphs displayed on a sleek, frameless monitor. The setting is bright and clean, with soft white lighting enhancing the sophisticated, minimalist UI design theme. Deep blacks and vibrant accents provide contrast." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDjGKKrsDDG0kpn_HS6Yqp6-uVTcu03nNY0ejMm-SMilx7J4a6lfOqtjg1tgxWHiIvHHoIwlBgvuZXr5S-E6Nx29Ixur5isg3v8VbwDfwg-3IdT-fJezNNpjln-Fo0hgjZ4SBPvBOAdUgU7_l9FfjBeyLRigccritLZ0fbnlrNs_z1yeOb_rBgvsoayDRgF_u6MKa-dXWuykhI2GK66G_hjp9JdJrC7WUZrgjQO3KuowTHORewyzsB7"/>
+<div class="absolute top-4 left-4 bg-[#D1FAE5] text-[#065F46] font-label-sm text-label-sm px-3 py-1 rounded-full flex items-center gap-1 backdrop-blur-sm bg-opacity-90">
+<span class="material-symbols-outlined text-[14px]">local_offer</span> Free
+                    </div>
+</div>
+<div class="p-6 flex flex-col flex-grow">
+<div class="flex justify-between items-center mb-2">
+<span class="font-label-sm text-label-sm text-on-surface-variant bg-surface-container-high px-2 py-1 rounded-full">Digital Literacy</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant flex items-center gap-1"><span class="material-symbols-outlined text-[14px]">schedule</span> 5 Hrs</span>
+</div>
+<h3 class="font-headline-md text-headline-md text-primary mb-2 line-clamp-2">Data Interpretation Basics</h3>
+<p class="font-body-md text-body-md text-on-surface-variant mb-6 line-clamp-2 flex-grow">Develop essential skills to read, analyze, and communicate basic data sets for informed decision-making.</p>
+<a class="inline-flex items-center gap-2 font-label-md text-label-md text-primary-container hover:text-secondary-fixed-dim transition-colors group" href="#">
+                        Start Module <span class="material-symbols-outlined group-hover:translate-x-1 transition-transform">arrow_forward</span>
+</a>
+</div>
+</article>
+<!-- Card 4 -->
+<article class="glass-card rounded-[16px] overflow-hidden hover-lift border-t-2 border-primary-container flex flex-col">
+<div class="h-40 w-full relative">
+<img class="w-full h-full object-cover" data-alt="A minimalist composition of modern tech devices—a sleek laptop, a smartphone, and a digital tablet—arranged neatly on a pristine white desk. The lighting is soft and diffused, creating a premium, high-end educational aesthetic consistent with a sophisticated light mode design." src="https://lh3.googleusercontent.com/aida-public/AB6AXuAkEFA5CS1WqVszyT7ex-AthCi9LHYUnId7qdQv03Igqw3RxBFi7qsoxx4KzmD8x8GHl6RY9hbdtcdWYiI_a098WpJjIUjAq05cSUYHjl816-Fgbtf9tjAGK1MNKVsPxQJxuCD_z__weDRmJ0NOO9NrtvnM_mlR3rRC5RIuk5OSvZbr8-5VodaC1cGY0Tu-DsbzxiIeLBFeUyvY-xnI_Z6yr2qJTefO2ddGnFEfIRw47R1euBI7uvJb"/>
+<div class="absolute top-4 left-4 bg-[#D1FAE5] text-[#065F46] font-label-sm text-label-sm px-3 py-1 rounded-full flex items-center gap-1 backdrop-blur-sm bg-opacity-90">
+<span class="material-symbols-outlined text-[14px]">local_offer</span> Free
+                    </div>
+</div>
+<div class="p-6 flex flex-col flex-grow">
+<div class="flex justify-between items-center mb-2">
+<span class="font-label-sm text-label-sm text-on-surface-variant bg-surface-container-high px-2 py-1 rounded-full">Digital Literacy</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant flex items-center gap-1"><span class="material-symbols-outlined text-[14px]">schedule</span> 4.5 Hrs</span>
+</div>
+<h3 class="font-headline-md text-headline-md text-primary mb-2 line-clamp-2">Cloud Tools for Productivity</h3>
+<p class="font-body-md text-body-md text-on-surface-variant mb-6 line-clamp-2 flex-grow">Navigate modern cloud-based software suites to enhance personal efficiency and remote collaboration.</p>
+<a class="inline-flex items-center gap-2 font-label-md text-label-md text-primary-container hover:text-secondary-fixed-dim transition-colors group" href="#">
+                        Start Module <span class="material-symbols-outlined group-hover:translate-x-1 transition-transform">arrow_forward</span>
+</a>
+</div>
+</article>
+<!-- Card 5 -->
+<article class="glass-card rounded-[16px] overflow-hidden hover-lift border-t-2 border-primary-container flex flex-col">
+<div class="h-40 w-full relative">
+<img class="w-full h-full object-cover" data-alt="A dynamic, creative workshop environment showing a whiteboard covered in colorful sticky notes and abstract diagrams. The focus is on a hand holding a marker, ready to write. The scene is illuminated by bright, natural light, reflecting a modern, premium educational platform." src="https://lh3.googleusercontent.com/aida-public/AB6AXuAiNrdbsCyT8eaxP5_x0UEgZq0LpYabc8Wk7NLKCgVVmafoRLAmEpciKMgYZWgXmbisToXpDKfXUufAhxAwj9utGTuzA3jx4W2SQ27i0Dc_2R6PEuyfn-ai9D9IBmbwOj3pFarT0YIS9HNK3funWUN3cCvqiLKbuiVZCF_E5mkNEVx4rO7gaSG0dqEodfSYRkxuVZC-mJkd_L4V4T0szf1wL4rmRU4mThul7S_b46HApwe9LIFVPnb2"/>
+<div class="absolute top-4 left-4 bg-[#D1FAE5] text-[#065F46] font-label-sm text-label-sm px-3 py-1 rounded-full flex items-center gap-1 backdrop-blur-sm bg-opacity-90">
+<span class="material-symbols-outlined text-[14px]">local_offer</span> Free
+                    </div>
+</div>
+<div class="p-6 flex flex-col flex-grow">
+<div class="flex justify-between items-center mb-2">
+<span class="font-label-sm text-label-sm text-on-surface-variant bg-surface-container-high px-2 py-1 rounded-full">Creative Thinking</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant flex items-center gap-1"><span class="material-symbols-outlined text-[14px]">schedule</span> 6 Hrs</span>
+</div>
+<h3 class="font-headline-md text-headline-md text-primary mb-2 line-clamp-2">Introduction to Design Thinking</h3>
+<p class="font-body-md text-body-md text-on-surface-variant mb-6 line-clamp-2 flex-grow">Explore user-centric approaches to ideation, prototyping, and solving ambiguous challenges creatively.</p>
+<a class="inline-flex items-center gap-2 font-label-md text-label-md text-primary-container hover:text-secondary-fixed-dim transition-colors group" href="#">
+                        Start Module <span class="material-symbols-outlined group-hover:translate-x-1 transition-transform">arrow_forward</span>
+</a>
+</div>
+</article>
+<!-- Card 6 -->
+<article class="glass-card rounded-[16px] overflow-hidden hover-lift border-t-2 border-primary-container flex flex-col">
+<div class="h-40 w-full relative">
+<img class="w-full h-full object-cover" data-alt="An intricate, abstract visualization of interlocking geometric puzzle pieces in a bright, white 3D space. Soft ambient shadows give a sense of depth and atmospheric quality, perfectly aligning with a high-end, premium minimalist interface aesthetic." src="https://lh3.googleusercontent.com/aida-public/AB6AXuD2BNmPWpmvzDPxxwrOip8cLviHdHk_ma0pW2v_oqA7YGbxToKscPYIedrfwP0i79B-hUus6UmpOfWu8NOX-BROQOxdZaos3ta2WkkA51gOPcwA4nAoxpg8UhsKXbtP0tv625t7tAvZcgoQBrd9Ma1gc8nIw_XuSVN36igfV5vRtob6Cng8FnF1KYvmt0ZiPKiOUVJhhZxjs2jRc12P-e87x3FU5sydU5CY2NagBO7YsVgd7D0QQjFf"/>
+<div class="absolute top-4 left-4 bg-[#D1FAE5] text-[#065F46] font-label-sm text-label-sm px-3 py-1 rounded-full flex items-center gap-1 backdrop-blur-sm bg-opacity-90">
+<span class="material-symbols-outlined text-[14px]">local_offer</span> Free
+                    </div>
+</div>
+<div class="p-6 flex flex-col flex-grow">
+<div class="flex justify-between items-center mb-2">
+<span class="font-label-sm text-label-sm text-on-surface-variant bg-surface-container-high px-2 py-1 rounded-full">Creative Thinking</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant flex items-center gap-1"><span class="material-symbols-outlined text-[14px]">schedule</span> 5.5 Hrs</span>
+</div>
+<h3 class="font-headline-md text-headline-md text-primary mb-2 line-clamp-2">Complex Problem Solving</h3>
+<p class="font-body-md text-body-md text-on-surface-variant mb-6 line-clamp-2 flex-grow">Techniques to deconstruct difficult issues, identify root causes, and develop innovative solutions.</p>
+<a class="inline-flex items-center gap-2 font-label-md text-label-md text-primary-container hover:text-secondary-fixed-dim transition-colors group" href="#">
+                        Start Module <span class="material-symbols-outlined group-hover:translate-x-1 transition-transform">arrow_forward</span>
+</a>
+</div>
+</article>
+<!-- Card 7 -->
+<article class="glass-card rounded-[16px] overflow-hidden hover-lift border-t-2 border-primary-container flex flex-col">
+<div class="h-40 w-full relative">
+<img class="w-full h-full object-cover" data-alt="A modern, minimalist desk setup featuring a sleek planner notebook, a premium pen, and a subtle mechanical clock in the background. The scene is bathed in warm, soft morning light, evoking a sense of organization, focus, and sophisticated productivity." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDsM5Kunj9_8G2ZZn4MsRBeHMdyVlyb3x_myNpg_mHkGT4lpCHpP51_wfQjr823iKFoQ9_owtYi6hzVxYq9v1yx49N0Z8VbP6DHWJN-TujwI90xZ3D4XmfoQ8Sptks38bHmn6kNiFPIdYNcgmyXVNGu_5I0R4ASeVtMUJpysT5GuaedP5U-tau-cIJkFt1TMjPtqjZgiY95QRhxPa5xU4GXXHxalEFotyoDLI5lnWDm29LNgAN6qSGv"/>
+<div class="absolute top-4 left-4 bg-[#D1FAE5] text-[#065F46] font-label-sm text-label-sm px-3 py-1 rounded-full flex items-center gap-1 backdrop-blur-sm bg-opacity-90">
+<span class="material-symbols-outlined text-[14px]">local_offer</span> Free
+                    </div>
+</div>
+<div class="p-6 flex flex-col flex-grow">
+<div class="flex justify-between items-center mb-2">
+<span class="font-label-sm text-label-sm text-on-surface-variant bg-surface-container-high px-2 py-1 rounded-full">Soft Skills</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant flex items-center gap-1"><span class="material-symbols-outlined text-[14px]">schedule</span> 3 Hrs</span>
+</div>
+<h3 class="font-headline-md text-headline-md text-primary mb-2 line-clamp-2">Time Management &amp; Prioritization</h3>
+<p class="font-body-md text-body-md text-on-surface-variant mb-6 line-clamp-2 flex-grow">Practical frameworks for organizing tasks, minimizing distractions, and maximizing daily output.</p>
+<a class="inline-flex items-center gap-2 font-label-md text-label-md text-primary-container hover:text-secondary-fixed-dim transition-colors group" href="#">
+                        Start Module <span class="material-symbols-outlined group-hover:translate-x-1 transition-transform">arrow_forward</span>
+</a>
+</div>
+</article>
+<!-- Card 8 -->
+<article class="glass-card rounded-[16px] overflow-hidden hover-lift border-t-2 border-primary-container flex flex-col">
+<div class="h-40 w-full relative">
+<img class="w-full h-full object-cover" data-alt="A stylized graphic showing a glowing padlock hovering over a digital network interface on a white background. The visuals are clean, crisp, and high-tech but grounded in a light, approachable aesthetic suitable for a premium educational platform." src="https://lh3.googleusercontent.com/aida-public/AB6AXuAR93JCMKyvIDrj9zvF-M8TTG_Sird0qMB3QlcaVbPlz_OiSNcxeJ4anV5vYusG7aVzvaQf69js46JIh4nVqkAoOaeU8Nn3SmW22zQad24JHAU2XPJDOtqjFFE9r5YdXBuH4GT_NlaI8sLcHoBLTUo5AhK1MANSym3OtJ7Nkq3iBklsxXalLcmlaSb7QeL7IiMCIhN0HV0I8oFaRNgPnPSPQ6n107UHeEDtdB7YoN4-QclcCZBRvZjP"/>
+<div class="absolute top-4 left-4 bg-[#D1FAE5] text-[#065F46] font-label-sm text-label-sm px-3 py-1 rounded-full flex items-center gap-1 backdrop-blur-sm bg-opacity-90">
+<span class="material-symbols-outlined text-[14px]">local_offer</span> Free
+                    </div>
+</div>
+<div class="p-6 flex flex-col flex-grow">
+<div class="flex justify-between items-center mb-2">
+<span class="font-label-sm text-label-sm text-on-surface-variant bg-surface-container-high px-2 py-1 rounded-full">Digital Literacy</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant flex items-center gap-1"><span class="material-symbols-outlined text-[14px]">schedule</span> 2.5 Hrs</span>
+</div>
+<h3 class="font-headline-md text-headline-md text-primary mb-2 line-clamp-2">Digital Etiquette &amp; Security</h3>
+<p class="font-body-md text-body-md text-on-surface-variant mb-6 line-clamp-2 flex-grow">Best practices for online professional behavior and maintaining basic cyber hygiene in the workplace.</p>
+<a class="inline-flex items-center gap-2 font-label-md text-label-md text-primary-container hover:text-secondary-fixed-dim transition-colors group" href="#">
+                        Start Module <span class="material-symbols-outlined group-hover:translate-x-1 transition-transform">arrow_forward</span>
+</a>
+</div>
+</article>
+</div>
+<!-- Milestone Section -->
+<section class="max-w-2xl mx-auto text-center py-stack-lg border-t border-outline-variant/30">
+<div class="w-16 h-16 bg-[#D1FAE5] rounded-full flex items-center justify-center mx-auto mb-stack-md shadow-sm">
+<span class="material-symbols-outlined text-[32px] text-[#065F46]">task_alt</span>
+</div>
+<h2 class="font-headline-lg text-headline-lg text-primary mb-stack-sm md:text-headline-lg text-headline-lg-mobile">
+                You've seen all free courses
+            </h2>
+<p class="font-body-lg text-body-lg text-on-surface-variant mb-stack-lg">
+                Ready to take the next step in your career? Our premium higher education programs offer deep dives and professional certifications.
+            </p>
+<div class="flex flex-col sm:flex-row justify-center gap-4">
+<button class="bg-primary-container text-on-primary font-label-md text-label-md px-6 py-3 rounded-lg hover:bg-primary transition-colors hover:shadow-md">
+                    Explore Higher Education
+                </button>
+<button class="bg-transparent border border-outline text-on-surface font-label-md text-label-md px-6 py-3 rounded-lg hover:bg-surface-variant transition-colors" onclick="window.scrollTo({top: 0, behavior: 'smooth'})">
+                    Back to Top
+                </button>
+</div>
+</section>
+</main>
+<!-- Footer (Shared Component) -->
+<footer class="w-full bg-primary dark:bg-primary-container text-on-primary dark:text-on-primary-container mt-auto">
+<div class="max-w-container-max mx-auto px-margin-desktop py-stack-lg flex flex-col md:flex-row justify-between gap-gutter md:px-margin-desktop px-margin-mobile">
+<div class="flex flex-col gap-4">
+<span class="text-headline-md font-headline-md text-on-primary">
+                    Skill Mitra
+                </span>
+<p class="font-body-md text-body-md text-on-primary/80 dark:text-on-primary-container/80 max-w-sm">
+                    Empowering careers through accessible, high-quality education and professional development.
+                </p>
+<span class="font-body-md text-body-md text-on-primary/60 mt-4">
+                    © 2024 Skill Mitra. All rights reserved.
+                </span>
+</div>
+<div class="flex flex-wrap gap-x-8 gap-y-4 items-start pt-2">
+<a class="font-label-sm text-label-sm text-on-primary/80 dark:text-on-primary-container/80 hover:text-secondary-fixed transition-colors opacity-90 hover:opacity-100" href="#">
+                    Sitemap
+                </a>
+<a class="font-label-sm text-label-sm text-on-primary/80 dark:text-on-primary-container/80 hover:text-secondary-fixed transition-colors opacity-90 hover:opacity-100" href="#">
+                    Social Links
+                </a>
+<a class="font-label-sm text-label-sm text-on-primary/80 dark:text-on-primary-container/80 hover:text-secondary-fixed transition-colors opacity-90 hover:opacity-100" href="#">
+                    Newsletter
+                </a>
+<a class="font-label-sm text-label-sm text-on-primary/80 dark:text-on-primary-container/80 hover:text-secondary-fixed transition-colors opacity-90 hover:opacity-100" href="#">
+                    Contact
+                </a>
+</div>
+</div>
+</footer>
+</body></html>

@@ -1,0 +1,416 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Skill Mitra - Pricing &amp; Plans</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    "colors": {
+                            "on-secondary-fixed-variant": "#5c4300",
+                            "error": "#ba1a1a",
+                            "surface-container": "#f0eded",
+                            "secondary": "#795900",
+                            "outline-variant": "#c6c6cf",
+                            "tertiary-fixed-dim": "#4edea3",
+                            "on-primary-container": "#7984aa",
+                            "on-secondary": "#ffffff",
+                            "primary": "#00020e",
+                            "on-background": "#1c1b1b",
+                            "surface-dim": "#dcd9d9",
+                            "secondary-container": "#fccb5c",
+                            "on-primary-fixed": "#0e1a3b",
+                            "surface-container-high": "#eae7e7",
+                            "primary-fixed-dim": "#bac5ef",
+                            "on-tertiary": "#ffffff",
+                            "on-secondary-fixed": "#261a00",
+                            "primary-container": "#0f1b3c",
+                            "surface-container-low": "#f6f3f2",
+                            "surface-container-highest": "#e5e2e1",
+                            "inverse-surface": "#313030",
+                            "on-primary": "#ffffff",
+                            "on-primary-fixed-variant": "#3a4569",
+                            "on-tertiary-fixed-variant": "#005236",
+                            "primary-fixed": "#dbe1ff",
+                            "on-surface": "#1c1b1b",
+                            "surface-variant": "#e5e2e1",
+                            "on-error-container": "#93000a",
+                            "surface": "#fcf9f8",
+                            "tertiary-fixed": "#6ffbbe",
+                            "on-secondary-container": "#735500",
+                            "inverse-on-surface": "#f3f0ef",
+                            "tertiary": "#000301",
+                            "background": "#fcf9f8",
+                            "on-error": "#ffffff",
+                            "inverse-primary": "#bac5ef",
+                            "on-tertiary-fixed": "#002113",
+                            "on-tertiary-container": "#009768",
+                            "tertiary-container": "#002214",
+                            "surface-tint": "#525d82",
+                            "on-surface-variant": "#45464e",
+                            "secondary-fixed": "#ffdf9f",
+                            "error-container": "#ffdad6",
+                            "outline": "#76767f",
+                            "surface-bright": "#fcf9f8",
+                            "secondary-fixed-dim": "#f0c052",
+                            "surface-container-lowest": "#ffffff"
+                    },
+                    "borderRadius": {
+                            "DEFAULT": "0.25rem",
+                            "lg": "0.5rem",
+                            "xl": "0.75rem",
+                            "full": "9999px"
+                    },
+                    "spacing": {
+                            "stack-md": "16px",
+                            "gutter": "24px",
+                            "stack-sm": "8px",
+                            "margin-desktop": "40px",
+                            "stack-lg": "32px",
+                            "container-max": "1280px",
+                            "margin-mobile": "16px"
+                    },
+                    "fontFamily": {
+                            "headline-lg-mobile": ["Inter"],
+                            "label-md": ["Inter"],
+                            "headline-md": ["Inter"],
+                            "display-lg": ["Inter"],
+                            "body-lg": ["Inter"],
+                            "body-md": ["Inter"],
+                            "headline-lg": ["Inter"],
+                            "label-sm": ["Inter"]
+                    },
+                    "fontSize": {
+                            "headline-lg-mobile": ["28px", {"lineHeight": "36px", "fontWeight": "700"}],
+                            "label-md": ["14px", {"lineHeight": "20px", "letterSpacing": "0.01em", "fontWeight": "500"}],
+                            "headline-md": ["24px", {"lineHeight": "32px", "fontWeight": "600"}],
+                            "display-lg": ["48px", {"lineHeight": "56px", "letterSpacing": "-0.02em", "fontWeight": "700"}],
+                            "body-lg": ["18px", {"lineHeight": "28px", "fontWeight": "400"}],
+                            "body-md": ["16px", {"lineHeight": "24px", "fontWeight": "400"}],
+                            "headline-lg": ["32px", {"lineHeight": "40px", "letterSpacing": "-0.01em", "fontWeight": "700"}],
+                            "label-sm": ["12px", {"lineHeight": "16px", "fontWeight": "600"}]
+                    }
+                }
+            }
+        }
+    </script>
+<style>
+        body { font-family: 'Inter', sans-serif; }
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        .symbol-filled {
+            font-variation-settings: 'FILL' 1;
+        }
+        
+        .toggle-checkbox:checked {
+            right: 0;
+            border-color: #00020e;
+        }
+        .toggle-checkbox:checked + .toggle-label {
+            background-color: #00020e;
+        }
+    </style>
+</head>
+<body class="bg-background text-on-background min-h-screen flex flex-col pt-[88px]">
+<!-- TopNavBar -->
+<nav class="fixed top-0 w-full z-50 shadow-sm bg-surface dark:bg-surface-dim transition-all duration-300" id="mainNav">
+<div class="flex justify-between items-center max-w-container-max mx-auto px-margin-desktop py-4 md:px-margin-desktop px-margin-mobile">
+<!-- Brand -->
+<a class="text-headline-md font-headline-md font-bold text-primary dark:text-primary-fixed shrink-0" href="#">
+                Skill Mitra
+            </a>
+<!-- Desktop Navigation Links -->
+<div class="hidden md:flex items-center gap-gutter">
+<a class="text-primary dark:text-primary-fixed hover:text-secondary-container transition-colors duration-200 font-label-md text-label-md" href="#">Free Education</a>
+<a class="text-primary dark:text-primary-fixed hover:text-secondary-container transition-colors duration-200 font-label-md text-label-md" href="#">Higher Education</a>
+<a class="text-secondary border-b-2 border-secondary pb-1 font-label-md text-label-md" href="#">Earning Opportunities</a>
+<a class="text-primary dark:text-primary-fixed hover:text-secondary-container transition-colors duration-200 font-label-md text-label-md" href="#">Community</a>
+</div>
+<!-- Trailing Action -->
+<div class="flex items-center gap-stack-md">
+<button class="hidden md:inline-flex items-center justify-center bg-primary-container text-on-primary rounded-lg font-label-md text-label-md px-6 py-2 hover:bg-primary-fixed-variant transition-colors scale-95 active:opacity-80 transition-transform">
+                    Login/Signup
+                </button>
+<button aria-label="Open Menu" class="md:hidden text-primary p-2">
+<span class="material-symbols-outlined text-[28px]" data-icon="menu">menu</span>
+</button>
+</div>
+</div>
+</nav>
+<!-- Main Content -->
+<main class="flex-grow">
+<!-- Header Section -->
+<section class="max-w-container-max mx-auto px-margin-mobile md:px-margin-desktop py-16 md:py-24 text-center">
+<h1 class="font-display-lg text-display-lg text-primary mb-stack-md">Invest in Your Career Journey</h1>
+<p class="font-body-lg text-body-lg text-on-surface-variant max-w-2xl mx-auto mb-stack-lg">
+                Choose the perfect plan to unlock premium educational resources, specialized career paths, and a dedicated community. Transparent pricing, no hidden fees.
+            </p>
+<!-- Billing Toggle -->
+<div class="flex items-center justify-center gap-4 mb-16">
+<span class="font-label-md text-label-md text-on-surface-variant" id="monthly-label">Monthly</span>
+<div class="relative inline-block w-12 h-6 align-middle select-none transition duration-200 ease-in">
+<input class="toggle-checkbox absolute block w-6 h-6 rounded-full bg-white border-4 appearance-none cursor-pointer border-outline-variant outline-none right-6 focus:ring-0 checked:right-0 checked:border-primary" id="billing-toggle" name="toggle" type="checkbox"/>
+<label class="toggle-label block overflow-hidden h-6 rounded-full bg-outline-variant cursor-pointer" for="billing-toggle"></label>
+</div>
+<span class="font-label-md text-label-md text-primary font-semibold flex items-center gap-2" id="yearly-label">
+                    Yearly
+                    <span class="bg-tertiary-fixed-dim/20 text-tertiary-container px-2 py-1 rounded-full font-label-sm text-label-sm">Save 20%</span>
+</span>
+</div>
+</section>
+<!-- Pricing Cards (Bento/Asymmetric Layout) -->
+<section class="max-w-container-max mx-auto px-margin-mobile md:px-margin-desktop pb-24">
+<div class="grid grid-cols-1 md:grid-cols-3 gap-8 items-end">
+<!-- Free Tier -->
+<div class="bg-surface-container-lowest rounded-xl shadow-[0_4px_12px_rgba(0,0,0,0.04)] border border-outline-variant/30 p-8 h-full flex flex-col">
+<div class="mb-8 flex-grow">
+<div class="inline-block bg-surface-container-high px-3 py-1 rounded-full font-label-sm text-label-sm text-on-surface-variant mb-4">Starter</div>
+<h2 class="font-headline-md text-headline-md text-primary mb-2">Free</h2>
+<div class="flex items-baseline gap-1 mb-4">
+<span class="font-display-lg text-display-lg text-primary">$0</span>
+<span class="font-body-md text-body-md text-on-surface-variant">/ forever</span>
+</div>
+<p class="font-body-md text-body-md text-on-surface-variant mb-6 border-b border-outline-variant/20 pb-6">Perfect for exploring basic skills and entering the community.</p>
+<ul class="space-y-4">
+<li class="flex items-start gap-3">
+<span class="material-symbols-outlined text-tertiary-container symbol-filled text-[20px]" data-icon="check_circle">check_circle</span>
+<span class="font-body-md text-body-md text-on-surface">Access to 50+ basic courses</span>
+</li>
+<li class="flex items-start gap-3">
+<span class="material-symbols-outlined text-tertiary-container symbol-filled text-[20px]" data-icon="check_circle">check_circle</span>
+<span class="font-body-md text-body-md text-on-surface">Community forum access</span>
+</li>
+<li class="flex items-start gap-3">
+<span class="material-symbols-outlined text-tertiary-container symbol-filled text-[20px]" data-icon="check_circle">check_circle</span>
+<span class="font-body-md text-body-md text-on-surface">Weekly newsletter</span>
+</li>
+</ul>
+</div>
+<button class="w-full py-3 px-6 rounded-lg border border-primary text-primary font-label-md text-label-md hover:bg-surface-container transition-colors focus:ring-2 focus:ring-primary focus:ring-offset-2">
+                        Get Started
+                    </button>
+</div>
+<!-- Pro Tier (Most Popular - Elevated) -->
+<div class="bg-surface-container-lowest rounded-xl shadow-[0_12px_24px_rgba(15,27,60,0.08)] border-t-2 border-secondary-container p-8 h-[105%] flex flex-col relative z-10 transform md:-translate-y-4">
+<div class="absolute top-0 left-1/2 -translate-x-1/2 -translate-y-1/2 bg-secondary-container text-on-secondary-container font-label-sm text-label-sm px-4 py-1 rounded-full shadow-sm whitespace-nowrap font-bold">
+                        Most Popular
+                    </div>
+<div class="mb-8 flex-grow mt-2">
+<div class="inline-block bg-primary-container/10 px-3 py-1 rounded-full font-label-sm text-label-sm text-primary-container mb-4">Professional</div>
+<h2 class="font-headline-md text-headline-md text-primary mb-2">Pro</h2>
+<div class="flex items-baseline gap-1 mb-4">
+<span class="font-display-lg text-display-lg text-primary price-display" data-monthly="$49" data-yearly="$39">$39</span>
+<span class="font-body-md text-body-md text-on-surface-variant">/ month<span class="yearly-text text-sm">, billed annually</span></span>
+</div>
+<p class="font-body-md text-body-md text-on-surface-variant mb-6 border-b border-outline-variant/20 pb-6">Everything you need to accelerate your career and master new skills.</p>
+<ul class="space-y-4">
+<li class="flex items-start gap-3">
+<span class="material-symbols-outlined text-secondary-container symbol-filled text-[20px]" data-icon="check_circle">check_circle</span>
+<span class="font-body-md text-body-md text-on-surface font-medium">All Basic features, plus:</span>
+</li>
+<li class="flex items-start gap-3">
+<span class="material-symbols-outlined text-primary-container symbol-filled text-[20px]" data-icon="check_circle">check_circle</span>
+<span class="font-body-md text-body-md text-on-surface">Unlimited access to 500+ premium courses</span>
+</li>
+<li class="flex items-start gap-3">
+<span class="material-symbols-outlined text-primary-container symbol-filled text-[20px]" data-icon="check_circle">check_circle</span>
+<span class="font-body-md text-body-md text-on-surface">1-on-1 Mentorship (1 session/mo)</span>
+</li>
+<li class="flex items-start gap-3">
+<span class="material-symbols-outlined text-primary-container symbol-filled text-[20px]" data-icon="check_circle">check_circle</span>
+<span class="font-body-md text-body-md text-on-surface">Certificate of completion</span>
+</li>
+<li class="flex items-start gap-3">
+<span class="material-symbols-outlined text-primary-container symbol-filled text-[20px]" data-icon="check_circle">check_circle</span>
+<span class="font-body-md text-body-md text-on-surface">Exclusive job board access</span>
+</li>
+</ul>
+</div>
+<button class="w-full py-3 px-6 rounded-lg bg-secondary-container text-on-secondary-container font-label-md text-label-md hover:bg-secondary-fixed transition-colors font-semibold shadow-sm focus:ring-2 focus:ring-secondary-container focus:ring-offset-2">
+                        Unlock Premium
+                    </button>
+</div>
+<!-- Basic Tier -->
+<div class="bg-surface-container-lowest rounded-xl shadow-[0_4px_12px_rgba(0,0,0,0.04)] border border-outline-variant/30 p-8 h-full flex flex-col">
+<div class="mb-8 flex-grow">
+<div class="inline-block bg-surface-container-high px-3 py-1 rounded-full font-label-sm text-label-sm text-on-surface-variant mb-4">Essential</div>
+<h2 class="font-headline-md text-headline-md text-primary mb-2">Basic</h2>
+<div class="flex items-baseline gap-1 mb-4">
+<span class="font-display-lg text-display-lg text-primary price-display" data-monthly="$19" data-yearly="$15">$15</span>
+<span class="font-body-md text-body-md text-on-surface-variant">/ month<span class="yearly-text text-sm">, billed annually</span></span>
+</div>
+<p class="font-body-md text-body-md text-on-surface-variant mb-6 border-b border-outline-variant/20 pb-6">A solid foundation for dedicated learners seeking structured paths.</p>
+<ul class="space-y-4">
+<li class="flex items-start gap-3">
+<span class="material-symbols-outlined text-tertiary-container symbol-filled text-[20px]" data-icon="check_circle">check_circle</span>
+<span class="font-body-md text-body-md text-on-surface">Access to 150+ curated courses</span>
+</li>
+<li class="flex items-start gap-3">
+<span class="material-symbols-outlined text-tertiary-container symbol-filled text-[20px]" data-icon="check_circle">check_circle</span>
+<span class="font-body-md text-body-md text-on-surface">Downloadable resources</span>
+</li>
+<li class="flex items-start gap-3">
+<span class="material-symbols-outlined text-tertiary-container symbol-filled text-[20px]" data-icon="check_circle">check_circle</span>
+<span class="font-body-md text-body-md text-on-surface">Ad-free experience</span>
+</li>
+</ul>
+</div>
+<button class="w-full py-3 px-6 rounded-lg bg-primary text-on-primary font-label-md text-label-md hover:bg-primary-container transition-colors focus:ring-2 focus:ring-primary focus:ring-offset-2">
+                        Choose Basic
+                    </button>
+</div>
+</div>
+</section>
+<!-- Detailed Feature Comparison -->
+<section class="max-w-container-max mx-auto px-margin-mobile md:px-margin-desktop py-24 border-t border-outline-variant/20">
+<div class="text-center mb-16">
+<h2 class="font-headline-lg text-headline-lg text-primary mb-4">Compare Features</h2>
+<p class="font-body-lg text-body-lg text-on-surface-variant">See exactly what you get with each tier to make an informed decision.</p>
+</div>
+<div class="overflow-x-auto">
+<table class="w-full text-left border-collapse min-w-[800px]">
+<thead>
+<tr class="border-b-2 border-outline-variant/30">
+<th class="py-4 px-6 font-headline-md text-headline-md text-primary w-1/4">Features</th>
+<th class="py-4 px-6 font-headline-md text-headline-md text-center w-1/4">Free</th>
+<th class="py-4 px-6 font-headline-md text-headline-md text-center w-1/4 bg-surface-container-low rounded-t-lg">Basic</th>
+<th class="py-4 px-6 font-headline-md text-headline-md text-center w-1/4 text-secondary-container bg-primary-container rounded-t-lg">Pro</th>
+</tr>
+</thead>
+<tbody class="font-body-md text-body-md text-on-surface">
+<tr class="border-b border-outline-variant/20 hover:bg-surface-container-lowest transition-colors">
+<td class="py-4 px-6">Course Library Access</td>
+<td class="py-4 px-6 text-center text-on-surface-variant">50+ Courses</td>
+<td class="py-4 px-6 text-center bg-surface-container-low/50">150+ Courses</td>
+<td class="py-4 px-6 text-center font-medium bg-primary-container/5">Unlimited (500+)</td>
+</tr>
+<tr class="border-b border-outline-variant/20 hover:bg-surface-container-lowest transition-colors">
+<td class="py-4 px-6">Downloadable Materials</td>
+<td class="py-4 px-6 text-center text-outline-variant"><span class="material-symbols-outlined" data-icon="close">close</span></td>
+<td class="py-4 px-6 text-center bg-surface-container-low/50"><span class="material-symbols-outlined text-tertiary-container symbol-filled" data-icon="check">check</span></td>
+<td class="py-4 px-6 text-center bg-primary-container/5"><span class="material-symbols-outlined text-secondary-container symbol-filled" data-icon="check">check</span></td>
+</tr>
+<tr class="border-b border-outline-variant/20 hover:bg-surface-container-lowest transition-colors">
+<td class="py-4 px-6">Certificates of Completion</td>
+<td class="py-4 px-6 text-center text-outline-variant"><span class="material-symbols-outlined" data-icon="close">close</span></td>
+<td class="py-4 px-6 text-center bg-surface-container-low/50">Paid Add-on</td>
+<td class="py-4 px-6 text-center bg-primary-container/5"><span class="material-symbols-outlined text-secondary-container symbol-filled" data-icon="check">check</span></td>
+</tr>
+<tr class="border-b border-outline-variant/20 hover:bg-surface-container-lowest transition-colors">
+<td class="py-4 px-6">1-on-1 Mentorship</td>
+<td class="py-4 px-6 text-center text-outline-variant"><span class="material-symbols-outlined" data-icon="close">close</span></td>
+<td class="py-4 px-6 text-center bg-surface-container-low/50 text-outline-variant"><span class="material-symbols-outlined" data-icon="close">close</span></td>
+<td class="py-4 px-6 text-center font-medium bg-primary-container/5 text-primary-container">1 Session / Month</td>
+</tr>
+</tbody>
+</table>
+</div>
+</section>
+<!-- FAQ Section -->
+<section class="max-w-3xl mx-auto px-margin-mobile md:px-margin-desktop py-24">
+<h2 class="font-headline-lg text-headline-lg text-primary mb-12 text-center">Frequently Asked Questions</h2>
+<div class="space-y-6">
+<!-- FAQ Item 1 -->
+<div class="bg-surface-container-lowest rounded-lg p-6 shadow-sm border border-outline-variant/20">
+<h3 class="font-headline-md text-[20px] leading-[28px] text-primary mb-2 flex justify-between items-center cursor-pointer">
+                        Can I switch plans later?
+                        <span class="material-symbols-outlined text-outline" data-icon="expand_more">expand_more</span>
+</h3>
+<p class="font-body-md text-body-md text-on-surface-variant">Yes, you can upgrade or downgrade your plan at any time. Prorated charges will be applied automatically if you upgrade mid-billing cycle.</p>
+</div>
+<!-- FAQ Item 2 -->
+<div class="bg-surface-container-lowest rounded-lg p-6 shadow-sm border border-outline-variant/20">
+<h3 class="font-headline-md text-[20px] leading-[28px] text-primary mb-2 flex justify-between items-center cursor-pointer">
+                        What payment methods do you accept?
+                        <span class="material-symbols-outlined text-outline" data-icon="expand_more">expand_more</span>
+</h3>
+<p class="font-body-md text-body-md text-on-surface-variant">We accept all major credit cards (Visa, MasterCard, American Express), PayPal, and select regional payment methods depending on your location.</p>
+</div>
+<!-- FAQ Item 3 -->
+<div class="bg-surface-container-lowest rounded-lg p-6 shadow-sm border border-outline-variant/20">
+<h3 class="font-headline-md text-[20px] leading-[28px] text-primary mb-2 flex justify-between items-center cursor-pointer">
+                        Is there a refund policy?
+                        <span class="material-symbols-outlined text-outline" data-icon="expand_more">expand_more</span>
+</h3>
+<p class="font-body-md text-body-md text-on-surface-variant">We offer a 14-day money-back guarantee on our Pro and Basic plans. If you are not satisfied, simply contact support within 14 days of purchase for a full refund.</p>
+</div>
+</div>
+</section>
+</main>
+<!-- Footer -->
+<footer class="w-full bg-primary dark:bg-primary-container mt-auto">
+<div class="max-w-container-max mx-auto px-margin-desktop py-stack-lg flex flex-col md:flex-row justify-between gap-gutter">
+<!-- Brand & Copyright -->
+<div class="flex flex-col gap-4">
+<span class="text-headline-md font-headline-md text-on-primary">Skill Mitra</span>
+<span class="font-body-md text-body-md text-on-primary/80 dark:text-on-primary-container/80">© 2024 Skill Mitra. All rights reserved.</span>
+</div>
+<!-- Links -->
+<div class="flex flex-wrap gap-6 items-center">
+<a class="font-label-sm text-label-sm text-on-primary/80 dark:text-on-primary-container/80 hover:text-secondary-fixed transition-colors opacity-90 hover:opacity-100 transition-opacity" href="#">Sitemap</a>
+<a class="font-label-sm text-label-sm text-on-primary/80 dark:text-on-primary-container/80 hover:text-secondary-fixed transition-colors opacity-90 hover:opacity-100 transition-opacity" href="#">Social Links</a>
+<a class="font-label-sm text-label-sm text-on-primary/80 dark:text-on-primary-container/80 hover:text-secondary-fixed transition-colors opacity-90 hover:opacity-100 transition-opacity" href="#">Newsletter</a>
+<a class="font-label-sm text-label-sm text-on-primary/80 dark:text-on-primary-container/80 hover:text-secondary-fixed transition-colors opacity-90 hover:opacity-100 transition-opacity" href="#">Contact</a>
+</div>
+</div>
+</footer>
+<script>
+        // Billing Toggle Logic
+        const toggle = document.getElementById('billing-toggle');
+        const prices = document.querySelectorAll('.price-display');
+        const yearlyTexts = document.querySelectorAll('.yearly-text');
+        
+        toggle.addEventListener('change', function() {
+            const isYearly = this.checked;
+            
+            prices.forEach(price => {
+                if(isYearly) {
+                    price.textContent = price.getAttribute('data-yearly');
+                } else {
+                    price.textContent = price.getAttribute('data-monthly');
+                }
+            });
+
+            yearlyTexts.forEach(text => {
+                text.style.display = isYearly ? 'inline' : 'none';
+            });
+            
+            // Toggle label styling
+            if(isYearly) {
+                document.getElementById('yearly-label').classList.add('text-primary');
+                document.getElementById('yearly-label').classList.remove('text-on-surface-variant');
+                document.getElementById('monthly-label').classList.add('text-on-surface-variant');
+                document.getElementById('monthly-label').classList.remove('text-primary', 'font-semibold');
+            } else {
+                document.getElementById('monthly-label').classList.add('text-primary', 'font-semibold');
+                document.getElementById('monthly-label').classList.remove('text-on-surface-variant');
+                document.getElementById('yearly-label').classList.add('text-on-surface-variant');
+                document.getElementById('yearly-label').classList.remove('text-primary');
+            }
+        });
+
+        // Initialize toggle state
+        toggle.checked = true; // Default to yearly as requested by "Save 20%" emphasis
+        toggle.dispatchEvent(new Event('change'));
+        
+        // Sticky Nav shadow effect on scroll
+        window.addEventListener('scroll', () => {
+            const nav = document.getElementById('mainNav');
+            if (window.scrollY > 10) {
+                nav.classList.add('shadow-md');
+                nav.classList.remove('shadow-sm');
+            } else {
+                nav.classList.add('shadow-sm');
+                nav.classList.remove('shadow-md');
+            }
+        });
+    </script>
+</body></html>

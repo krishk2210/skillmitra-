@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Resume Upload &amp; Skills Profile - Skill Mitra</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    "colors": {
+                        "on-surface-variant": "#45464e",
+                        "on-tertiary-fixed-variant": "#005236",
+                        "primary-fixed-dim": "#bac5ef",
+                        "surface-tint": "#525d82",
+                        "secondary": "#795900",
+                        "surface-dim": "#dcd9d9",
+                        "on-primary": "#ffffff",
+                        "surface-container-highest": "#e5e2e1",
+                        "inverse-primary": "#bac5ef",
+                        "surface": "#fcf9f8",
+                        "on-tertiary": "#ffffff",
+                        "on-background": "#1c1b1b",
+                        "on-surface": "#1c1b1b",
+                        "surface-bright": "#fcf9f8",
+                        "surface-container-low": "#f6f3f2",
+                        "error": "#ba1a1a",
+                        "surface-container": "#f0eded",
+                        "on-primary-fixed-variant": "#3a4569",
+                        "on-secondary-container": "#735500",
+                        "on-secondary-fixed-variant": "#5c4300",
+                        "surface-container-lowest": "#ffffff",
+                        "secondary-container": "#fccb5c",
+                        "tertiary-container": "#002214",
+                        "surface-container-high": "#eae7e7",
+                        "background": "#fcf9f8",
+                        "on-primary-fixed": "#0e1a3b",
+                        "tertiary-fixed": "#6ffbbe",
+                        "inverse-surface": "#313030",
+                        "on-secondary": "#ffffff",
+                        "outline": "#76767f",
+                        "on-primary-container": "#7984aa",
+                        "on-tertiary-container": "#009768",
+                        "primary": "#00020e",
+                        "inverse-on-surface": "#f3f0ef",
+                        "surface-variant": "#e5e2e1",
+                        "error-container": "#ffdad6",
+                        "on-error-container": "#93000a",
+                        "primary-container": "#0f1b3c",
+                        "tertiary": "#000301",
+                        "on-secondary-fixed": "#261a00",
+                        "outline-variant": "#c6c6cf",
+                        "tertiary-fixed-dim": "#4edea3",
+                        "primary-fixed": "#dbe1ff",
+                        "secondary-fixed-dim": "#f0c052",
+                        "on-tertiary-fixed": "#002113",
+                        "secondary-fixed": "#ffdf9f",
+                        "on-error": "#ffffff"
+                    },
+                    "borderRadius": {
+                        "DEFAULT": "0.25rem",
+                        "lg": "0.5rem",
+                        "xl": "0.75rem",
+                        "2xl": "1rem",
+                        "full": "9999px"
+                    },
+                    "spacing": {
+                        "container-max": "1280px",
+                        "gutter": "24px",
+                        "stack-lg": "32px",
+                        "stack-sm": "8px",
+                        "stack-md": "16px",
+                        "margin-desktop": "40px",
+                        "margin-mobile": "16px"
+                    },
+                    "fontFamily": {
+                        "label-sm": ["Inter"],
+                        "headline-lg-mobile": ["Inter"],
+                        "headline-lg": ["Inter"],
+                        "label-md": ["Inter"],
+                        "headline-md": ["Inter"],
+                        "body-md": ["Inter"],
+                        "display-lg": ["Inter"],
+                        "body-lg": ["Inter"]
+                    },
+                    "fontSize": {
+                        "label-sm": ["12px", { "lineHeight": "16px", "fontWeight": "600" }],
+                        "headline-lg-mobile": ["28px", { "lineHeight": "36px", "fontWeight": "700" }],
+                        "headline-lg": ["32px", { "lineHeight": "40px", "letterSpacing": "-0.01em", "fontWeight": "700" }],
+                        "label-md": ["14px", { "lineHeight": "20px", "letterSpacing": "0.01em", "fontWeight": "500" }],
+                        "headline-md": ["24px", { "lineHeight": "32px", "fontWeight": "600" }],
+                        "body-md": ["16px", { "lineHeight": "24px", "fontWeight": "400" }],
+                        "display-lg": ["48px", { "lineHeight": "56px", "letterSpacing": "-0.02em", "fontWeight": "700" }],
+                        "body-lg": ["18px", { "lineHeight": "28px", "fontWeight": "400" }]
+                    }
+                }
+            }
+        }
+    </script>
+<style>
+        body { font-family: 'Inter', sans-serif; background-color: #fcf9f8; }
+        .material-symbols-outlined { font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24; }
+        .material-symbols-outlined.fill { font-variation-settings: 'FILL' 1; }
+        .ambient-shadow { box-shadow: 0 4px 12px rgba(0, 0, 0, 0.04); }
+        .interactive-shadow:hover { box-shadow: 0 8px 24px rgba(15, 27, 60, 0.08); transform: translateY(-2px); transition: all 0.3s ease; }
+    </style>
+</head>
+<body class="bg-background text-on-background antialiased min-h-screen flex flex-col pt-20">
+<!-- TopNavBar -->
+<header class="fixed top-0 w-full z-50 shadow-sm bg-surface dark:bg-surface-dim">
+<div class="flex justify-between items-center max-w-container-max mx-auto px-margin-mobile md:px-margin-desktop py-4">
+<a class="text-headline-md font-headline-md font-bold text-primary dark:text-primary-fixed flex items-center gap-2" href="#">
+<span class="material-symbols-outlined text-primary-container fill" style="font-size: 32px;">school</span>
+                Skill Mitra
+            </a>
+<nav class="hidden md:flex items-center gap-8">
+<a class="text-primary dark:text-primary-fixed font-label-md text-label-md hover:text-secondary-container transition-colors duration-200" href="#">Free Education</a>
+<a class="text-primary dark:text-primary-fixed font-label-md text-label-md hover:text-secondary-container transition-colors duration-200" href="#">Higher Education</a>
+<a class="text-primary dark:text-primary-fixed font-label-md text-label-md hover:text-secondary-container transition-colors duration-200" href="#">Earning Opportunities</a>
+<a class="text-primary dark:text-primary-fixed font-label-md text-label-md hover:text-secondary-container transition-colors duration-200" href="#">Community</a>
+</nav>
+<div class="flex items-center gap-4">
+<button class="hidden md:flex items-center gap-2 text-primary font-label-md text-label-md hover:bg-surface-container py-2 px-4 rounded-lg transition-colors">
+<span class="material-symbols-outlined">search</span>
+</button>
+<button class="bg-primary-container text-on-primary font-label-md text-label-md py-2 px-6 rounded-lg scale-95 active:opacity-80 transition-transform shadow-sm hover:bg-primary-fixed hover:text-on-primary-fixed transition-colors">
+                    Login/Signup
+                </button>
+<button class="md:hidden text-primary">
+<span class="material-symbols-outlined">menu</span>
+</button>
+</div>
+</div>
+</header>
+<!-- Main Content -->
+<main class="flex-grow w-full max-w-container-max mx-auto px-margin-mobile md:px-margin-desktop py-12 flex flex-col gap-12">
+<!-- Header & Progress -->
+<div class="flex flex-col items-center text-center max-w-2xl mx-auto mb-4">
+<h1 class="font-display-lg text-display-lg text-primary-container mb-4">Build Your Profile</h1>
+<p class="font-body-lg text-body-lg text-on-surface-variant mb-12">Upload your resume to automatically extract your skills and matching opportunities.</p>
+<!-- Progress Stepper -->
+<div class="w-full flex items-center justify-between relative">
+<div class="absolute left-0 top-1/2 -translate-y-1/2 w-full h-1 bg-surface-variant rounded-full -z-10"></div>
+<div class="absolute left-0 top-1/2 -translate-y-1/2 w-1/3 h-1 bg-secondary-container rounded-full -z-10 transition-all duration-500"></div>
+<div class="flex flex-col items-center gap-2 relative z-10 bg-background px-2">
+<div class="w-10 h-10 rounded-full bg-secondary-container text-on-secondary-container flex items-center justify-center font-bold shadow-sm">1</div>
+<span class="font-label-sm text-label-sm text-on-surface">Upload</span>
+</div>
+<div class="flex flex-col items-center gap-2 relative z-10 bg-background px-2 opacity-50">
+<div class="w-10 h-10 rounded-full bg-surface-variant text-on-surface-variant flex items-center justify-center font-bold">2</div>
+<span class="font-label-sm text-label-sm text-on-surface-variant">Parse</span>
+</div>
+<div class="flex flex-col items-center gap-2 relative z-10 bg-background px-2 opacity-50">
+<div class="w-10 h-10 rounded-full bg-surface-variant text-on-surface-variant flex items-center justify-center font-bold">3</div>
+<span class="font-label-sm text-label-sm text-on-surface-variant">Confirm</span>
+</div>
+</div>
+</div>
+<!-- Two Column Layout -->
+<div class="grid grid-cols-1 lg:grid-cols-3 gap-8">
+<!-- Upload Area (Main Column) -->
+<div class="lg:col-span-2 flex flex-col gap-6">
+<div class="bg-surface-container-lowest rounded-2xl ambient-shadow p-8 flex flex-col items-center justify-center border-2 border-dashed border-outline-variant hover:border-secondary-container transition-colors duration-300 min-h-[400px] cursor-pointer group relative overflow-hidden">
+<div class="absolute inset-0 bg-secondary-container/5 opacity-0 group-hover:opacity-100 transition-opacity duration-300 pointer-events-none"></div>
+<div class="w-20 h-20 rounded-full bg-primary-fixed-dim/20 flex items-center justify-center mb-6 text-primary-container group-hover:scale-110 transition-transform duration-300">
+<span class="material-symbols-outlined text-[40px]">cloud_upload</span>
+</div>
+<h3 class="font-headline-md text-headline-md text-primary-container mb-2">Drag &amp; Drop Resume</h3>
+<p class="font-body-md text-body-md text-on-surface-variant text-center mb-8 max-w-sm">
+                        Supported formats: PDF, DOCX, TXT. Maximum file size: 5MB.
+                    </p>
+<button class="bg-primary-container text-on-primary font-label-md text-label-md py-3 px-8 rounded-lg shadow-sm hover:shadow-md transition-all hover:bg-primary flex items-center gap-2">
+<span class="material-symbols-outlined text-[18px]">folder_open</span>
+                        Browse Files
+                    </button>
+<div class="mt-8 flex items-center gap-4 opacity-60">
+<span class="material-symbols-outlined text-outline">lock</span>
+<span class="font-label-sm text-label-sm text-outline">Your data is secure and encrypted.</span>
+</div>
+</div>
+<div class="bg-surface-container-low rounded-xl p-6 border border-surface-variant flex items-start gap-4">
+<span class="material-symbols-outlined text-secondary-container mt-1">info</span>
+<div>
+<h4 class="font-label-md text-label-md text-on-surface font-semibold mb-1">Privacy Notice</h4>
+<p class="font-body-sm text-[14px] text-on-surface-variant">We only use your resume to build your profile and match you with educational and earning opportunities. We do not share your raw document with third parties without consent.</p>
+</div>
+</div>
+</div>
+<!-- Tips Sidebar -->
+<div class="flex flex-col gap-6">
+<h2 class="font-headline-md text-headline-md text-primary-container mb-2">Tips for Success</h2>
+<div class="bg-surface-container-lowest rounded-2xl ambient-shadow p-6 flex flex-col gap-6 border-t-2 border-secondary-container">
+<!-- Tip 1 -->
+<div class="flex gap-4 items-start interactive-shadow p-4 rounded-xl -mx-4 transition-all">
+<div class="w-12 h-12 rounded-full bg-secondary-fixed/30 flex-shrink-0 flex items-center justify-center text-on-secondary-fixed">
+<span class="material-symbols-outlined fill">work</span>
+</div>
+<div>
+<h4 class="font-label-md text-label-md text-primary-container font-semibold mb-1">Unlock Earning Opportunities</h4>
+<p class="font-body-md text-[14px] leading-tight text-on-surface-variant">A complete profile instantly connects you with freelance gigs and entry-level roles suited to your extracted skills.</p>
+</div>
+</div>
+<!-- Tip 2 -->
+<div class="flex gap-4 items-start interactive-shadow p-4 rounded-xl -mx-4 transition-all">
+<div class="w-12 h-12 rounded-full bg-primary-fixed/50 flex-shrink-0 flex items-center justify-center text-on-primary-fixed">
+<span class="material-symbols-outlined fill">psychology</span>
+</div>
+<div>
+<h4 class="font-label-md text-label-md text-primary-container font-semibold mb-1">AI Skill Matching</h4>
+<p class="font-body-md text-[14px] leading-tight text-on-surface-variant">Ensure your resume highlights specific hard skills (e.g., Python, Data Entry) so our AI can accurately categorize your expertise.</p>
+</div>
+</div>
+<!-- Tip 3 -->
+<div class="flex gap-4 items-start interactive-shadow p-4 rounded-xl -mx-4 transition-all">
+<div class="w-12 h-12 rounded-full bg-tertiary-fixed/30 flex-shrink-0 flex items-center justify-center text-on-tertiary-fixed">
+<span class="material-symbols-outlined fill">school</span>
+</div>
+<div>
+<h4 class="font-label-md text-label-md text-primary-container font-semibold mb-1">Higher Ed Pathways</h4>
+<p class="font-body-md text-[14px] leading-tight text-on-surface-variant">We analyze your current educational background to suggest relevant courses that bridge the gap to your dream career.</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</main>
+<!-- Footer -->
+<footer class="w-full bg-primary dark:bg-primary-container mt-auto">
+<div class="max-w-container-max mx-auto px-margin-desktop py-stack-lg flex flex-col md:flex-row justify-between gap-gutter items-center md:items-start">
+<div class="flex flex-col items-center md:items-start gap-4">
+<span class="text-headline-md font-headline-md text-on-primary font-bold flex items-center gap-2">
+<span class="material-symbols-outlined fill">school</span>
+                    Skill Mitra
+                </span>
+<p class="font-label-sm text-label-sm text-on-primary/60">Empowering careers through education and opportunity.</p>
+</div>
+<nav class="flex flex-wrap justify-center md:justify-end gap-6 md:gap-8">
+<a class="font-label-sm text-label-sm text-on-primary/80 dark:text-on-primary-container/80 hover:text-secondary-fixed transition-colors opacity-90 hover:opacity-100" href="#">Sitemap</a>
+<a class="font-label-sm text-label-sm text-on-primary/80 dark:text-on-primary-container/80 hover:text-secondary-fixed transition-colors opacity-90 hover:opacity-100" href="#">Social Links</a>
+<a class="font-label-sm text-label-sm text-on-primary/80 dark:text-on-primary-container/80 hover:text-secondary-fixed transition-colors opacity-90 hover:opacity-100" href="#">Newsletter</a>
+<a class="font-label-sm text-label-sm text-on-primary/80 dark:text-on-primary-container/80 hover:text-secondary-fixed transition-colors opacity-90 hover:opacity-100" href="#">Contact</a>
+</nav>
+</div>
+<div class="max-w-container-max mx-auto px-margin-desktop pb-8 text-center md:text-left">
+<span class="font-label-sm text-label-sm text-on-primary/50">© 2024 Skill Mitra. All rights reserved.</span>
+</div>
+</footer>
+</body></html>

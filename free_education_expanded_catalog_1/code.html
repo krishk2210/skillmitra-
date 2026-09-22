@@ -1,0 +1,388 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Skill Mitra - Free Education Catalog Continued</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    "colors": {
+                        "secondary-fixed": "#ffdf9f",
+                        "surface-container-highest": "#e5e2e1",
+                        "on-secondary-fixed": "#261a00",
+                        "primary-fixed-dim": "#bac5ef",
+                        "primary-container": "#0f1b3c",
+                        "secondary-fixed-dim": "#f0c052",
+                        "on-secondary": "#ffffff",
+                        "secondary": "#795900",
+                        "on-secondary-container": "#735500",
+                        "tertiary-fixed": "#6ffbbe",
+                        "outline": "#76767f",
+                        "tertiary-fixed-dim": "#4edea3",
+                        "on-primary-fixed": "#0e1a3b",
+                        "on-surface": "#1c1b1b",
+                        "inverse-surface": "#313030",
+                        "surface-container-low": "#f6f3f2",
+                        "surface-variant": "#e5e2e1",
+                        "on-secondary-fixed-variant": "#5c4300",
+                        "inverse-on-surface": "#f3f0ef",
+                        "surface-container-high": "#eae7e7",
+                        "error": "#ba1a1a",
+                        "error-container": "#ffdad6",
+                        "on-primary": "#ffffff",
+                        "on-error-container": "#93000a",
+                        "on-tertiary-fixed-variant": "#005236",
+                        "outline-variant": "#c6c6cf",
+                        "tertiary-container": "#002214",
+                        "tertiary": "#000301",
+                        "on-primary-container": "#7984aa",
+                        "on-primary-fixed-variant": "#3a4569",
+                        "on-tertiary-fixed": "#002113",
+                        "surface-container": "#f0eded",
+                        "inverse-primary": "#bac5ef",
+                        "surface-tint": "#525d82",
+                        "surface": "#fcf9f8",
+                        "on-tertiary-container": "#009768",
+                        "on-error": "#ffffff",
+                        "surface-container-lowest": "#ffffff",
+                        "surface-bright": "#fcf9f8",
+                        "background": "#fcf9f8",
+                        "surface-dim": "#dcd9d9",
+                        "on-background": "#1c1b1b",
+                        "on-tertiary": "#ffffff",
+                        "primary": "#00020e",
+                        "secondary-container": "#fccb5c",
+                        "on-surface-variant": "#45464e",
+                        "primary-fixed": "#dbe1ff"
+                    },
+                    "borderRadius": {
+                        "DEFAULT": "0.25rem",
+                        "lg": "0.5rem",
+                        "xl": "0.75rem",
+                        "full": "9999px"
+                    },
+                    "spacing": {
+                        "margin-mobile": "16px",
+                        "stack-sm": "8px",
+                        "container-max": "1280px",
+                        "stack-md": "16px",
+                        "margin-desktop": "40px",
+                        "gutter": "24px",
+                        "stack-lg": "32px"
+                    },
+                    "fontFamily": {
+                        "body-md": ["Inter"],
+                        "body-lg": ["Inter"],
+                        "label-md": ["Inter"],
+                        "label-sm": ["Inter"],
+                        "headline-lg-mobile": ["Inter"],
+                        "display-lg": ["Inter"],
+                        "headline-lg": ["Inter"],
+                        "headline-md": ["Inter"]
+                    },
+                    "fontSize": {
+                        "body-md": ["16px", { "lineHeight": "24px", "fontWeight": "400" }],
+                        "body-lg": ["18px", { "lineHeight": "28px", "fontWeight": "400" }],
+                        "label-md": ["14px", { "lineHeight": "20px", "letterSpacing": "0.01em", "fontWeight": "500" }],
+                        "label-sm": ["12px", { "lineHeight": "16px", "fontWeight": "600" }],
+                        "headline-lg-mobile": ["28px", { "lineHeight": "36px", "fontWeight": "700" }],
+                        "display-lg": ["48px", { "lineHeight": "56px", "letterSpacing": "-0.02em", "fontWeight": "700" }],
+                        "headline-lg": ["32px", { "lineHeight": "40px", "letterSpacing": "-0.01em", "fontWeight": "700" }],
+                        "headline-md": ["24px", { "lineHeight": "32px", "fontWeight": "600" }]
+                    }
+                }
+            }
+        }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        .card-hover:hover {
+            box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.08), 0 8px 10px -6px rgba(0, 0, 0, 0.04);
+            transform: translateY(-2px);
+            transition: all 0.3s ease;
+        }
+    </style>
+</head>
+<body class="bg-surface text-on-surface font-body-md antialiased pt-20">
+<!-- TopNavBar -->
+<header class="fixed top-0 w-full z-50 shadow-sm bg-surface dark:bg-surface-dim">
+<nav class="flex justify-between items-center max-w-container-max mx-auto px-margin-mobile md:px-margin-desktop py-4">
+<div class="flex items-center gap-4">
+<a class="text-headline-md font-headline-md font-bold text-primary dark:text-primary-fixed hover:opacity-80 transition-opacity" href="#">Skill Mitra</a>
+</div>
+<div class="hidden md:flex items-center gap-gutter">
+<a class="text-secondary border-b-2 border-secondary pb-1 text-label-md font-label-md transition-colors duration-200" href="#">Free Education</a>
+<a class="text-primary dark:text-primary-fixed hover:text-secondary-container transition-colors duration-200 text-label-md font-label-md" href="#">Higher Education</a>
+<a class="text-primary dark:text-primary-fixed hover:text-secondary-container transition-colors duration-200 text-label-md font-label-md" href="#">Earning Opportunities</a>
+<a class="text-primary dark:text-primary-fixed hover:text-secondary-container transition-colors duration-200 text-label-md font-label-md" href="#">Community</a>
+</div>
+<div class="flex items-center gap-4">
+<button class="bg-primary text-on-primary font-label-md text-label-md px-6 py-2 rounded-lg hover:bg-primary/90 transition-colors scale-95 active:opacity-80">
+                    Login/Signup
+                </button>
+</div>
+</nav>
+</header>
+<!-- Main Content -->
+<main class="max-w-container-max mx-auto px-margin-mobile md:px-margin-desktop py-12 md:py-24">
+<!-- Header Section -->
+<div class="mb-12">
+<div class="flex items-center gap-2 text-on-surface-variant font-label-sm text-label-sm mb-4">
+<a class="hover:text-primary transition-colors" href="#">Catalog</a>
+<span class="material-symbols-outlined text-[16px]">chevron_right</span>
+<span class="text-primary font-medium">Page 2</span>
+</div>
+<h1 class="font-display-lg text-display-lg text-primary mb-4">More Free Courses</h1>
+<p class="font-body-lg text-body-lg text-on-surface-variant max-w-3xl">Continuing your journey with advanced foundational skills. Explore soft skills, digital literacy, and creative thinking modules designed to elevate your professional profile.</p>
+</div>
+<!-- Filter Chips (Static representation for continuity) -->
+<div class="flex flex-wrap gap-3 mb-12">
+<button class="px-4 py-2 rounded-full bg-surface-container-high text-on-surface font-label-md text-label-md hover:bg-surface-container-highest transition-colors">All categories</button>
+<button class="px-4 py-2 rounded-full bg-primary text-on-primary font-label-md text-label-md shadow-sm">Soft Skills</button>
+<button class="px-4 py-2 rounded-full bg-surface-container-high text-on-surface font-label-md text-label-md hover:bg-surface-container-highest transition-colors">Digital Literacy</button>
+<button class="px-4 py-2 rounded-full bg-surface-container-high text-on-surface font-label-md text-label-md hover:bg-surface-container-highest transition-colors">Creative Thinking</button>
+</div>
+<!-- Course Grid -->
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-gutter mb-16">
+<!-- Card 1 -->
+<div class="bg-surface-container-lowest rounded-xl shadow-[0_4px_12px_rgba(0,0,0,0.04)] border border-surface-container flex flex-col overflow-hidden card-hover group">
+<div class="h-48 relative overflow-hidden">
+<img class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105" data-alt="A clean, modern workspace with a focus on communication. A laptop, a notepad, and an elegant cup of coffee on a wooden desk. Natural light filtering in, creating a professional and inviting atmosphere. Premium minimalist style." src="https://lh3.googleusercontent.com/aida-public/AB6AXuC_VcwWRXzoyFI-VTva64UHouwgsa4MfZ15Vf1F9moYfSxnPrMRFiPd4GhFEZ3iVdgJZq4FrypnWgkXkbzehJVHzLNNIvVt7lr_UebHq5JE4NjXv2gm4YM918OjR7VG1rAzOP_cab8XOFiQr07OcYtjgrl6vW7RptSt5favniwcLuotIVPGVD4LkrOHIksFSvoZX5f2YpfDRboy_3UvyT-iEYS8XF8pcyY4OW-FhJXbDsskWADXhhc9"/>
+<div class="absolute top-4 right-4 bg-tertiary-fixed-dim/10 text-on-tertiary-container px-3 py-1 rounded-full font-label-sm text-label-sm flex items-center gap-1 backdrop-blur-sm">
+<span class="material-symbols-outlined text-[14px]">sell</span> Free
+                    </div>
+</div>
+<div class="p-6 flex flex-col flex-grow">
+<span class="text-on-surface-variant font-label-sm text-label-sm uppercase tracking-wider mb-2">Soft Skills</span>
+<h3 class="font-headline-md text-headline-md text-primary mb-3 line-clamp-2">Effective Business Communication</h3>
+<p class="font-body-md text-body-md text-on-surface-variant mb-6 line-clamp-3 flex-grow">Master the art of clear, concise, and persuasive communication in a corporate environment. Learn email etiquette and presentation basics.</p>
+<div class="flex items-center justify-between mt-auto">
+<div class="flex items-center gap-2 text-on-surface-variant font-label-sm text-label-sm">
+<span class="material-symbols-outlined text-[18px]">schedule</span> 4 Hours
+                        </div>
+<button class="text-primary font-label-md text-label-md group-hover:text-secondary-container transition-colors flex items-center gap-1">
+                            Start <span class="material-symbols-outlined text-[18px]">arrow_forward</span>
+</button>
+</div>
+</div>
+</div>
+<!-- Card 2 -->
+<div class="bg-surface-container-lowest rounded-xl shadow-[0_4px_12px_rgba(0,0,0,0.04)] border border-surface-container flex flex-col overflow-hidden card-hover group">
+<div class="h-48 relative overflow-hidden">
+<img class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105" data-alt="A close-up of a diverse group of hands working together on a puzzle or collaborative task on a clean, bright table. Warm lighting, emphasizing teamwork and synergy. Minimalist corporate aesthetic." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDQEDwnB4hIAc2K7g3LK-PfueSdtWSgBZsAndrXm0g9VXNLTBjevKq5HkkfeRia3Httlh7rXOnDrHobs39BT1W3olqcPydOb_j6AdNC6G7BMRh_Y7fe3SOlKD9WFa06eldggIOOipCeT_UoIy9a3TgFnVICPfiVXOHkPYSgKfDsVpl1NOHf6m1BRrPpI-7RRd-0NAGUmXoSFSP1YoyI-PDZtgyhaDC38EB30bx_feW3YjdiC-UMIFSK"/>
+<div class="absolute top-4 right-4 bg-tertiary-fixed-dim/10 text-on-tertiary-container px-3 py-1 rounded-full font-label-sm text-label-sm flex items-center gap-1 backdrop-blur-sm">
+<span class="material-symbols-outlined text-[14px]">sell</span> Free
+                    </div>
+</div>
+<div class="p-6 flex flex-col flex-grow">
+<span class="text-on-surface-variant font-label-sm text-label-sm uppercase tracking-wider mb-2">Soft Skills</span>
+<h3 class="font-headline-md text-headline-md text-primary mb-3 line-clamp-2">Teamwork &amp; Collaboration</h3>
+<p class="font-body-md text-body-md text-on-surface-variant mb-6 line-clamp-3 flex-grow">Understand group dynamics, conflict resolution, and how to contribute effectively to cross-functional teams in modern workplaces.</p>
+<div class="flex items-center justify-between mt-auto">
+<div class="flex items-center gap-2 text-on-surface-variant font-label-sm text-label-sm">
+<span class="material-symbols-outlined text-[18px]">schedule</span> 3.5 Hours
+                        </div>
+<button class="text-primary font-label-md text-label-md group-hover:text-secondary-container transition-colors flex items-center gap-1">
+                            Start <span class="material-symbols-outlined text-[18px]">arrow_forward</span>
+</button>
+</div>
+</div>
+</div>
+<!-- Card 3 -->
+<div class="bg-surface-container-lowest rounded-xl shadow-[0_4px_12px_rgba(0,0,0,0.04)] border border-surface-container flex flex-col overflow-hidden card-hover group">
+<div class="h-48 relative overflow-hidden">
+<img class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105" data-alt="A sleek computer monitor displaying abstract data visualization charts in shades of blue and gold. Minimalist office background with soft focus. High-key lighting, professional and analytical mood." src="https://lh3.googleusercontent.com/aida-public/AB6AXuD0_wBAgJVgeG9LYdYQjiiRmZe18u_3vWDHbxZG0QVFXy6iIkEwCaFEz5DNdqg3olNMnY5UNLelTBKTnc6uH06fxEjOwkSdtyf59_i4dIcEiZiGeBNTQjY_bCp6zt6THDPcvIFD67d74O33Sc7c82lke2ougTpfncUfPRTrnKHINspU1PyUlheb7_m-vmRTun92aStShh82465mPEOdoMiebGTAXKba2ZflzR57zePuzTyKiY0WGYLU"/>
+<div class="absolute top-4 right-4 bg-tertiary-fixed-dim/10 text-on-tertiary-container px-3 py-1 rounded-full font-label-sm text-label-sm flex items-center gap-1 backdrop-blur-sm">
+<span class="material-symbols-outlined text-[14px]">sell</span> Free
+                    </div>
+</div>
+<div class="p-6 flex flex-col flex-grow">
+<span class="text-on-surface-variant font-label-sm text-label-sm uppercase tracking-wider mb-2">Digital Literacy</span>
+<h3 class="font-headline-md text-headline-md text-primary mb-3 line-clamp-2">Data Interpretation Basics</h3>
+<p class="font-body-md text-body-md text-on-surface-variant mb-6 line-clamp-3 flex-grow">Learn to read, understand, and draw insights from standard business charts, graphs, and basic analytics dashboards.</p>
+<div class="flex items-center justify-between mt-auto">
+<div class="flex items-center gap-2 text-on-surface-variant font-label-sm text-label-sm">
+<span class="material-symbols-outlined text-[18px]">schedule</span> 5 Hours
+                        </div>
+<button class="text-primary font-label-md text-label-md group-hover:text-secondary-container transition-colors flex items-center gap-1">
+                            Start <span class="material-symbols-outlined text-[18px]">arrow_forward</span>
+</button>
+</div>
+</div>
+</div>
+<!-- Card 4 -->
+<div class="bg-surface-container-lowest rounded-xl shadow-[0_4px_12px_rgba(0,0,0,0.04)] border border-surface-container flex flex-col overflow-hidden card-hover group">
+<div class="h-48 relative overflow-hidden">
+<img class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105" data-alt="A person holding a tablet device showing cloud computing icons. The setting is a bright, modern co-working space. The image is clean, aspirational, and focused on modern technology tools." src="https://lh3.googleusercontent.com/aida-public/AB6AXuAWopsO8LlNMPd6SsyX3YYyLa9QfCpbjeEAYGM6uhuU1xOm8ThV2dQMerI04ZS5kliYH3ac1XQl9ZqBIuPlh2sAabLQI21Ww6aOl1YznJ80Z7SK_e-g3IXP-nsfHtR6dpjMS2La-KSk5IinGgRFCJI5RZxo7qsMrMSSLki6TroPhNEDtZu-ZpgWd1_WFU8f51qGh6HnbsLLfLQl_AYXYJjmJideyvSz4cVARxB3snnniQaEQ1ox43Yq"/>
+<div class="absolute top-4 right-4 bg-tertiary-fixed-dim/10 text-on-tertiary-container px-3 py-1 rounded-full font-label-sm text-label-sm flex items-center gap-1 backdrop-blur-sm">
+<span class="material-symbols-outlined text-[14px]">sell</span> Free
+                    </div>
+</div>
+<div class="p-6 flex flex-col flex-grow">
+<span class="text-on-surface-variant font-label-sm text-label-sm uppercase tracking-wider mb-2">Digital Literacy</span>
+<h3 class="font-headline-md text-headline-md text-primary mb-3 line-clamp-2">Cloud Tools for Productivity</h3>
+<p class="font-body-md text-body-md text-on-surface-variant mb-6 line-clamp-3 flex-grow">Navigate Google Workspace and Microsoft 365. Understand cloud storage, document sharing, and collaborative editing.</p>
+<div class="flex items-center justify-between mt-auto">
+<div class="flex items-center gap-2 text-on-surface-variant font-label-sm text-label-sm">
+<span class="material-symbols-outlined text-[18px]">schedule</span> 4.5 Hours
+                        </div>
+<button class="text-primary font-label-md text-label-md group-hover:text-secondary-container transition-colors flex items-center gap-1">
+                            Start <span class="material-symbols-outlined text-[18px]">arrow_forward</span>
+</button>
+</div>
+</div>
+</div>
+<!-- Card 5 -->
+<div class="bg-surface-container-lowest rounded-xl shadow-[0_4px_12px_rgba(0,0,0,0.04)] border border-surface-container flex flex-col overflow-hidden card-hover group">
+<div class="h-48 relative overflow-hidden">
+<img class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105" data-alt="An open sketchbook with creative diagrams, mind maps, and a fine-liner pen resting on it. Minimalist wooden surface, soft diffused lighting, conveying a sense of brainstorming and ideation." src="https://lh3.googleusercontent.com/aida-public/AB6AXuABX94ezSs3CkIpCFtr7Nqjn43J0-UgzXdfMO1B6oPiuznKUlOjYDEXOhcVmb2QK_Pj0MWr3APfhv4izQC10VxNJxzWWt0_1q441F2Nx_Qu8-b81Wq4utq1_YG3raPR6eqLj0OVYLo8dWzYX52Fd7XdntiKBl7xx2wDUEC_OVJpZDTQQ2sMl4U45eYQ_4gfIHBXxUhMKkJZ5wn-jWaO2zwSNmwDyImel2fXIib-k0dYR3apf-tCAN5k"/>
+<div class="absolute top-4 right-4 bg-tertiary-fixed-dim/10 text-on-tertiary-container px-3 py-1 rounded-full font-label-sm text-label-sm flex items-center gap-1 backdrop-blur-sm">
+<span class="material-symbols-outlined text-[14px]">sell</span> Free
+                    </div>
+</div>
+<div class="p-6 flex flex-col flex-grow">
+<span class="text-on-surface-variant font-label-sm text-label-sm uppercase tracking-wider mb-2">Creative Thinking</span>
+<h3 class="font-headline-md text-headline-md text-primary mb-3 line-clamp-2">Introduction to Design Thinking</h3>
+<p class="font-body-md text-body-md text-on-surface-variant mb-6 line-clamp-3 flex-grow">A user-centric approach to problem-solving. Learn the 5 stages: Empathize, Define, Ideate, Prototype, and Test.</p>
+<div class="flex items-center justify-between mt-auto">
+<div class="flex items-center gap-2 text-on-surface-variant font-label-sm text-label-sm">
+<span class="material-symbols-outlined text-[18px]">schedule</span> 6 Hours
+                        </div>
+<button class="text-primary font-label-md text-label-md group-hover:text-secondary-container transition-colors flex items-center gap-1">
+                            Start <span class="material-symbols-outlined text-[18px]">arrow_forward</span>
+</button>
+</div>
+</div>
+</div>
+<!-- Card 6 -->
+<div class="bg-surface-container-lowest rounded-xl shadow-[0_4px_12px_rgba(0,0,0,0.04)] border border-surface-container flex flex-col overflow-hidden card-hover group">
+<div class="h-48 relative overflow-hidden">
+<img class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105" data-alt="Abstract representation of problem solving: interacting geometric shapes fitting together perfectly. Clean, white background with subtle shadows. Premium, conceptual and minimalist visual style." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCDMZsI9PLIQzoVcf1tWgsqJwsd8_ayqbirslDjM7E9vLhCOT8Qu5NrY3Hczsnm3TVMdupDQeEOpzQrbkZSIIXt2ibFQdmsKz-0fZjqr2v61snVIJxJoHD95x0uFckgQCGlWMcsGQz8MMQQ7nGged1NIu7XLHmSB3-jjBj0im5HAytIyknan91WLL5ldPC_GyEJeH0Dym0eDR0ei3RioX0sBNAulwmMc6hoybMzkY7F4vIC7K2x4J1b"/>
+<div class="absolute top-4 right-4 bg-tertiary-fixed-dim/10 text-on-tertiary-container px-3 py-1 rounded-full font-label-sm text-label-sm flex items-center gap-1 backdrop-blur-sm">
+<span class="material-symbols-outlined text-[14px]">sell</span> Free
+                    </div>
+</div>
+<div class="p-6 flex flex-col flex-grow">
+<span class="text-on-surface-variant font-label-sm text-label-sm uppercase tracking-wider mb-2">Creative Thinking</span>
+<h3 class="font-headline-md text-headline-md text-primary mb-3 line-clamp-2">Complex Problem Solving</h3>
+<p class="font-body-md text-body-md text-on-surface-variant mb-6 line-clamp-3 flex-grow">Techniques to break down large, ambiguous problems into manageable parts using logical frameworks and lateral thinking.</p>
+<div class="flex items-center justify-between mt-auto">
+<div class="flex items-center gap-2 text-on-surface-variant font-label-sm text-label-sm">
+<span class="material-symbols-outlined text-[18px]">schedule</span> 5.5 Hours
+                        </div>
+<button class="text-primary font-label-md text-label-md group-hover:text-secondary-container transition-colors flex items-center gap-1">
+                            Start <span class="material-symbols-outlined text-[18px]">arrow_forward</span>
+</button>
+</div>
+</div>
+</div>
+<!-- Card 7 -->
+<div class="bg-surface-container-lowest rounded-xl shadow-[0_4px_12px_rgba(0,0,0,0.04)] border border-surface-container flex flex-col overflow-hidden card-hover group">
+<div class="h-48 relative overflow-hidden">
+<img class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105" data-alt="A person presenting in front of a clean, minimalist whiteboard with simple timeline graphics. The presenter looks confident. Soft, bright office lighting, focusing on leadership and time management." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCciVXSmx41m1KjpXr-1d5fN8ZGB8jeSt_ZOL-QRW4jarMsYfer0DJDRNfuivTCMlgLAdhA6QMyKymNSyebYzOGk4zElvScMyI5FVV4q5RhjZFx_HfVzf5gRagTT2l9aA1fctIXuT1S5Y3QL50UZ4Gh-W75UEEuOdhGJHpzY9MdjEFqr4Yse0Mab-el5Erhn2vv9943GpmBkAUvm2fplo6J1-B_G6-pCa8swuxPEK9vsfEpiZYZfwRM"/>
+<div class="absolute top-4 right-4 bg-tertiary-fixed-dim/10 text-on-tertiary-container px-3 py-1 rounded-full font-label-sm text-label-sm flex items-center gap-1 backdrop-blur-sm">
+<span class="material-symbols-outlined text-[14px]">sell</span> Free
+                    </div>
+</div>
+<div class="p-6 flex flex-col flex-grow">
+<span class="text-on-surface-variant font-label-sm text-label-sm uppercase tracking-wider mb-2">Soft Skills</span>
+<h3 class="font-headline-md text-headline-md text-primary mb-3 line-clamp-2">Time Management &amp; Prioritization</h3>
+<p class="font-body-md text-body-md text-on-surface-variant mb-6 line-clamp-3 flex-grow">Maximize your productivity using proven frameworks like the Eisenhower Matrix and Pomodoro technique for daily tasks.</p>
+<div class="flex items-center justify-between mt-auto">
+<div class="flex items-center gap-2 text-on-surface-variant font-label-sm text-label-sm">
+<span class="material-symbols-outlined text-[18px]">schedule</span> 3 Hours
+                        </div>
+<button class="text-primary font-label-md text-label-md group-hover:text-secondary-container transition-colors flex items-center gap-1">
+                            Start <span class="material-symbols-outlined text-[18px]">arrow_forward</span>
+</button>
+</div>
+</div>
+</div>
+<!-- Card 8 -->
+<div class="bg-surface-container-lowest rounded-xl shadow-[0_4px_12px_rgba(0,0,0,0.04)] border border-surface-container flex flex-col overflow-hidden card-hover group">
+<div class="h-48 relative overflow-hidden">
+<img class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105" data-alt="A smartphone displaying a clean, abstract UI wireframe. Resting on a light grey desk next to a modern stylus. High key lighting, emphasizing digital interfaces and tech literacy." src="https://lh3.googleusercontent.com/aida-public/AB6AXuC0W7y3ATj8HcX3anf-g1lUCctnYVQvZq5hknfHxWBx2vSFZeQwR-dN4XejFceln5o-SmHpjESG0jWaXeGlUlT9osV5SttYP4SOvXmsr0ZBzwVjC6Nvl5LKUyzNg_EIYYlaRhclixeBDZQoVTO7INn5bbpkJsMy_PgqXybL7G6kY7_hI1BO1c4BX8FsaX1Rar1xqIJ5NWEUtZBfN9o9NyXfDgPbO57HrKk4vUbwS264uKiyucJYbUXc"/>
+<div class="absolute top-4 right-4 bg-tertiary-fixed-dim/10 text-on-tertiary-container px-3 py-1 rounded-full font-label-sm text-label-sm flex items-center gap-1 backdrop-blur-sm">
+<span class="material-symbols-outlined text-[14px]">sell</span> Free
+                    </div>
+</div>
+<div class="p-6 flex flex-col flex-grow">
+<span class="text-on-surface-variant font-label-sm text-label-sm uppercase tracking-wider mb-2">Digital Literacy</span>
+<h3 class="font-headline-md text-headline-md text-primary mb-3 line-clamp-2">Digital Etiquette &amp; Security</h3>
+<p class="font-body-md text-body-md text-on-surface-variant mb-6 line-clamp-3 flex-grow">Essential knowledge for staying safe online. Learn about phishing, secure passwords, and maintaining a professional digital footprint.</p>
+<div class="flex items-center justify-between mt-auto">
+<div class="flex items-center gap-2 text-on-surface-variant font-label-sm text-label-sm">
+<span class="material-symbols-outlined text-[18px]">schedule</span> 2.5 Hours
+                        </div>
+<button class="text-primary font-label-md text-label-md group-hover:text-secondary-container transition-colors flex items-center gap-1">
+                            Start <span class="material-symbols-outlined text-[18px]">arrow_forward</span>
+</button>
+</div>
+</div>
+</div>
+</div>
+<!-- End of Catalog / Pagination Indicator -->
+<div class="flex flex-col items-center justify-center py-12 border-t border-surface-container-highest">
+<div class="w-16 h-16 bg-surface-container-high rounded-full flex items-center justify-center mb-6">
+<span class="material-symbols-outlined text-[32px] text-primary">done_all</span>
+</div>
+<h2 class="font-headline-md text-headline-md text-primary mb-2">You've seen all free courses</h2>
+<p class="font-body-md text-body-md text-on-surface-variant mb-8 text-center max-w-md">You've reached the end of our foundational catalog. Ready to take the next step?</p>
+<div class="flex gap-4">
+<button class="bg-primary text-on-primary font-label-md text-label-md px-8 py-3 rounded-lg hover:bg-primary/90 transition-colors shadow-sm">
+                    Explore Higher Education
+                </button>
+<button class="bg-transparent border border-outline text-primary font-label-md text-label-md px-8 py-3 rounded-lg hover:bg-surface-container transition-colors">
+                    Back to Top
+                </button>
+</div>
+</div>
+</main>
+<!-- Footer -->
+<footer class="bg-primary dark:bg-primary-container text-on-primary dark:text-on-primary-container w-full">
+<div class="max-w-container-max mx-auto px-margin-mobile md:px-margin-desktop py-stack-lg flex flex-col md:flex-row justify-between gap-gutter">
+<div class="flex flex-col gap-4 max-w-sm">
+<div class="text-headline-md font-headline-md font-bold text-on-primary">Skill Mitra</div>
+<p class="font-body-md text-body-md text-on-primary/80 dark:text-on-primary-container/80">Empowering careers through accessible education and targeted skill development. Your journey starts here.</p>
+</div>
+<div class="grid grid-cols-2 md:grid-cols-4 gap-8 w-full md:w-auto">
+<div class="flex flex-col gap-3">
+<h4 class="font-label-md text-label-md font-bold text-secondary-fixed mb-2">Sitemap</h4>
+<a class="font-label-sm text-label-sm text-on-primary/80 dark:text-on-primary-container/80 hover:text-secondary-fixed transition-colors" href="#">Free Education</a>
+<a class="font-label-sm text-label-sm text-on-primary/80 dark:text-on-primary-container/80 hover:text-secondary-fixed transition-colors" href="#">Higher Education</a>
+<a class="font-label-sm text-label-sm text-on-primary/80 dark:text-on-primary-container/80 hover:text-secondary-fixed transition-colors" href="#">Opportunities</a>
+</div>
+<div class="flex flex-col gap-3">
+<h4 class="font-label-md text-label-md font-bold text-secondary-fixed mb-2">Social Links</h4>
+<a class="font-label-sm text-label-sm text-on-primary/80 dark:text-on-primary-container/80 hover:text-secondary-fixed transition-colors" href="#">LinkedIn</a>
+<a class="font-label-sm text-label-sm text-on-primary/80 dark:text-on-primary-container/80 hover:text-secondary-fixed transition-colors" href="#">Twitter</a>
+<a class="font-label-sm text-label-sm text-on-primary/80 dark:text-on-primary-container/80 hover:text-secondary-fixed transition-colors" href="#">Instagram</a>
+</div>
+<div class="flex flex-col gap-3">
+<h4 class="font-label-md text-label-md font-bold text-secondary-fixed mb-2">Newsletter</h4>
+<a class="font-label-sm text-label-sm text-on-primary/80 dark:text-on-primary-container/80 hover:text-secondary-fixed transition-colors" href="#">Subscribe</a>
+<a class="font-label-sm text-label-sm text-on-primary/80 dark:text-on-primary-container/80 hover:text-secondary-fixed transition-colors" href="#">Latest News</a>
+</div>
+<div class="flex flex-col gap-3">
+<h4 class="font-label-md text-label-md font-bold text-secondary-fixed mb-2">Contact</h4>
+<a class="font-label-sm text-label-sm text-on-primary/80 dark:text-on-primary-container/80 hover:text-secondary-fixed transition-colors" href="#">Support</a>
+<a class="font-label-sm text-label-sm text-on-primary/80 dark:text-on-primary-container/80 hover:text-secondary-fixed transition-colors" href="#">Partner with us</a>
+</div>
+</div>
+</div>
+<div class="max-w-container-max mx-auto px-margin-mobile md:px-margin-desktop py-4 border-t border-on-primary/10">
+<div class="font-label-sm text-label-sm text-on-primary/60">
+                © 2024 Skill Mitra. All rights reserved.
+            </div>
+</div>
+</footer>
+</body></html>

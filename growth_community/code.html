@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Skill Mitra Community</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            "colors": {
+                    "on-secondary-fixed-variant": "#5c4300",
+                    "error": "#ba1a1a",
+                    "surface-container": "#f0eded",
+                    "secondary": "#795900",
+                    "outline-variant": "#c6c6cf",
+                    "tertiary-fixed-dim": "#4edea3",
+                    "on-primary-container": "#7984aa",
+                    "on-secondary": "#ffffff",
+                    "primary": "#00020e",
+                    "on-background": "#1c1b1b",
+                    "surface-dim": "#dcd9d9",
+                    "secondary-container": "#fccb5c",
+                    "on-primary-fixed": "#0e1a3b",
+                    "surface-container-high": "#eae7e7",
+                    "primary-fixed-dim": "#bac5ef",
+                    "on-tertiary": "#ffffff",
+                    "on-secondary-fixed": "#261a00",
+                    "primary-container": "#0f1b3c",
+                    "surface-container-low": "#f6f3f2",
+                    "surface-container-highest": "#e5e2e1",
+                    "inverse-surface": "#313030",
+                    "on-primary": "#ffffff",
+                    "on-primary-fixed-variant": "#3a4569",
+                    "on-tertiary-fixed-variant": "#005236",
+                    "primary-fixed": "#dbe1ff",
+                    "on-surface": "#1c1b1b",
+                    "surface-variant": "#e5e2e1",
+                    "on-error-container": "#93000a",
+                    "surface": "#fcf9f8",
+                    "tertiary-fixed": "#6ffbbe",
+                    "on-secondary-container": "#735500",
+                    "inverse-on-surface": "#f3f0ef",
+                    "tertiary": "#000301",
+                    "background": "#fcf9f8",
+                    "on-error": "#ffffff",
+                    "inverse-primary": "#bac5ef",
+                    "on-tertiary-fixed": "#002113",
+                    "on-tertiary-container": "#009768",
+                    "tertiary-container": "#002214",
+                    "surface-tint": "#525d82",
+                    "on-surface-variant": "#45464e",
+                    "secondary-fixed": "#ffdf9f",
+                    "error-container": "#ffdad6",
+                    "outline": "#76767f",
+                    "surface-bright": "#fcf9f8",
+                    "secondary-fixed-dim": "#f0c052",
+                    "surface-container-lowest": "#ffffff"
+            },
+            "borderRadius": {
+                    "DEFAULT": "0.25rem",
+                    "lg": "0.5rem",
+                    "xl": "0.75rem",
+                    "full": "9999px"
+            },
+            "spacing": {
+                    "stack-md": "16px",
+                    "gutter": "24px",
+                    "stack-sm": "8px",
+                    "margin-desktop": "40px",
+                    "stack-lg": "32px",
+                    "container-max": "1280px",
+                    "margin-mobile": "16px"
+            },
+            "fontFamily": {
+                    "headline-lg-mobile": ["Inter"],
+                    "label-md": ["Inter"],
+                    "headline-md": ["Inter"],
+                    "display-lg": ["Inter"],
+                    "body-lg": ["Inter"],
+                    "body-md": ["Inter"],
+                    "headline-lg": ["Inter"],
+                    "label-sm": ["Inter"]
+            },
+            "fontSize": {
+                    "headline-lg-mobile": ["28px", {"lineHeight": "36px", "fontWeight": "700"}],
+                    "label-md": ["14px", {"lineHeight": "20px", "letterSpacing": "0.01em", "fontWeight": "500"}],
+                    "headline-md": ["24px", {"lineHeight": "32px", "fontWeight": "600"}],
+                    "display-lg": ["48px", {"lineHeight": "56px", "letterSpacing": "-0.02em", "fontWeight": "700"}],
+                    "body-lg": ["18px", {"lineHeight": "28px", "fontWeight": "400"}],
+                    "body-md": ["16px", {"lineHeight": "24px", "fontWeight": "400"}],
+                    "headline-lg": ["32px", {"lineHeight": "40px", "letterSpacing": "-0.01em", "fontWeight": "700"}],
+                    "label-sm": ["12px", {"lineHeight": "16px", "fontWeight": "600"}]
+            }
+          }
+        }
+      }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        .material-symbols-outlined.fill {
+            font-variation-settings: 'FILL' 1;
+        }
+        
+        /* Subtle lift for cards */
+        .card-hover {
+            transition: transform 0.2s ease, box-shadow 0.2s ease;
+        }
+        .card-hover:hover {
+            transform: translateY(-4px);
+            box-shadow: 0 10px 25px -5px rgba(0, 2, 14, 0.08), 0 8px 10px -6px rgba(0, 2, 14, 0.04);
+        }
+    </style>
+</head>
+<body class="bg-background text-on-background antialiased font-body-md pt-[80px]">
+<!-- TopNavBar -->
+<nav class="fixed top-0 w-full z-50 bg-surface dark:bg-surface-dim shadow-sm">
+<div class="flex justify-between items-center max-w-container-max mx-auto px-margin-desktop py-4">
+<div class="text-headline-md font-headline-md font-bold text-primary dark:text-primary-fixed">
+                Skill Mitra
+            </div>
+<div class="hidden md:flex space-x-8">
+<a class="text-primary dark:text-primary-fixed hover:text-secondary-container transition-colors duration-200 font-label-md text-label-md" href="#">Free Education</a>
+<a class="text-primary dark:text-primary-fixed hover:text-secondary-container transition-colors duration-200 font-label-md text-label-md" href="#">Higher Education</a>
+<a class="text-primary dark:text-primary-fixed hover:text-secondary-container transition-colors duration-200 font-label-md text-label-md" href="#">Earning Opportunities</a>
+<a class="text-secondary border-b-2 border-secondary pb-1 font-label-md text-label-md" href="#">Community</a>
+</div>
+<button class="bg-primary-container text-on-primary rounded-lg px-6 py-2 font-label-md text-label-md hover:bg-on-primary-fixed-variant transition-colors duration-200 scale-95 active:opacity-80 transition-transform hidden md:block">
+                Login/Signup
+            </button>
+<!-- Mobile Menu Toggle -->
+<button class="md:hidden text-primary">
+<span class="material-symbols-outlined">menu</span>
+</button>
+</div>
+</nav>
+<main>
+<!-- Hero Section -->
+<section class="max-w-container-max mx-auto px-margin-desktop py-20 text-center">
+<h1 class="font-display-lg text-display-lg text-primary mb-stack-md hidden md:block">Grow Together with Skill Mitra</h1>
+<h1 class="font-headline-lg-mobile text-headline-lg-mobile text-primary mb-stack-md md:hidden">Grow Together with Skill Mitra</h1>
+<p class="font-body-lg text-body-lg text-on-surface-variant max-w-2xl mx-auto mb-stack-lg">
+                Join a thriving ecosystem of learners, mentors, and industry experts. Share knowledge, find opportunities, and build your career path in a supportive environment.
+            </p>
+<div class="flex flex-col sm:flex-row justify-center gap-stack-md">
+<button class="bg-[#25D366] text-white rounded-lg px-8 py-3 font-label-md text-label-md flex items-center justify-center gap-2 hover:bg-[#20bd5a] transition-colors shadow-sm">
+<span class="material-symbols-outlined">chat</span>
+                    Join WhatsApp Group
+                </button>
+<button class="bg-[#5865F2] text-white rounded-lg px-8 py-3 font-label-md text-label-md flex items-center justify-center gap-2 hover:bg-[#4752c4] transition-colors shadow-sm">
+<span class="material-symbols-outlined">forum</span>
+                    Join Discord Server
+                </button>
+</div>
+<!-- Stats Bento Grid -->
+<div class="grid grid-cols-2 md:grid-cols-4 gap-gutter mt-20">
+<div class="bg-surface-container rounded-xl p-stack-lg text-center shadow-[0_4px_12px_-4px_rgba(0,0,0,0.04)]">
+<div class="font-headline-lg text-headline-lg text-primary mb-stack-sm">10k+</div>
+<div class="font-label-md text-label-md text-on-surface-variant">Active Members</div>
+</div>
+<div class="bg-surface-container rounded-xl p-stack-lg text-center shadow-[0_4px_12px_-4px_rgba(0,0,0,0.04)]">
+<div class="font-headline-lg text-headline-lg text-secondary mb-stack-sm">50+</div>
+<div class="font-label-md text-label-md text-on-surface-variant">Expert Mentors</div>
+</div>
+<div class="bg-surface-container rounded-xl p-stack-lg text-center shadow-[0_4px_12px_-4px_rgba(0,0,0,0.04)]">
+<div class="font-headline-lg text-headline-lg text-primary mb-stack-sm">500+</div>
+<div class="font-label-md text-label-md text-on-surface-variant">Study Groups</div>
+</div>
+<div class="bg-surface-container rounded-xl p-stack-lg text-center shadow-[0_4px_12px_-4px_rgba(0,0,0,0.04)] border-t-2 border-secondary-container">
+<div class="font-headline-lg text-headline-lg text-primary mb-stack-sm">1k+</div>
+<div class="font-label-md text-label-md text-on-surface-variant">Events Hosted</div>
+</div>
+</div>
+</section>
+<!-- Community Highlights (Asymmetric Layout) -->
+<section class="max-w-container-max mx-auto px-margin-desktop py-20">
+<div class="flex items-center justify-between mb-stack-lg">
+<h2 class="font-headline-md text-headline-md text-primary">Community Highlights</h2>
+<a class="font-label-md text-label-md text-secondary hover:underline flex items-center" href="#">
+                    View All <span class="material-symbols-outlined text-[18px] ml-1">arrow_forward</span>
+</a>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-12 gap-gutter">
+<!-- Main Feature Post -->
+<div class="md:col-span-8 bg-surface-container-lowest rounded-xl p-gutter shadow-[0_4px_12px_-4px_rgba(0,0,0,0.04)] border border-outline-variant/30 card-hover">
+<div class="flex items-center gap-stack-sm mb-stack-md">
+<img class="w-10 h-10 rounded-full object-cover" data-alt="A portrait photograph of a confident young professional woman with warm lighting, wearing a smart casual blazer, smiling slightly, set against a soft, out-of-focus modern office background. The image should have a premium, bright, and welcoming aesthetic." src="https://lh3.googleusercontent.com/aida-public/AB6AXuBvW7Azx1vE9FR3VnEeTxd4mwcqMh6bRxW_ASkcjatlE4e8F1bJxWti3lyvNhKkcVkxVe9CdhCfjFrBNmx7FyXMLCwbRKkYvzx9fKEnmQtP-yNVlspBzJIra4LbNy5JXhKbhqoJWe80HV5mMHZxI-dH9tq5uym8skWUENjp94J3fcbBNS3aIhV5jWMDAdlG8EGl5TWmocn0CI-lEA6vq-45uM_MiCva27jXgJhJ-bdI94RjIjhUgouE"/>
+<div>
+<div class="font-label-md text-label-md text-primary">Priya Sharma</div>
+<div class="font-label-sm text-label-sm text-on-surface-variant">Senior Mentor • 2 hours ago</div>
+</div>
+</div>
+<h3 class="font-headline-md text-headline-md text-primary mb-stack-sm">How to transition into Tech without a CS degree</h3>
+<p class="font-body-md text-body-md text-on-surface-variant mb-stack-md line-clamp-3">
+                        I see this question a lot in our community. The short answer is: absolutely possible. The long answer requires a strategic approach to building a portfolio rather than just collecting certificates. Here's the roadmap I suggest to all my mentees...
+                    </p>
+<div class="flex items-center gap-stack-md text-on-surface-variant">
+<button class="flex items-center gap-1 hover:text-primary transition-colors">
+<span class="material-symbols-outlined text-[20px]">thumb_up</span>
+<span class="font-label-sm text-label-sm">245</span>
+</button>
+<button class="flex items-center gap-1 hover:text-primary transition-colors">
+<span class="material-symbols-outlined text-[20px]">chat_bubble</span>
+<span class="font-label-sm text-label-sm">82 Comments</span>
+</button>
+</div>
+</div>
+<!-- Upcoming Event -->
+<div class="md:col-span-4 bg-primary-container text-on-primary-container rounded-xl p-gutter shadow-[0_4px_12px_-4px_rgba(0,0,0,0.04)] relative overflow-hidden card-hover">
+<!-- Decorative element -->
+<div class="absolute top-0 right-0 w-32 h-32 bg-primary-fixed-dim/10 rounded-full -mr-16 -mt-16 blur-xl"></div>
+<div class="bg-secondary-container/20 text-secondary-fixed inline-block px-3 py-1 rounded-full font-label-sm text-label-sm mb-stack-md">
+                        Upcoming Event
+                    </div>
+<h3 class="font-headline-md text-headline-md text-on-primary mb-stack-sm">Resume Review Workshop</h3>
+<div class="flex items-center gap-2 mb-2 font-label-sm text-label-sm">
+<span class="material-symbols-outlined text-[16px]">calendar_today</span>
+                        Tomorrow, 6:00 PM IST
+                    </div>
+<div class="flex items-center gap-2 mb-stack-lg font-label-sm text-label-sm">
+<span class="material-symbols-outlined text-[16px]">videocam</span>
+                        Google Meet
+                    </div>
+<div class="flex items-center justify-between mt-auto">
+<div class="flex -space-x-2">
+<img class="w-8 h-8 rounded-full border-2 border-primary-container object-cover" data-alt="A small circular avatar showing a person smiling, bright modern lighting." src="https://lh3.googleusercontent.com/aida-public/AB6AXuBw3d-IVPKCI2EUcHR3RidaTS-X015hnka3142wpykyxi56tqK3QuciN1rpWfd37_yoxKvMhPk8bXM4BzO0auYJnPOLhkzE_BJTNKrGsHUHr_P7aWnYGTW0bDICtAtDqHji4A4Qs8LDKP0Pnt_6IOB-9R-IwWoPnPsma0IXWgrQkS3vfrWySeGV5milCVbh1d2knmfmGbnMYktJZ59tggE4vcDGhYDBCXnKOBsjzkrXsnhggulBN-BN"/>
+<img class="w-8 h-8 rounded-full border-2 border-primary-container object-cover" data-alt="A small circular avatar showing a person looking thoughtful, soft lighting." src="https://lh3.googleusercontent.com/aida-public/AB6AXuBRDLOtO0_-6dWQexxg9OoofoXP_6ydJpVGMYyd-feFH8x6SL0eEGwNGa4NCU4yC203NHEg5rjJwRJ1mK_0UFgPqjULvBoNNPbTI_vJck2LMp0KKr84Tw_LDd3K5bPf3FA580B6Sx0ID0ZKzCmt1n208MmZnvwZ8rikcJXck0Zmd4MnJj-OgYXSJEduRDEVKh7rjNZI9DDvehzSQ39dVImhQUr5LcECfvhf6a0raU2cwIP0ku_BmOdW"/>
+<div class="w-8 h-8 rounded-full border-2 border-primary-container bg-surface-tint flex items-center justify-center font-label-sm text-label-sm text-on-primary">
+                                +42
+                            </div>
+</div>
+<button class="bg-secondary text-on-secondary rounded-lg px-4 py-2 font-label-sm text-label-sm hover:bg-secondary/90 transition-colors">
+                            RSVP
+                        </button>
+</div>
+</div>
+<!-- Active Groups -->
+<div class="md:col-span-12 mt-stack-md">
+<h3 class="font-headline-md text-headline-md text-primary mb-stack-md">Popular Study Groups</h3>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-gutter">
+<!-- Group 1 -->
+<div class="bg-surface-container-lowest rounded-xl p-gutter shadow-[0_4px_12px_-4px_rgba(0,0,0,0.04)] border border-outline-variant/30 flex items-start gap-stack-md card-hover">
+<div class="w-12 h-12 bg-primary-fixed rounded-lg flex items-center justify-center text-on-primary-fixed">
+<span class="material-symbols-outlined">code</span>
+</div>
+<div>
+<h4 class="font-label-md text-label-md text-primary font-bold">Frontend Development</h4>
+<p class="font-label-sm text-label-sm text-on-surface-variant mb-2">1,240 Members</p>
+<button class="text-secondary font-label-sm text-label-sm font-bold hover:underline">Join Group</button>
+</div>
+</div>
+<!-- Group 2 -->
+<div class="bg-surface-container-lowest rounded-xl p-gutter shadow-[0_4px_12px_-4px_rgba(0,0,0,0.04)] border border-outline-variant/30 flex items-start gap-stack-md card-hover">
+<div class="w-12 h-12 bg-tertiary-fixed rounded-lg flex items-center justify-center text-on-tertiary-fixed">
+<span class="material-symbols-outlined">bar_chart</span>
+</div>
+<div>
+<h4 class="font-label-md text-label-md text-primary font-bold">Data Analytics Beginners</h4>
+<p class="font-label-sm text-label-sm text-on-surface-variant mb-2">856 Members</p>
+<button class="text-secondary font-label-sm text-label-sm font-bold hover:underline">Join Group</button>
+</div>
+</div>
+<!-- Group 3 -->
+<div class="bg-surface-container-lowest rounded-xl p-gutter shadow-[0_4px_12px_-4px_rgba(0,0,0,0.04)] border border-outline-variant/30 flex items-start gap-stack-md card-hover">
+<div class="w-12 h-12 bg-secondary-fixed rounded-lg flex items-center justify-center text-on-secondary-fixed">
+<span class="material-symbols-outlined">design_services</span>
+</div>
+<div>
+<h4 class="font-label-md text-label-md text-primary font-bold">UI/UX Design Review</h4>
+<p class="font-label-sm text-label-sm text-on-surface-variant mb-2">2,100 Members</p>
+<button class="text-secondary font-label-sm text-label-sm font-bold hover:underline">Join Group</button>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+</main>
+<!-- Footer -->
+<footer class="w-full bg-primary dark:bg-primary-container text-on-primary dark:text-on-primary-container mt-20">
+<div class="max-w-container-max mx-auto px-margin-desktop py-stack-lg flex flex-col md:flex-row justify-between gap-gutter">
+<div>
+<div class="text-headline-md font-headline-md text-on-primary mb-stack-sm">
+                    Skill Mitra
+                </div>
+<p class="font-label-sm text-label-sm opacity-80 mb-stack-md">© 2024 Skill Mitra. All rights reserved.</p>
+</div>
+<div class="flex flex-wrap gap-x-8 gap-y-4 font-label-sm text-label-sm">
+<a class="text-on-primary/80 dark:text-on-primary-container/80 hover:text-secondary-fixed transition-colors opacity-90 hover:opacity-100 transition-opacity" href="#">Sitemap</a>
+<a class="text-on-primary/80 dark:text-on-primary-container/80 hover:text-secondary-fixed transition-colors opacity-90 hover:opacity-100 transition-opacity" href="#">Social Links</a>
+<a class="text-on-primary/80 dark:text-on-primary-container/80 hover:text-secondary-fixed transition-colors opacity-90 hover:opacity-100 transition-opacity" href="#">Newsletter</a>
+<a class="text-on-primary/80 dark:text-on-primary-container/80 hover:text-secondary-fixed transition-colors opacity-90 hover:opacity-100 transition-opacity" href="#">Contact</a>
+</div>
+</div>
+</footer>
+</body></html>

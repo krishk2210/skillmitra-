@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Skill Mitra - Resume Upload</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    "colors": {
+                        "secondary-fixed-dim": "#f0c052",
+                        "error-container": "#ffdad6",
+                        "surface-bright": "#fcf9f8",
+                        "secondary": "#795900",
+                        "secondary-fixed": "#ffdf9f",
+                        "on-secondary-fixed-variant": "#5c4300",
+                        "secondary-container": "#fccb5c",
+                        "on-primary-fixed-variant": "#3a4569",
+                        "inverse-on-surface": "#f3f0ef",
+                        "on-tertiary-fixed": "#002113",
+                        "error": "#ba1a1a",
+                        "outline": "#76767f",
+                        "on-error": "#ffffff",
+                        "inverse-primary": "#bac5ef",
+                        "background": "#fcf9f8",
+                        "surface-variant": "#e5e2e1",
+                        "surface-container-highest": "#e5e2e1",
+                        "surface-tint": "#525d82",
+                        "on-primary": "#ffffff",
+                        "outline-variant": "#c6c6cf",
+                        "surface-container-high": "#eae7e7",
+                        "on-tertiary": "#ffffff",
+                        "on-surface-variant": "#45464e",
+                        "on-secondary": "#ffffff",
+                        "on-primary-fixed": "#0e1a3b",
+                        "surface-container-low": "#f6f3f2",
+                        "primary-container": "#0f1b3c",
+                        "on-background": "#1c1b1b",
+                        "on-secondary-container": "#735500",
+                        "on-secondary-fixed": "#261a00",
+                        "tertiary-fixed": "#6ffbbe",
+                        "on-tertiary-container": "#009768",
+                        "on-tertiary-fixed-variant": "#005236",
+                        "on-error-container": "#93000a",
+                        "primary": "#00020e",
+                        "tertiary-fixed-dim": "#4edea3",
+                        "primary-fixed": "#dbe1ff",
+                        "inverse-surface": "#313030",
+                        "surface-dim": "#dcd9d9",
+                        "on-surface": "#1c1b1b",
+                        "surface": "#fcf9f8",
+                        "tertiary": "#000301",
+                        "primary-fixed-dim": "#bac5ef",
+                        "surface-container-lowest": "#ffffff",
+                        "tertiary-container": "#002214",
+                        "on-primary-container": "#7984aa",
+                        "surface-container": "#f0eded"
+                    },
+                    "borderRadius": {
+                        "DEFAULT": "0.25rem",
+                        "lg": "0.5rem",
+                        "xl": "0.75rem",
+                        "full": "9999px"
+                    },
+                    "spacing": {
+                        "stack-lg": "32px",
+                        "stack-md": "16px",
+                        "margin-desktop": "40px",
+                        "container-max": "1280px",
+                        "margin-mobile": "16px",
+                        "gutter": "24px",
+                        "stack-sm": "8px"
+                    },
+                    "fontFamily": {
+                        "headline-md": ["Inter"],
+                        "label-md": ["Inter"],
+                        "headline-lg": ["Inter"],
+                        "display-lg": ["Inter"],
+                        "body-md": ["Inter"],
+                        "label-sm": ["Inter"],
+                        "headline-lg-mobile": ["Inter"],
+                        "body-lg": ["Inter"]
+                    },
+                    "fontSize": {
+                        "headline-md": ["24px", { "lineHeight": "32px", "fontWeight": "600" }],
+                        "label-md": ["14px", { "lineHeight": "20px", "letterSpacing": "0.01em", "fontWeight": "500" }],
+                        "headline-lg": ["32px", { "lineHeight": "40px", "letterSpacing": "-0.01em", "fontWeight": "700" }],
+                        "display-lg": ["48px", { "lineHeight": "56px", "letterSpacing": "-0.02em", "fontWeight": "700" }],
+                        "body-md": ["16px", { "lineHeight": "24px", "fontWeight": "400" }],
+                        "label-sm": ["12px", { "lineHeight": "16px", "fontWeight": "600" }],
+                        "headline-lg-mobile": ["28px", { "lineHeight": "36px", "fontWeight": "700" }],
+                        "body-lg": ["18px", { "lineHeight": "28px", "fontWeight": "400" }]
+                    }
+                }
+            }
+        }
+    </script>
+<style>
+        body {
+            background-color: #fcf9f8; /* background */
+            color: #1c1b1b; /* on-background */
+        }
+        .card-shadow {
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.04);
+        }
+        .card-shadow-hover {
+            box-shadow: 0 8px 24px rgba(15, 27, 60, 0.08); /* primary-container tint */
+        }
+    </style>
+</head>
+<body class="font-body-md flex flex-col min-h-screen">
+<!-- TopNavBar -->
+<header class="fixed top-0 w-full z-50 shadow-sm bg-surface dark:bg-surface-dim">
+<div class="flex justify-between items-center max-w-container-max mx-auto px-margin-desktop py-4">
+<div class="text-headline-md font-headline-md font-bold text-primary dark:text-primary-fixed">
+                Skill Mitra
+            </div>
+<nav class="hidden md:flex gap-gutter">
+<a class="text-primary dark:text-primary-fixed font-label-md text-label-md hover:text-secondary-container transition-colors duration-200" href="#">Free Education</a>
+<a class="text-primary dark:text-primary-fixed font-label-md text-label-md hover:text-secondary-container transition-colors duration-200" href="#">Higher Education</a>
+<a class="text-secondary border-b-2 border-secondary pb-1 font-label-md text-label-md hover:text-secondary-container transition-colors duration-200" href="#">Earning Opportunities</a>
+<a class="text-primary dark:text-primary-fixed font-label-md text-label-md hover:text-secondary-container transition-colors duration-200" href="#">Community</a>
+</nav>
+<button class="bg-primary-container text-on-primary font-label-md text-label-md px-4 py-2 rounded-lg scale-95 active:opacity-80 transition-transform">
+                Login/Signup
+            </button>
+</div>
+</header>
+<!-- Main Content -->
+<main class="flex-grow pt-24 pb-16 px-margin-desktop max-w-container-max mx-auto w-full">
+<!-- Progress Bar -->
+<div class="mb-stack-lg max-w-2xl mx-auto">
+<div class="flex justify-between items-center relative">
+<div class="absolute left-0 top-1/2 -translate-y-1/2 w-full h-1 bg-surface-variant z-0 rounded-full"></div>
+<div class="absolute left-0 top-1/2 -translate-y-1/2 w-1/3 h-1 bg-secondary z-0 rounded-full"></div>
+<div class="flex flex-col items-center relative z-10">
+<div class="w-8 h-8 rounded-full bg-secondary text-on-secondary flex items-center justify-center font-label-md mb-2">1</div>
+<span class="font-label-md text-primary">Upload</span>
+</div>
+<div class="flex flex-col items-center relative z-10">
+<div class="w-8 h-8 rounded-full bg-surface-variant text-on-surface-variant flex items-center justify-center font-label-md mb-2">2</div>
+<span class="font-label-md text-on-surface-variant">Parse</span>
+</div>
+<div class="flex flex-col items-center relative z-10">
+<div class="w-8 h-8 rounded-full bg-surface-variant text-on-surface-variant flex items-center justify-center font-label-md mb-2">3</div>
+<span class="font-label-md text-on-surface-variant">Skills Confirmation</span>
+</div>
+</div>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-12 gap-gutter">
+<!-- Main Upload Area -->
+<div class="md:col-span-8">
+<div class="bg-surface-container-lowest rounded-xl card-shadow p-8 text-center transition-shadow hover:card-shadow-hover duration-300 border-2 border-dashed border-outline-variant relative h-96 flex flex-col items-center justify-center cursor-pointer" id="drop-zone">
+<input accept=".pdf,.doc,.docx" class="hidden" id="file-upload" type="file"/>
+<div class="flex flex-col items-center" id="initial-state">
+<span class="material-symbols-outlined text-6xl text-primary-container mb-4" data-icon="upload_file">upload_file</span>
+<h2 class="font-headline-md text-headline-md text-primary mb-2">Drag &amp; Drop your Resume</h2>
+<p class="font-body-md text-body-md text-on-surface-variant mb-6">Supported formats: PDF, DOCX (Max 5MB)</p>
+<button class="bg-primary-container text-on-primary font-label-md text-label-md px-6 py-3 rounded-lg hover:bg-on-primary-fixed-variant transition-colors" onclick="document.getElementById('file-upload').click()">
+                            Browse Files
+                        </button>
+</div>
+<div class="hidden flex-col items-center w-full max-w-md" id="selected-state">
+<div class="bg-surface p-4 rounded-lg flex items-center gap-4 w-full mb-6 border border-outline-variant">
+<span class="material-symbols-outlined text-3xl text-secondary" data-icon="description">description</span>
+<div class="flex-grow text-left">
+<p class="font-label-md text-primary truncate" id="file-name">resume_2024.pdf</p>
+<p class="font-label-sm text-on-surface-variant" id="file-size">1.2 MB</p>
+</div>
+<button class="text-error hover:text-error-container transition-colors" id="remove-file">
+<span class="material-symbols-outlined" data-icon="close">close</span>
+</button>
+</div>
+<button class="bg-secondary-container text-on-secondary-container font-label-md text-label-md px-8 py-3 rounded-lg w-full hover:bg-secondary-fixed-dim transition-colors flex justify-center items-center gap-2">
+                            Process Resume
+                            <span class="material-symbols-outlined text-sm" data-icon="arrow_forward">arrow_forward</span>
+</button>
+</div>
+</div>
+</div>
+<!-- Sidebar -->
+<div class="md:col-span-4">
+<div class="bg-surface-container-lowest rounded-xl card-shadow p-6 h-full border-t-2 border-secondary">
+<h3 class="font-headline-md text-headline-md text-primary mb-4 flex items-center gap-2">
+<span class="material-symbols-outlined text-secondary" data-icon="lightbulb">lightbulb</span>
+                        Tips for Success
+                    </h3>
+<div class="space-y-6">
+<div class="flex gap-4">
+<div class="w-8 h-8 rounded-full bg-primary-fixed text-primary-container flex items-center justify-center shrink-0">
+<span class="material-symbols-outlined text-sm" data-icon="work">work</span>
+</div>
+<div>
+<h4 class="font-label-md text-primary mb-1">Unlock Earning Opportunities</h4>
+<p class="font-body-md text-body-md text-on-surface-variant text-sm">A complete resume allows our AI to match you with higher-paying placement services.</p>
+</div>
+</div>
+<div class="flex gap-4">
+<div class="w-8 h-8 rounded-full bg-primary-fixed text-primary-container flex items-center justify-center shrink-0">
+<span class="material-symbols-outlined text-sm" data-icon="auto_awesome">auto_awesome</span>
+</div>
+<div>
+<h4 class="font-label-md text-primary mb-1">Highlight Hard Skills</h4>
+<p class="font-body-md text-body-md text-on-surface-variant text-sm">Ensure your technical proficiencies are clearly listed for accurate parsing.</p>
+</div>
+</div>
+<div class="flex gap-4">
+<div class="w-8 h-8 rounded-full bg-primary-fixed text-primary-container flex items-center justify-center shrink-0">
+<span class="material-symbols-outlined text-sm" data-icon="school">school</span>
+</div>
+<div>
+<h4 class="font-label-md text-primary mb-1">Education Matters</h4>
+<p class="font-body-md text-body-md text-on-surface-variant text-sm">We use your academic background to suggest relevant 'Higher Education' pathways.</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</main>
+<!-- Footer -->
+<footer class="w-full bg-primary dark:bg-primary-container mt-auto">
+<div class="max-w-container-max mx-auto px-margin-desktop py-stack-lg flex flex-col md:flex-row justify-between gap-gutter">
+<div class="text-headline-md font-headline-md text-on-primary">
+                Skill Mitra
+            </div>
+<div class="flex gap-4 text-on-primary/80 dark:text-on-primary-container/80 font-label-sm text-label-sm">
+<a class="hover:text-secondary-fixed transition-colors opacity-90 hover:opacity-100 transition-opacity" href="#">Sitemap</a>
+<a class="hover:text-secondary-fixed transition-colors opacity-90 hover:opacity-100 transition-opacity" href="#">Social Links</a>
+<a class="hover:text-secondary-fixed transition-colors opacity-90 hover:opacity-100 transition-opacity" href="#">Newsletter</a>
+<a class="hover:text-secondary-fixed transition-colors opacity-90 hover:opacity-100 transition-opacity" href="#">Contact</a>
+</div>
+<div class="text-on-primary/80 dark:text-on-primary-container/80 font-label-sm text-label-sm">
+                © 2024 Skill Mitra. All rights reserved.
+            </div>
+</div>
+</footer>
+<script>
+        // Simple Interaction Script
+        const fileInput = document.getElementById('file-upload');
+        const dropZone = document.getElementById('drop-zone');
+        const initialState = document.getElementById('initial-state');
+        const selectedState = document.getElementById('selected-state');
+        const fileNameDisplay = document.getElementById('file-name');
+        const fileSizeDisplay = document.getElementById('file-size');
+        const removeFileBtn = document.getElementById('remove-file');
+
+        function handleFile(file) {
+            if (file) {
+                fileNameDisplay.textContent = file.name;
+                fileSizeDisplay.textContent = (file.size / (1024 * 1024)).toFixed(2) + ' MB';
+                initialState.classList.add('hidden');
+                selectedState.classList.remove('hidden');
+                selectedState.classList.add('flex');
+                dropZone.classList.remove('border-dashed');
+                dropZone.classList.add('border-solid', 'border-secondary-container');
+            }
+        }
+
+        fileInput.addEventListener('change', (e) => {
+            handleFile(e.target.files[0]);
+        });
+
+        dropZone.addEventListener('dragover', (e) => {
+            e.preventDefault();
+            dropZone.classList.add('bg-surface-variant');
+        });
+
+        dropZone.addEventListener('dragleave', () => {
+            dropZone.classList.remove('bg-surface-variant');
+        });
+
+        dropZone.addEventListener('drop', (e) => {
+            e.preventDefault();
+            dropZone.classList.remove('bg-surface-variant');
+            if (e.dataTransfer.files.length) {
+                fileInput.files = e.dataTransfer.files;
+                handleFile(e.dataTransfer.files[0]);
+            }
+        });
+
+        removeFileBtn.addEventListener('click', (e) => {
+            e.stopPropagation();
+            fileInput.value = '';
+            initialState.classList.remove('hidden');
+            selectedState.classList.add('hidden');
+            selectedState.classList.remove('flex');
+            dropZone.classList.add('border-dashed');
+            dropZone.classList.remove('border-solid', 'border-secondary-container');
+        });
+    </script>
+</body></html>

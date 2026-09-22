@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Sign Up - Skill Mitra</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    "colors": {
+                            "on-tertiary-fixed": "#002113",
+                            "outline-variant": "#c6c6cf",
+                            "on-primary-container": "#7984aa",
+                            "on-error": "#ffffff",
+                            "surface": "#fcf9f8",
+                            "outline": "#76767f",
+                            "on-primary": "#ffffff",
+                            "primary-fixed-dim": "#bac5ef",
+                            "surface-container-highest": "#e5e2e1",
+                            "surface-dim": "#dcd9d9",
+                            "surface-container-low": "#f6f3f2",
+                            "on-secondary-fixed": "#261a00",
+                            "error": "#ba1a1a",
+                            "secondary-fixed": "#ffdf9f",
+                            "on-error-container": "#93000a",
+                            "primary-fixed": "#dbe1ff",
+                            "on-tertiary-container": "#009768",
+                            "inverse-surface": "#313030",
+                            "on-surface-variant": "#45464e",
+                            "surface-container-lowest": "#ffffff",
+                            "on-tertiary": "#ffffff",
+                            "on-surface": "#1c1b1b",
+                            "on-secondary-fixed-variant": "#5c4300",
+                            "primary-container": "#0f1b3c",
+                            "tertiary-fixed-dim": "#4edea3",
+                            "surface-container": "#f0eded",
+                            "surface-bright": "#fcf9f8",
+                            "background": "#fcf9f8",
+                            "primary": "#00020e",
+                            "on-primary-fixed-variant": "#3a4569",
+                            "on-secondary": "#ffffff",
+                            "surface-container-high": "#eae7e7",
+                            "tertiary-container": "#002214",
+                            "surface-tint": "#525d82",
+                            "on-background": "#1c1b1b",
+                            "error-container": "#ffdad6",
+                            "on-tertiary-fixed-variant": "#005236",
+                            "secondary": "#795900",
+                            "inverse-primary": "#bac5ef",
+                            "tertiary": "#000301",
+                            "secondary-container": "#fccb5c",
+                            "on-secondary-container": "#735500",
+                            "tertiary-fixed": "#6ffbbe",
+                            "surface-variant": "#e5e2e1",
+                            "secondary-fixed-dim": "#f0c052",
+                            "on-primary-fixed": "#0e1a3b",
+                            "inverse-on-surface": "#f3f0ef"
+                    },
+                    "borderRadius": {
+                            "DEFAULT": "0.25rem",
+                            "lg": "0.5rem",
+                            "xl": "0.75rem",
+                            "full": "9999px",
+                            "card": "16px"
+                    },
+                    "spacing": {
+                            "stack-sm": "8px",
+                            "container-max": "1280px",
+                            "gutter": "24px",
+                            "stack-md": "16px",
+                            "margin-mobile": "16px",
+                            "stack-lg": "32px",
+                            "margin-desktop": "40px"
+                    },
+                    "fontFamily": {
+                            "body-lg": ["Inter"],
+                            "headline-lg-mobile": ["Inter"],
+                            "body-md": ["Inter"],
+                            "display-lg": ["Inter"],
+                            "headline-lg": ["Inter"],
+                            "label-md": ["Inter"],
+                            "headline-md": ["Inter"],
+                            "label-sm": ["Inter"]
+                    },
+                    "fontSize": {
+                            "body-lg": ["18px", {"lineHeight": "28px", "fontWeight": "400"}],
+                            "headline-lg-mobile": ["28px", {"lineHeight": "36px", "fontWeight": "700"}],
+                            "body-md": ["16px", {"lineHeight": "24px", "fontWeight": "400"}],
+                            "display-lg": ["48px", {"lineHeight": "56px", "letterSpacing": "-0.02em", "fontWeight": "700"}],
+                            "headline-lg": ["32px", {"lineHeight": "40px", "letterSpacing": "-0.01em", "fontWeight": "700"}],
+                            "label-md": ["14px", {"lineHeight": "20px", "letterSpacing": "0.01em", "fontWeight": "500"}],
+                            "headline-md": ["24px", {"lineHeight": "32px", "fontWeight": "600"}],
+                            "label-sm": ["12px", {"lineHeight": "16px", "fontWeight": "600"}]
+                    }
+                },
+            }
+        }
+    </script>
+<style>
+        .ambient-shadow { box-shadow: 0 4px 24px -4px rgba(0, 0, 0, 0.04); }
+        .interactive-shadow:hover { box-shadow: 0 8px 32px -8px rgba(15, 27, 60, 0.08); transform: translateY(-2px); }
+        .input-glow:focus-within { box-shadow: 0 0 0 2px rgba(15, 27, 60, 0.2); }
+        
+        .goal-card.selected {
+            border-color: #0f1b3c;
+            background-color: #f6f3f2;
+        }
+        .goal-card.selected .check-icon {
+            opacity: 1;
+        }
+    </style>
+</head>
+<body class="bg-surface text-on-surface font-body-md min-h-screen flex flex-col antialiased">
+<!-- TopNavBar Suppressed as per Intent (Transactional Screen). Replaced with simple Back link -->
+<header class="absolute top-0 left-0 w-full z-10 p-margin-desktop md:block hidden">
+<a class="inline-flex items-center gap-2 text-on-primary hover:text-secondary-fixed transition-colors" href="#">
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 0;">arrow_back</span>
+<span class="font-label-md text-label-md">Back to Home</span>
+</a>
+</header>
+<main class="flex-grow flex flex-col md:flex-row min-h-screen">
+<!-- Left Column: Brand & Benefits -->
+<section class="w-full md:w-5/12 bg-primary-container text-on-primary p-margin-mobile md:p-margin-desktop flex flex-col justify-center relative overflow-hidden shrink-0">
+<!-- Decorative Background Element -->
+<div class="absolute -top-32 -left-32 w-96 h-96 bg-primary rounded-full blur-3xl opacity-50 mix-blend-multiply pointer-events-none"></div>
+<div class="relative z-10 max-w-md mx-auto">
+<img alt="Skill Mitra Logo" class="w-24 h-24 mb-stack-lg rounded-xl shadow-lg" src="https://lh3.googleusercontent.com/aida/AEtjO1XdC-khAs-9QEw1XkInvKgcW0rafYpzfDw1Tl_xCkjk8bmvclSpeqVjpDVbYIIkw3HA92PQC_7WD-_S0VOxB5uQkYWNDMehPRZKltO9Lnkxi3dVyNPQHXy0y1yKgB-GE3W_FtJC7dB7C3VUTXP-ch1ULV2F5RaO0CGCzXDWq27fejcy57GmFRMTsGnjhQG_WEtJbZHG6q7UZeIZ-761Rn8LUK7VqMp8Gwd1o8bVNExPmP8eMfcFdmJoNSY"/>
+<h1 class="font-display-lg text-display-lg text-on-primary mb-stack-md">Start Your Growth Journey</h1>
+<p class="font-body-lg text-body-lg text-on-primary/80 mb-stack-lg">Join the platform that bridges education and career success with premium guidance.</p>
+<ul class="space-y-stack-md">
+<li class="flex items-start gap-3">
+<div class="w-8 h-8 rounded-full bg-secondary-container/20 flex items-center justify-center shrink-0 mt-1">
+<span class="material-symbols-outlined text-secondary-fixed" style="font-variation-settings: 'FILL' 1;">menu_book</span>
+</div>
+<div>
+<h3 class="font-headline-md text-headline-md text-on-primary text-[18px] leading-snug">Access 50+ Free Courses</h3>
+<p class="font-body-md text-body-md text-on-primary/70">Build your foundational skills at no cost.</p>
+</div>
+</li>
+<li class="flex items-start gap-3">
+<div class="w-8 h-8 rounded-full bg-secondary-container/20 flex items-center justify-center shrink-0 mt-1">
+<span class="material-symbols-outlined text-secondary-fixed" style="font-variation-settings: 'FILL' 1;">groups</span>
+</div>
+<div>
+<h3 class="font-headline-md text-headline-md text-on-primary text-[18px] leading-snug">Join a 10k+ Student Community</h3>
+<p class="font-body-md text-body-md text-on-primary/70">Connect, collaborate, and grow together.</p>
+</div>
+</li>
+<li class="flex items-start gap-3">
+<div class="w-8 h-8 rounded-full bg-secondary-container/20 flex items-center justify-center shrink-0 mt-1">
+<span class="material-symbols-outlined text-secondary-fixed" style="font-variation-settings: 'FILL' 1;">work</span>
+</div>
+<div>
+<h3 class="font-headline-md text-headline-md text-on-primary text-[18px] leading-snug">Unlock Career Placements</h3>
+<p class="font-body-md text-body-md text-on-primary/70">Direct pathways to top hiring partners.</p>
+</div>
+</li>
+</ul>
+</div>
+</section>
+<!-- Right Column: Registration Form -->
+<section class="w-full md:w-7/12 bg-surface p-margin-mobile md:p-margin-desktop flex items-center justify-center overflow-y-auto">
+<div class="w-full max-w-xl bg-surface-container-lowest rounded-card ambient-shadow p-stack-lg md:p-margin-desktop border-t-2 border-secondary-container relative">
+<!-- Mobile Back Button -->
+<a class="md:hidden flex items-center gap-2 text-on-surface-variant hover:text-primary mb-stack-md" href="#">
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 0;">arrow_back</span>
+<span class="font-label-sm text-label-sm">Back</span>
+</a>
+<div class="mb-stack-lg">
+<h2 class="font-headline-lg text-headline-lg-mobile md:text-headline-lg text-on-surface mb-2">Create Account</h2>
+<p class="font-body-md text-body-md text-on-surface-variant">Step 1 of 2: Basic Information</p>
+</div>
+<form class="space-y-stack-md" id="signupForm">
+<!-- Social Sign Up -->
+<div class="grid grid-cols-1 md:grid-cols-2 gap-stack-sm mb-stack-lg">
+<button class="flex items-center justify-center gap-2 py-3 px-4 border border-outline-variant rounded-lg hover:bg-surface-container-low transition-colors font-label-md text-label-md text-on-surface" type="button">
+<svg class="w-5 h-5" fill="none" viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M22.56 12.25c0-.78-.07-1.53-.2-2.25H12v4.26h5.92c-.26 1.37-1.04 2.53-2.21 3.31v2.77h3.57c2.08-1.92 3.28-4.74 3.28-8.09z" fill="#4285F4"></path><path d="M12 23c2.97 0 5.46-.98 7.28-2.66l-3.57-2.77c-.98.66-2.23 1.06-3.71 1.06-2.86 0-5.29-1.93-6.16-4.53H2.18v2.84C3.99 20.53 7.7 23 12 23z" fill="#34A853"></path><path d="M5.84 14.09c-.22-.66-.35-1.36-.35-2.09s.13-1.43.35-2.09V7.07H2.18C1.43 8.55 1 10.22 1 12s.43 3.45 1.18 4.93l2.85-2.22.81-.62z" fill="#FBBC05"></path><path d="M12 5.38c1.62 0 3.06.56 4.21 1.64l3.15-3.15C17.45 2.09 14.97 1 12 1 7.7 1 3.99 3.47 2.18 7.07l3.66 2.84c.87-2.6 3.3-4.53 6.16-4.53z" fill="#EA4335"></path></svg>
+                            Google
+                        </button>
+<button class="flex items-center justify-center gap-2 py-3 px-4 border border-outline-variant rounded-lg hover:bg-surface-container-low transition-colors font-label-md text-label-md text-on-surface" type="button">
+<svg class="w-5 h-5" fill="#0A66C2" viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"></path></svg>
+                            LinkedIn
+                        </button>
+</div>
+<div class="relative flex items-center mb-stack-lg">
+<div class="flex-grow border-t border-outline-variant"></div>
+<span class="flex-shrink-0 mx-4 font-label-sm text-label-sm text-outline">or sign up with email</span>
+<div class="flex-grow border-t border-outline-variant"></div>
+</div>
+<!-- Input Fields -->
+<div>
+<label class="block font-label-md text-label-md text-on-surface mb-2" for="fullName">Full Name</label>
+<div class="relative input-glow rounded-lg transition-shadow">
+<span class="material-symbols-outlined absolute left-3 top-3 text-outline" style="font-variation-settings: 'FILL' 0;">person</span>
+<input class="w-full pl-10 pr-4 py-3 border border-outline-variant rounded-lg bg-surface-container-lowest text-on-surface focus:outline-none focus:border-primary-container" id="fullName" placeholder="Jane Doe" type="text"/>
+</div>
+</div>
+<div>
+<label class="block font-label-md text-label-md text-on-surface mb-2" for="email">Email Address</label>
+<div class="relative input-glow rounded-lg transition-shadow">
+<span class="material-symbols-outlined absolute left-3 top-3 text-outline" style="font-variation-settings: 'FILL' 0;">mail</span>
+<input class="w-full pl-10 pr-4 py-3 border border-outline-variant rounded-lg bg-surface-container-lowest text-on-surface focus:outline-none focus:border-primary-container" id="email" placeholder="jane@example.com" type="email"/>
+</div>
+</div>
+<div>
+<label class="block font-label-md text-label-md text-on-surface mb-2" for="password">Password</label>
+<div class="relative input-glow rounded-lg transition-shadow">
+<span class="material-symbols-outlined absolute left-3 top-3 text-outline" style="font-variation-settings: 'FILL' 0;">lock</span>
+<input class="w-full pl-10 pr-12 py-3 border border-outline-variant rounded-lg bg-surface-container-lowest text-on-surface focus:outline-none focus:border-primary-container" id="password" placeholder="••••••••" type="password"/>
+<button class="absolute right-3 top-3 text-outline hover:text-on-surface" type="button">
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 0;">visibility</span>
+</button>
+</div>
+</div>
+<!-- Progressive Disclosure: Step 2 Trigger (Simplified for this static view as a visual separator) -->
+<div class="pt-stack-md border-t border-outline-variant mt-stack-lg">
+<h3 class="font-headline-md text-headline-md text-on-surface mb-2">What are you here for?</h3>
+<p class="font-body-md text-body-md text-on-surface-variant mb-stack-md">Select your primary goal to help us personalize your experience.</p>
+<div class="grid grid-cols-1 sm:grid-cols-2 gap-stack-md">
+<!-- Goal Card 1 -->
+<div class="goal-card border border-outline-variant rounded-xl p-4 cursor-pointer hover:border-primary-container transition-colors relative flex flex-col items-start" onclick="this.classList.toggle('selected')">
+<div class="w-10 h-10 rounded-full bg-surface-container-highest flex items-center justify-center mb-3">
+<span class="material-symbols-outlined text-on-surface" style="font-variation-settings: 'FILL' 0;">school</span>
+</div>
+<span class="font-label-md text-label-md text-on-surface font-semibold">Foundational Learning</span>
+<span class="material-symbols-outlined absolute top-4 right-4 text-primary-container opacity-0 check-icon transition-opacity" style="font-variation-settings: 'FILL' 1;">check_circle</span>
+</div>
+<!-- Goal Card 2 -->
+<div class="goal-card border border-outline-variant rounded-xl p-4 cursor-pointer hover:border-primary-container transition-colors relative flex flex-col items-start" onclick="this.classList.toggle('selected')">
+<div class="w-10 h-10 rounded-full bg-surface-container-highest flex items-center justify-center mb-3">
+<span class="material-symbols-outlined text-on-surface" style="font-variation-settings: 'FILL' 0;">swap_calls</span>
+</div>
+<span class="font-label-md text-label-md text-on-surface font-semibold">Career Transition</span>
+<span class="material-symbols-outlined absolute top-4 right-4 text-primary-container opacity-0 check-icon transition-opacity" style="font-variation-settings: 'FILL' 1;">check_circle</span>
+</div>
+<!-- Goal Card 3 -->
+<div class="goal-card border border-outline-variant rounded-xl p-4 cursor-pointer hover:border-primary-container transition-colors relative flex flex-col items-start" onclick="this.classList.toggle('selected')">
+<div class="w-10 h-10 rounded-full bg-surface-container-highest flex items-center justify-center mb-3">
+<span class="material-symbols-outlined text-on-surface" style="font-variation-settings: 'FILL' 0;">workspace_premium</span>
+</div>
+<span class="font-label-md text-label-md text-on-surface font-semibold">Higher Education</span>
+<span class="material-symbols-outlined absolute top-4 right-4 text-primary-container opacity-0 check-icon transition-opacity" style="font-variation-settings: 'FILL' 1;">check_circle</span>
+</div>
+<!-- Goal Card 4 -->
+<div class="goal-card border border-outline-variant rounded-xl p-4 cursor-pointer hover:border-primary-container transition-colors relative flex flex-col items-start" onclick="this.classList.toggle('selected')">
+<div class="w-10 h-10 rounded-full bg-surface-container-highest flex items-center justify-center mb-3">
+<span class="material-symbols-outlined text-on-surface" style="font-variation-settings: 'FILL' 0;">payments</span>
+</div>
+<span class="font-label-md text-label-md text-on-surface font-semibold">Earning/Jobs</span>
+<span class="material-symbols-outlined absolute top-4 right-4 text-primary-container opacity-0 check-icon transition-opacity" style="font-variation-settings: 'FILL' 1;">check_circle</span>
+</div>
+</div>
+</div>
+<button class="w-full bg-primary-container text-on-primary py-3 px-4 rounded-lg font-label-md text-label-md hover:opacity-90 transition-opacity mt-stack-lg flex items-center justify-center gap-2" type="button">
+                        Create Account
+                        <span class="material-symbols-outlined text-[18px]" style="font-variation-settings: 'FILL' 0;">arrow_forward</span>
+</button>
+<p class="text-center font-body-md text-body-md text-on-surface-variant text-sm mt-4">
+                        Already have an account? <a class="text-primary-container font-semibold hover:underline" href="#">Log in</a>
+</p>
+</form>
+</div>
+</section>
+</main>
+</body></html>

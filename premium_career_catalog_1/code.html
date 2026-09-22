@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+
+<html lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Premium Course Catalog - Skill Mitra</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    "colors": {
+                        "secondary-fixed": "#ffdf9f",
+                        "error": "#ba1a1a",
+                        "secondary-fixed-dim": "#f0c052",
+                        "on-secondary-container": "#735500",
+                        "background": "#fcf9f8",
+                        "surface-container-high": "#eae7e7",
+                        "primary-fixed-dim": "#bac5ef",
+                        "surface-dim": "#dcd9d9",
+                        "surface-container-highest": "#e5e2e1",
+                        "tertiary-container": "#002214",
+                        "primary": "#00020e",
+                        "on-tertiary": "#ffffff",
+                        "on-primary-fixed": "#0e1a3b",
+                        "on-primary-container": "#7984aa",
+                        "surface-container-lowest": "#ffffff",
+                        "tertiary-fixed-dim": "#4edea3",
+                        "primary-container": "#0f1b3c",
+                        "on-error": "#ffffff",
+                        "on-primary": "#ffffff",
+                        "on-tertiary-fixed-variant": "#005236",
+                        "primary-fixed": "#dbe1ff",
+                        "inverse-primary": "#bac5ef",
+                        "outline": "#76767f",
+                        "surface-container": "#f0eded",
+                        "secondary-container": "#fccb5c",
+                        "on-secondary": "#ffffff",
+                        "surface-tint": "#525d82",
+                        "error-container": "#ffdad6",
+                        "on-tertiary-fixed": "#002113",
+                        "on-tertiary-container": "#009768",
+                        "surface-variant": "#e5e2e1",
+                        "on-secondary-fixed": "#261a00",
+                        "on-surface": "#1c1b1b",
+                        "inverse-surface": "#313030",
+                        "secondary": "#795900",
+                        "on-background": "#1c1b1b",
+                        "on-surface-variant": "#45464e",
+                        "tertiary-fixed": "#6ffbbe",
+                        "outline-variant": "#c6c6cf",
+                        "surface": "#fcf9f8",
+                        "surface-bright": "#fcf9f8",
+                        "on-error-container": "#93000a",
+                        "surface-container-low": "#f6f3f2",
+                        "on-secondary-fixed-variant": "#5c4300",
+                        "inverse-on-surface": "#f3f0ef",
+                        "tertiary": "#000301",
+                        "on-primary-fixed-variant": "#3a4569"
+                    },
+                    "borderRadius": {
+                        "DEFAULT": "0.25rem",
+                        "lg": "0.5rem",
+                        "xl": "0.75rem",
+                        "full": "9999px"
+                    },
+                    "spacing": {
+                        "stack-md": "16px",
+                        "container-max": "1280px",
+                        "gutter": "24px",
+                        "margin-desktop": "40px",
+                        "margin-mobile": "16px",
+                        "stack-sm": "8px",
+                        "stack-lg": "32px"
+                    },
+                    "fontFamily": {
+                        "body-lg": ["Inter"],
+                        "label-sm": ["Inter"],
+                        "display-lg": ["Inter"],
+                        "headline-lg-mobile": ["Inter"],
+                        "body-md": ["Inter"],
+                        "headline-lg": ["Inter"],
+                        "headline-md": ["Inter"],
+                        "label-md": ["Inter"]
+                    },
+                    "fontSize": {
+                        "body-lg": ["18px", {"lineHeight": "28px", "fontWeight": "400"}],
+                        "label-sm": ["12px", {"lineHeight": "16px", "fontWeight": "600"}],
+                        "display-lg": ["48px", {"lineHeight": "56px", "letterSpacing": "-0.02em", "fontWeight": "700"}],
+                        "headline-lg-mobile": ["28px", {"lineHeight": "36px", "fontWeight": "700"}],
+                        "body-md": ["16px", {"lineHeight": "24px", "fontWeight": "400"}],
+                        "headline-lg": ["32px", {"lineHeight": "40px", "letterSpacing": "-0.01em", "fontWeight": "700"}],
+                        "headline-md": ["24px", {"lineHeight": "32px", "fontWeight": "600"}],
+                        "label-md": ["14px", {"lineHeight": "20px", "letterSpacing": "0.01em", "fontWeight": "500"}]
+                    }
+                }
+            }
+        }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+    </style>
+</head>
+<body class="bg-surface text-on-surface font-body-md antialiased pt-20">
+<!-- TopNavBar -->
+<header class="fixed top-0 w-full z-50 shadow-sm bg-surface dark:bg-surface-dim">
+<div class="flex justify-between items-center max-w-container-max mx-auto px-margin-desktop py-4">
+<div class="text-headline-md font-headline-md font-bold text-primary dark:text-primary-fixed">
+                Skill Mitra
+            </div>
+<nav class="hidden md:flex gap-gutter">
+<a class="text-primary dark:text-primary-fixed hover:text-secondary-container transition-colors duration-200 font-label-md text-label-md scale-95 active:opacity-80 transition-transform" href="#">Free Education</a>
+<a class="text-secondary border-b-2 border-secondary pb-1 hover:text-secondary-container transition-colors duration-200 font-label-md text-label-md scale-95 active:opacity-80 transition-transform" href="#">Higher Education</a>
+<a class="text-primary dark:text-primary-fixed hover:text-secondary-container transition-colors duration-200 font-label-md text-label-md scale-95 active:opacity-80 transition-transform" href="#">Earning Opportunities</a>
+<a class="text-primary dark:text-primary-fixed hover:text-secondary-container transition-colors duration-200 font-label-md text-label-md scale-95 active:opacity-80 transition-transform" href="#">Community</a>
+</nav>
+<button class="bg-primary-container text-on-primary font-label-md text-label-md px-4 py-2 rounded-lg hover:bg-primary transition-colors scale-95 active:opacity-80 transition-transform">
+                Login/Signup
+            </button>
+</div>
+</header>
+<!-- Hero Section -->
+<section class="bg-primary-container text-on-primary py-24 relative overflow-hidden">
+<div class="absolute inset-0 opacity-10 bg-[radial-gradient(ellipse_at_top_right,_var(--tw-gradient-stops))] from-secondary-fixed to-transparent"></div>
+<div class="max-w-container-max mx-auto px-margin-desktop relative z-10 text-center md:text-left">
+<h1 class="font-display-lg text-display-lg mb-stack-md">Premium Career-Track Catalog</h1>
+<p class="font-body-lg text-body-lg text-on-primary-container max-w-2xl">Master high-demand skills with university-partnered certifications and expert mentorship.</p>
+</div>
+</section>
+<!-- Main Content -->
+<main class="max-w-container-max mx-auto px-margin-desktop py-16 flex flex-col md:flex-row gap-gutter">
+<!-- Sidebar Filters -->
+<aside class="w-full md:w-64 shrink-0 space-y-stack-lg">
+<div>
+<h3 class="font-headline-md text-headline-md mb-stack-md">Category</h3>
+<div class="space-y-stack-sm">
+<label class="flex items-center gap-2 font-body-md text-body-md cursor-pointer hover:text-primary">
+<input class="rounded border-outline text-primary-container focus:ring-primary-container" type="checkbox"/>
+                        Tech
+                    </label>
+<label class="flex items-center gap-2 font-body-md text-body-md cursor-pointer hover:text-primary">
+<input class="rounded border-outline text-primary-container focus:ring-primary-container" type="checkbox"/>
+                        Business
+                    </label>
+<label class="flex items-center gap-2 font-body-md text-body-md cursor-pointer hover:text-primary">
+<input class="rounded border-outline text-primary-container focus:ring-primary-container" type="checkbox"/>
+                        Design
+                    </label>
+<label class="flex items-center gap-2 font-body-md text-body-md cursor-pointer hover:text-primary">
+<input class="rounded border-outline text-primary-container focus:ring-primary-container" type="checkbox"/>
+                        Finance
+                    </label>
+</div>
+</div>
+<div>
+<h3 class="font-headline-md text-headline-md mb-stack-md">Duration</h3>
+<div class="space-y-stack-sm">
+<label class="flex items-center gap-2 font-body-md text-body-md cursor-pointer hover:text-primary">
+<input class="rounded border-outline text-primary-container focus:ring-primary-container" type="checkbox"/>
+                        3-6 months
+                    </label>
+<label class="flex items-center gap-2 font-body-md text-body-md cursor-pointer hover:text-primary">
+<input class="rounded border-outline text-primary-container focus:ring-primary-container" type="checkbox"/>
+                        6+ months
+                    </label>
+</div>
+</div>
+<div>
+<h3 class="font-headline-md text-headline-md mb-stack-md">Certification</h3>
+<div class="space-y-stack-sm">
+<label class="flex items-center gap-2 font-body-md text-body-md cursor-pointer hover:text-primary">
+<input class="rounded border-outline text-primary-container focus:ring-primary-container" type="checkbox"/>
+                        University
+                    </label>
+<label class="flex items-center gap-2 font-body-md text-body-md cursor-pointer hover:text-primary">
+<input class="rounded border-outline text-primary-container focus:ring-primary-container" type="checkbox"/>
+                        Industry-standard
+                    </label>
+</div>
+</div>
+</aside>
+<!-- Course Grid -->
+<div class="flex-1">
+<div class="grid grid-cols-1 lg:grid-cols-2 xl:grid-cols-3 gap-gutter">
+<!-- Course Card 1 -->
+<div class="bg-surface-container-lowest rounded-xl shadow-sm border-t-2 border-secondary-container overflow-hidden hover:shadow-md transition-shadow duration-300">
+<img class="w-full h-48 object-cover" data-alt="A highly detailed professional workspace scene focusing on a modern computer monitor displaying complex coding interfaces. Warm, inviting light mode aesthetic. The desk is minimalist, featuring a notebook, pen, and a subtle potted plant. The overall mood is focused, modern, and educational, with soft shadows and a high-end SaaS feel. Deep navy and subtle gold accents are present in the environment." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDtGn2M7iRICPFRJDEdTlR1VQbGmJ3pCEnsdQThrzuzZWNTjSps0aprs0SybmNRCt2CGTMtI9hwCgDl6luadXA6D4Kvc_rEH84XCZMEwM_h-mMN03LNMwXpk5V2-EoBCEY7gmc0Fz3qPZ-UfAoRSKg3KdUwOrUXBBzs9Ph9jwxi17MYeLh04mPzxL5lnQsxz5QtdvEFBWnrStHGE0PL0bKKp0w4h5MSSELWrGDIbNjJFZPjhdphDym2"/>
+<div class="p-6">
+<span class="inline-block bg-secondary-container/20 text-on-secondary-container font-label-sm text-label-sm px-2 py-1 rounded-full mb-3">Premium</span>
+<h3 class="font-headline-md text-headline-md mb-2">Advanced Full-Stack Web Development</h3>
+<p class="font-body-md text-body-md text-on-surface-variant mb-4">In partnership with Tech University</p>
+<div class="flex flex-wrap gap-4 mb-6">
+<div class="flex items-center gap-1 text-on-surface-variant font-label-md text-label-md">
+<span class="material-symbols-outlined text-[18px]">schedule</span> 6 Months
+                            </div>
+<div class="flex items-center gap-1 text-on-surface-variant font-label-md text-label-md">
+<span class="material-symbols-outlined text-[18px]">school</span> Advanced
+                            </div>
+<div class="flex items-center gap-1 text-on-surface-variant font-label-md text-label-md">
+<span class="material-symbols-outlined text-[18px]">group</span> 1.2k
+                            </div>
+</div>
+<div class="flex gap-2">
+<button class="flex-1 bg-primary-container text-on-primary font-label-md text-label-md py-2 rounded-lg hover:bg-primary transition-colors">View Detail</button>
+<button class="flex-1 bg-secondary-container text-on-secondary-fixed font-label-md text-label-md py-2 rounded-lg hover:bg-secondary-fixed-dim transition-colors">Enroll Now</button>
+</div>
+</div>
+</div>
+<!-- Course Card 2 -->
+<div class="bg-surface-container-lowest rounded-xl shadow-sm border-t-2 border-secondary-container overflow-hidden hover:shadow-md transition-shadow duration-300">
+<img class="w-full h-48 object-cover" data-alt="A modern, abstract representation of artificial intelligence and machine learning. A bright, light-mode aesthetic featuring glowing nodes and connections on a clean white background. Subtle deep navy and premium gold accents are woven through the design. The mood is analytical, advanced, and academic, fitting a high-end educational platform." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDyf3uJogxbRzrnhZi62oRWwA3JRF406fu80qJiucyJ4Sf4RCapgCrTRH-lMPmj3F5xkptVp8OiPKXsbGGnFy9NyylvhpDGB_1OG6_1bHW10KJnMwZfArUfoDeciUeq9MCVz4oHOeuLKzLKE2s0WRQgc-KJh3wftWhmFLyTrsXINOTDaobtLKOqFCSla4DnoaH3jiHVjEvZ0oVurCvlnL8jtt8gFwomsTFf5e_3-5YDWJWTa-ZehKsQ"/>
+<div class="p-6">
+<span class="inline-block bg-secondary-container/20 text-on-secondary-container font-label-sm text-label-sm px-2 py-1 rounded-full mb-3">Premium</span>
+<h3 class="font-headline-md text-headline-md mb-2">AI &amp; Machine Learning Specialist</h3>
+<p class="font-body-md text-body-md text-on-surface-variant mb-4">In partnership with Global Data Institute</p>
+<div class="flex flex-wrap gap-4 mb-6">
+<div class="flex items-center gap-1 text-on-surface-variant font-label-md text-label-md">
+<span class="material-symbols-outlined text-[18px]">schedule</span> 8 Months
+                            </div>
+<div class="flex items-center gap-1 text-on-surface-variant font-label-md text-label-md">
+<span class="material-symbols-outlined text-[18px]">school</span> Advanced
+                            </div>
+<div class="flex items-center gap-1 text-on-surface-variant font-label-md text-label-md">
+<span class="material-symbols-outlined text-[18px]">group</span> 850
+                            </div>
+</div>
+<div class="flex gap-2">
+<button class="flex-1 bg-primary-container text-on-primary font-label-md text-label-md py-2 rounded-lg hover:bg-primary transition-colors">View Detail</button>
+<button class="flex-1 bg-secondary-container text-on-secondary-fixed font-label-md text-label-md py-2 rounded-lg hover:bg-secondary-fixed-dim transition-colors">Enroll Now</button>
+</div>
+</div>
+</div>
+<!-- Course Card 3 -->
+<div class="bg-surface-container-lowest rounded-xl shadow-sm border-t-2 border-secondary-container overflow-hidden hover:shadow-md transition-shadow duration-300">
+<img class="w-full h-48 object-cover" data-alt="A sophisticated business meeting scene in a bright, modern corporate boardroom. Focus on a clear whiteboard with strategic diagrams. The aesthetic is clean, professional, and aspirational, using a light-mode palette. Deep navy suits and subtle gold presentation accents reinforce the premium, high-end educational brand identity." src="https://lh3.googleusercontent.com/aida-public/AB6AXuBPoSExOqG4nMyF5JCn_AarOBbRnAd_N9866RY4P0N_QhNk2WXrVi9xpEmR-IBcZW0jCEBIb_xvWBjseypsn6P4jcUnYMT0uPuJifIuOFjXQ2pVu7gWL7icZGYHVrLsEJ1a5BJeSiF94CfLQnU-LkO5TmzONWBty9cyNYg0BUG-D3Z2t4H0fixux_YioTr39eBtOHPNXfCC0B7FpVM_KpEyZ-r-8sfUv_CAKvLldiSWC0wNhTcKvEY-"/>
+<div class="p-6">
+<span class="inline-block bg-secondary-container/20 text-on-secondary-container font-label-sm text-label-sm px-2 py-1 rounded-full mb-3">Premium</span>
+<h3 class="font-headline-md text-headline-md mb-2">Strategic Business Leadership</h3>
+<p class="font-body-md text-body-md text-on-surface-variant mb-4">In partnership with Executive Business School</p>
+<div class="flex flex-wrap gap-4 mb-6">
+<div class="flex items-center gap-1 text-on-surface-variant font-label-md text-label-md">
+<span class="material-symbols-outlined text-[18px]">schedule</span> 4 Months
+                            </div>
+<div class="flex items-center gap-1 text-on-surface-variant font-label-md text-label-md">
+<span class="material-symbols-outlined text-[18px]">school</span> Intermediate
+                            </div>
+<div class="flex items-center gap-1 text-on-surface-variant font-label-md text-label-md">
+<span class="material-symbols-outlined text-[18px]">group</span> 2.1k
+                            </div>
+</div>
+<div class="flex gap-2">
+<button class="flex-1 bg-primary-container text-on-primary font-label-md text-label-md py-2 rounded-lg hover:bg-primary transition-colors">View Detail</button>
+<button class="flex-1 bg-secondary-container text-on-secondary-fixed font-label-md text-label-md py-2 rounded-lg hover:bg-secondary-fixed-dim transition-colors">Enroll Now</button>
+</div>
+</div>
+</div>
+</div>
+</div>
+</main>
+<!-- Membership Perk Bar -->
+<section class="bg-surface-container-low border-y border-outline-variant/30 py-8">
+<div class="max-w-container-max mx-auto px-margin-desktop flex flex-col md:flex-row justify-center items-center gap-8 md:gap-16">
+<div class="flex items-center gap-3">
+<div class="w-10 h-10 rounded-full bg-secondary-container/20 flex items-center justify-center text-secondary">
+<span class="material-symbols-outlined" data-icon="person_play">person_play</span>
+</div>
+<span class="font-headline-md text-headline-md text-primary-container">1-on-1 Mentorship</span>
+</div>
+<div class="flex items-center gap-3">
+<div class="w-10 h-10 rounded-full bg-secondary-container/20 flex items-center justify-center text-secondary">
+<span class="material-symbols-outlined" data-icon="video_camera_front">video_camera_front</span>
+</div>
+<span class="font-headline-md text-headline-md text-primary-container">Live Labs</span>
+</div>
+<div class="flex items-center gap-3">
+<div class="w-10 h-10 rounded-full bg-secondary-container/20 flex items-center justify-center text-secondary">
+<span class="material-symbols-outlined" data-icon="work">work</span>
+</div>
+<span class="font-headline-md text-headline-md text-primary-container">Priority Placement</span>
+</div>
+</div>
+</section>
+<!-- Footer -->
+<footer class="w-full bg-primary dark:bg-primary-container">
+<div class="max-w-container-max mx-auto px-margin-desktop py-stack-lg flex flex-col md:flex-row justify-between gap-gutter items-center">
+<div class="text-headline-md font-headline-md text-on-primary">
+                Skill Mitra
+            </div>
+<div class="flex gap-gutter font-label-sm text-label-sm">
+<a class="text-on-primary/80 dark:text-on-primary-container/80 hover:text-secondary-fixed transition-colors opacity-90 hover:opacity-100" href="#">Sitemap</a>
+<a class="text-on-primary/80 dark:text-on-primary-container/80 hover:text-secondary-fixed transition-colors opacity-90 hover:opacity-100" href="#">Social Links</a>
+<a class="text-on-primary/80 dark:text-on-primary-container/80 hover:text-secondary-fixed transition-colors opacity-90 hover:opacity-100" href="#">Newsletter</a>
+<a class="text-on-primary/80 dark:text-on-primary-container/80 hover:text-secondary-fixed transition-colors opacity-90 hover:opacity-100" href="#">Contact</a>
+</div>
+<div class="font-body-md text-body-md text-on-primary/80">
+                © 2024 Skill Mitra. All rights reserved.
+            </div>
+</div>
+</footer>
+</body></html>
